@@ -1,0 +1,15 @@
+@startuml
+title ArgumentJSON UML Diagram
+
+class ArgumentJSON {
+    - processed_log_path: string
+    - custom_fields: List<CustomField> {optional}
+}
+
+class CustomField {
+    - name: string
+    - property: string
+}
+
+ArgumentJSON *-- "0..*" CustomField : contains
+@enduml
