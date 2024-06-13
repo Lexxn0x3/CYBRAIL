@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start_time": { "type": "string", "format": "date-time" },
+          "end_time": { "type": "string", "format": "date-time" },
+          "logs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "timestamp": { "type": "string", "format": "date-time" },
+                "thread_id": { "type": "string" },
+                "level": {
+                  "type": "string",
+                  "enum": ["INFO", "DEBUG", "ERROR"]
+                },
+                "message": { "type": "string" },
+                "details": { "type": "string", "nullable": true }
+              },
+              "required": ["timestamp", "thread_id", "level", "message"]
+            }
+          }
+        },
+        "required": ["start_time", "end_time", "logs"]
+      }
+    }
+  },
+  "required": ["sessions"]
+}

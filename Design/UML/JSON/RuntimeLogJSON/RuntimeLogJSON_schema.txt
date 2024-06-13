@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "application": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "build": {"type": "string"},
+        "copyright": {"type": "string"}
+      },
+      "required": ["name", "version", "build", "copyright"]
+    },
+    "system": {
+      "type": "object",
+      "properties": {
+        "start_time": {"type": "string", "format": "date-time"},
+        "os": {"type": "string"},
+        "computer": {"type": "string"},
+        "model": {"type": "string"},
+        "manufacturer": {"type": "string"},
+        "runtime_id": {"type": "string"}
+      },
+      "required": ["start_time", "os", "computer", "model", "manufacturer", "runtime_id"]
+    },
+    "logs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {"type": "string", "format": "date-time"},
+          "thread": {"type": "string"},
+          "level": {"type": "string", "enum": ["INFO", "DEBUG", "ERROR"]},
+          "message": {"type": "string"}
+        },
+        "required": ["timestamp", "thread", "level", "message"]
+      }
+    }
+  },
+  "required": ["application", "system", "logs"]
+}
