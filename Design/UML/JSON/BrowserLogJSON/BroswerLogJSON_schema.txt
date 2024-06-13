@@ -1,0 +1,13 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "timestamp": {"type": "string", "format": "date-time"},
+            "severity": {"type": "string", "enum": ["WARNING", "INFO"]},
+            "source": {"type": "string"},
+            "message": {"type": "string"}
+        },
+        "required": ["timestamp", "severity", "source", "message"]
+    }
+}

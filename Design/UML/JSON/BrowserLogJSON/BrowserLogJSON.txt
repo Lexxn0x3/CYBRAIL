@@ -1,0 +1,23 @@
+@startuml
+title Browser Log JSON Schema UML Diagram
+
+class BrowserLog {
+    - timestamp: string <<date-time>>
+    - severity: string <<SeverityEnum>>
+    - source: string
+    - message: string
+}
+
+enum SeverityEnum {
+    WARNING
+    INFO
+}
+
+class BrowserLogArray {
+    - logs: List<BrowserLog>
+}
+
+BrowserLogArray *-- "0..*" BrowserLog : contains
+BrowserLog -right- SeverityEnum : "severity is"
+
+@enduml

@@ -1,0 +1,32 @@
+@startuml
+title Client Log JSON Schema UML Diagram
+
+class ClientLog {
+    - sessions: List<Session>
+}
+
+class Session {
+    - start_time: string <<date-time>>
+    - end_time: string <<date-time>>
+    - logs: List<Log>
+}
+
+class Log {
+    - timestamp: string <<date-time>>
+    - thread_id: string
+    - level: string <<LevelEnum>>
+    - message: string
+    - details: string {optional}
+}
+
+enum LevelEnum {
+    INFO
+    DEBUG
+    ERROR
+}
+
+ClientLog *-- "0..*" Session : contains
+Session *-- "0..*" Log : contains
+Log -right- LevelEnum : "level is"
+
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+title Runtime Log JSON Schema UML Diagram
+
+class Application {
+    - name: string
+    - version: string
+    - build: string
+    - copyright: string
+}
+
+class System {
+    - start_time: string <<date-time>>
+    - os: string
+    - computer: string
+    - model: string
+    - manufacturer: string
+    - runtime_id: string
+}
+
+class LogEntry {
+    - timestamp: string <<date-time>>
+    - thread: string
+    - level: string <<LogLevel>>
+    - message: string
+}
+
+class RuntimeLog {
+    - application: Application
+    - system: System
+    - logs: List<LogEntry>
+}
+
+enum LogLevel {
+    INFO
+    DEBUG
+    ERROR
+}
+
+RuntimeLog *-- "1" Application : contains
+RuntimeLog *-- "1" System : contains
+RuntimeLog *-- "0..*" LogEntry : contains
+LogEntry -right- LogLevel : "level is"
+
+@enduml
