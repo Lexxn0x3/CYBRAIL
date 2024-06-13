@@ -1,0 +1,136 @@
+@startuml
+
+package "Log Processing System" {
+    
+    package "ZentralInfoPrep" {
+        class LogParser {
+            Empfängt und verarbeitet Logs
+            Wandelt Logs in JSON um
+            --
+            +parse_logs(logs)
+            +convert_to_json(logs)
+        }
+        
+        class QuizAnswersPrep {
+            Empfängt und verarbeitet die Antworten auf die Klausurfragen
+            Wandelt Antworten in JSON um
+            --
+            +parse_answers(answers)
+            +convert_to_json(answers)
+        }
+        
+        class FutureInfos {
+            Empfängt und verarbeitet zukünftige Informationen
+            Wandelt Informationen in JSON um
+            --
+            +process_infos(infos)
+            +convert_to_json(infos)
+        }
+        
+        class DataDistributor {
+            Verteilt notwendige Daten an einzelne Module
+            --
+            +distribute_data(data)
+        }
+    }
+    
+    package "TestingPipeline" {
+        class RuleBasedAnomalyDetector {
+            Prüft Logs gegen vordefinierte Regeln
+            --
+            +detect_anomalies(logs)
+        }
+        
+        class FastTyping {
+            Erkennung von schneller Eingabe
+            --
+            +check(logs)
+        }
+        
+        class SameHardware {
+            Erkennung von gleicher Hardware
+            --
+            +check(logs)
+        }
+        
+        class VMDetection {
+            Erkennung von VM-Nutzung
+            --
+            +check(logs)
+        }
+        
+        class NumberOfDisplays {
+            Erkennung der Anzahl der Displays
+            --
+            +check(logs)
+        }
+        
+        class MLAnomalyDetector {
+            Nutzt ML-Modell(e) zur Anomalieerkennung
+            --
+            +detect_anomalies(logs)
+        }
+        
+        class SystemPatterns {
+            Erkennung von Systemmustern
+            --
+            +check_patterns(logs)
+        }
+        
+        class UserPatterns {
+            Erkennung von Benutzermustern
+            --
+            +check_patterns(logs)
+        }
+        
+        class AIAnomalyDetector {
+            Nutzt externe KI (z.B. ChatGPT) zur Anomalieerkennung
+            --
+            +detect_anomalies(logs)
+        }
+        
+        class CheckingQuizAnswersUsingAI {
+            Überprüfung der Klausurantworten mithilfe von KI
+            --
+            +check_answers(logs)
+        }
+        
+        class ResultAggregator {
+            Aggregiert Anomalie-Daten
+            Bereitet finale Ergebnisse auf
+            --
+            +aggregate_results(results)
+        }
+      }
+      class Output {
+          Präsentiert oder speichert die Ergebnisse
+          --
+          +display(results)
+      }
+      
+      LogParser --> DataDistributor : sends to
+      QuizAnswersPrep --> DataDistributor : sends to
+      FutureInfos --> DataDistributor : sends to
+        
+      DataDistributor --> RuleBasedAnomalyDetector : distributes to
+      DataDistributor --> MLAnomalyDetector : distributes to
+      DataDistributor --> AIAnomalyDetector : distributes to
+
+      RuleBasedAnomalyDetector --> ResultAggregator : sends results to
+      MLAnomalyDetector --> ResultAggregator : sends results to
+      AIAnomalyDetector --> ResultAggregator : sends results to
+      ResultAggregator --> Output : sends aggregated results to
+
+      RuleBasedAnomalyDetector *-- FastTyping : checks
+      RuleBasedAnomalyDetector *-- SameHardware : checks
+      RuleBasedAnomalyDetector *-- VMDetection : checks
+      RuleBasedAnomalyDetector *-- NumberOfDisplays : checks
+
+      MLAnomalyDetector *-- SystemPatterns : checks
+      MLAnomalyDetector *-- UserPatterns : checks
+
+      AIAnomalyDetector *-- CheckingQuizAnswersUsingAI : checks
+
+}
+
+@enduml
