@@ -1,0 +1,129 @@
+@startuml
+package "Log Processing System" {
+    
+    package "ZentralInfoPrep" {
+        component "LogParser" {
+            note right of LogParser
+            - Empfängt und verarbeitet Logs
+            - Wandelt Logs in JSON um
+            end note
+        }
+        component "QuizAnswersPrep" {
+            note right of QuizAnswersPrep
+            - Empfängt und verarbeitet die Antworten auf die Klausurfragen
+            - Wandelt Logs in JSON um
+            end note
+        }
+        component "FutureInfos" {
+            note right of FutureInfos
+            - Empfängt und verarbeitet die Antworten auf die Klausurfragen
+            - Wandelt Logs in JSON um
+            end note
+        }
+        
+        component "DataDistributor" {
+                note right of DataDistributor
+                - Verteilt notwendige Daten an einzelne Module
+                end note
+        }
+      
+        
+    }
+    
+    [LogParser] --> [DataDistributor]
+    [QuizAnswersPrep] --> [DataDistributor]
+
+    package "TestingPipeline" {
+        
+        
+        
+        component "RuleBasedAnomalyDetector" {
+            note right of RuleBasedAnomalyDetector
+            - Prüft Logs gegen vordefinierte Regeln
+            end note
+            
+            component "FastTyping" {
+                note right of FastTyping
+                - Erkennung von schneller Eingabe
+                end note
+            }
+            component "SameHardware" {
+                note right of SameHardware
+                - Erkennung von gleicher Hardware
+                end note
+            }
+            component "VMDetection" {
+                note right of VMDetection
+                - Erkennung von VM-Nutzung
+                end note
+            }
+            component "NumberOfDisplays" {
+                note right of NumberOfDisplays
+                - Erkennung der Anzahl der Displays
+                end note
+            }
+            
+            [RuleBasedAnomalyDetector] --> [FastTyping] : JSON Logs
+            [RuleBasedAnomalyDetector] --> [SameHardware] : JSON Logs
+            [RuleBasedAnomalyDetector] --> [VMDetection] : JSON Logs
+            [RuleBasedAnomalyDetector] --> [NumberOfDisplays] : JSON Logs
+
+            
+        }
+        component "MLAnomalyDetector" {
+            note right of MLAnomalyDetector
+            - Nutzt ML-Modell(e) zur Anomalieerkennung
+            end note
+            
+            component "SystemPatterns" {
+                note right of SystemPatterns
+                - 
+                end note
+            }
+            
+            component "UserPatters" {
+                note right of UserPatters
+                - 
+                end note
+            }
+        }
+        component "AIAnomalyDetector" {
+            note right of AIAnomalyDetector
+            - Nutzt externe KI (z.B. ChatGPT) zur Anomalieerkennung
+            end note
+            
+            component "CheckingQuizAnswersofAIUsing" {
+                note right of CheckingQuizAnswersofAIUsing
+                - Erkennung der Anzahl der Displays
+                end note
+            }
+        }
+
+        [DataDistributor] --> [RuleBasedAnomalyDetector] : JSON Logs
+        [DataDistributor] --> [MLAnomalyDetector] : JSON Logs
+        [DataDistributor] --> [AIAnomalyDetector] : JSON Logs
+
+        [RuleBasedAnomalyDetector] --> [ResultAggregator] : Anomalie-Daten
+        [MLAnomalyDetector] --> [ResultAggregator] : Anomalie-Daten
+        [AIAnomalyDetector] --> [ResultAggregator] : Anomalie-Daten
+    }
+
+    component "ResultAggregator" {
+        note right of ResultAggregator
+        - Aggregiert Anomalie-Daten
+        - Bereitet finale Ergebnisse auf
+        end note
+    }
+
+    [ResultAggregator] --> [Output] : Aggregierte Daten
+
+    component "Output" {
+        note right of Output
+        - Präsentiert oder speichert die Ergebnisse
+        end note
+    }
+
+}
+
+@enduml
+
