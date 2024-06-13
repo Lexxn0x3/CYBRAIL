@@ -1,0 +1,31 @@
+@startuml
+title Return JSON Schema UML Diagram
+
+class ReturnJSON {
+    - status: string <<StatusEnum>>
+    - results: List<Metric> {optional}
+    - errors: List<Error> {optional}
+}
+
+class Metric {
+    - short_info: string
+    - long_info: string
+    - name: string
+}
+
+class Error {
+    - message: string
+    - details: string {optional}
+}
+
+enum StatusEnum {
+    success
+    cheating
+    error
+}
+
+ReturnJSON *-- "0..*" Metric : contains
+ReturnJSON *-- "0..*" Error : contains
+ReturnJSON -right- StatusEnum : "status is"
+
+@enduml
