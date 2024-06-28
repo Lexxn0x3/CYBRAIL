@@ -9,4 +9,5 @@ type CheckStrategy interface {
 type CheckModule struct {
 	Name     string
 	Strategy CheckStrategy
+	LogPath  string
 }

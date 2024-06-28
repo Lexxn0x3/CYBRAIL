@@ -17,6 +17,7 @@ func main() {
 	clientLogPath := filepath.Join(baseDir, "2024-05-09_17h53m25s_Client.log")
 	runtimeLogPath := filepath.Join(baseDir, "2024-05-09_17h53m25s_Runtime.log")
 	runtimeLogsJSONPath := filepath.Join(baseDir, "runtime_logs.json")
+	clientLogsJSONPath := filepath.Join(baseDir, "client_logs.json")
 
 	// Read Browser Log Data
 	browserLogData, err := ioutil.ReadFile(browserLogPath)
@@ -73,11 +74,14 @@ func main() {
 		log.Fatalf("Failed to write runtime logs JSON file: %v", err)
 	}
 
-	// Define check modules
+	// Define check modules with appropriate log paths
 	checkModules := []checkstrategies.CheckModule{
-		{"RuntimeLogCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\module.py"}},
-		{"IntegrityCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\integrity_check.py"}},
-		{"BinaryCheck", &checkstrategies.BinaryExecutableStrategy{ExecutablePath: "path/to/binary/executable"}},
+		{"RuntimeLogCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\module.py"}, runtimeLogsJSONPath},
+		{"IntegrityCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\integrity_check.py"}, runtimeLogsJSONPath},
+		{"DisplayCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\display_check.py"}, runtimeLogsJSONPath},
+		{"NetworkConfigCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\network_config_check.py"}, clientLogsJSONPath},
+		{"FrequentReinitialization", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\frequent_reinitialization.py"}, runtimeLogsJSONPath},
+		{"UnusualShutdownCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: "Z:\\A_Projekte\\CYBRAIL\\Modules\\unusual_shutdown_check.py"}, clientLogsJSONPath},
 	}
 
 	overallStatus := "success"
@@ -85,7 +89,7 @@ func main() {
 
 	// Execute check modules
 	for _, module := range checkModules {
-		output, err := module.Strategy.Execute(runtimeLogsJSONPath)
+		output, err := module.Strategy.Execute(module.LogPath)
 		result := utils.ParseModuleOutput(output, err)
 		results[module.Name] = result
 
