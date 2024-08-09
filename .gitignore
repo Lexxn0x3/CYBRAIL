@@ -165,3 +165,5 @@ LogParser/data/
 LogParser/data/
 .idea/
 *.db
+
+!Logs/**/*.log
