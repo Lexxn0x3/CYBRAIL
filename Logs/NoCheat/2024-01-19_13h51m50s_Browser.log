@@ -1,0 +1,11 @@
+[0119/135156.072:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0119/135159.461:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135214.423:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0119/135217.157:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135224.011:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135227.078:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135348.361:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135349.670:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135400.287:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135405.151:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/135406.456:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
