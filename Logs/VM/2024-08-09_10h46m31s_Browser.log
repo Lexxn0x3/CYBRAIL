@@ -1,0 +1,10 @@
+[0809/104641.539:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0809/104649.540:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104716.737:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104720.751:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104725.121:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104727.936:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104730.167:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104739.060:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104741.773:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)
+[0809/104758.882:INFO:CONSOLE(1192)] "Starting Moodle session timeout warning.", source: https://moodle.lexx.nexus/lib/requirejs.php/1715266843/core/first.js (1192)

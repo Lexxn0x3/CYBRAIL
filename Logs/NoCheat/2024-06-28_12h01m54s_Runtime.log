@@ -1,0 +1,73 @@
+﻿/* Safe Exam Browser, Version 3.6.0 (x64), Build 3.6.0.633
+/* Copyright © 2023 ETH Zürich, Educational Development and Technology (LET)
+/* 
+/* Please visit https://www.github.com/SafeExamBrowser for more information.
+
+# Application started at 2024-06-28 12:01:54.262
+# Running on Windows 11, Microsoft Windows NT 10.0.22631.0 (x64)
+# Computer 'PASCALSLAPTOP' is a Nitro 5 Nitro AN515-55 manufactured by Acer
+# Runtime-ID: 470a39cf-795e-4343-8ff2-30e966eb2c36
+
+2024-06-28 12:01:55.941 [09] - INFO: Initiating startup procedure...
+2024-06-28 12:01:56.062 [09] - INFO: Loading text data...
+2024-06-28 12:01:56.063 [09] - DEBUG: [Text] System language is 'en', trying to load data...
+2024-06-28 12:01:56.071 [09] - DEBUG: [Text] Data successfully loaded.
+2024-06-28 12:01:56.071 [09] - INFO: Starting communication host...
+2024-06-28 12:01:56.105 [06] - DEBUG: [RuntimeHost] Communication host is opening...
+2024-06-28 12:01:56.143 [06] - DEBUG: [RuntimeHost] Communication host has been opened.
+2024-06-28 12:01:56.143 [06] - DEBUG: [RuntimeHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/88788687-bd6a-49e8-8004-86e54453f064'.
+2024-06-28 12:01:56.145 [09] - INFO: Attempting to verify application integrity...
+2024-06-28 12:01:56.269 [09] - INFO: Application integrity successfully verified.
+2024-06-28 12:01:56.271 [09] - INFO: Application successfully initialized.
+
+2024-06-28 12:01:56.298 [09] - INFO: ### ------------------------------------ Session Start Procedure ------------------------------------- ###
+2024-06-28 12:01:56.303 [09] - INFO: Initializing new session configuration...
+2024-06-28 12:01:56.311 [09] - INFO:  -> Client-ID: 9efaed88-f4c8-4a83-b079-c59f022c9b3e
+2024-06-28 12:01:56.312 [09] - INFO:  -> Runtime-ID: 470a39cf-795e-4343-8ff2-30e966eb2c36
+2024-06-28 12:01:56.313 [09] - INFO:  -> Session-ID: 126d1c93-a5f9-4f88-b35b-715bb201d2f5
+2024-06-28 12:01:56.317 [09] - INFO: Initializing application configuration...
+2024-06-28 12:01:56.321 [09] - INFO: Found command-line argument for configuration resource: 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb', the URI is valid.
+2024-06-28 12:01:56.336 [09] - INFO: [ConfigurationRepository] Initialized default settings, now attempting to load 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb'...
+2024-06-28 12:01:56.351 [09] - DEBUG: [FileResourceLoader] Can load 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb' as it is an existing file.
+2024-06-28 12:01:56.352 [09] - DEBUG: [FileResourceLoader] Loading data from 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb'...
+2024-06-28 12:01:56.353 [09] - DEBUG: [FileResourceLoader] Created 'System.IO.FileStream' for 0,478 KB data in 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb'.
+2024-06-28 12:01:56.354 [09] - INFO: [ConfigurationRepository] Tried to load data from 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb' using FileResourceLoader -> Result: Success.
+2024-06-28 12:01:56.359 [09] - DEBUG: [BinaryParser] 'System.IO.FileStream' starting with 'plnd' matches the Binary format.
+2024-06-28 12:01:56.362 [09] - DEBUG: [GZipCompressor] Starting decompression of 'System.IO.FileStream' with 0,478 KB data...
+2024-06-28 12:01:56.363 [09] - DEBUG: [GZipCompressor] Successfully decompressed 0,478 KB to 0,455 KB data.
+2024-06-28 12:01:56.365 [09] - DEBUG: [GZipCompressor] Starting decompression of 'SafeExamBrowser.Configuration.SubStream' with 0,451 KB data...
+2024-06-28 12:01:56.366 [09] - DEBUG: [GZipCompressor] Successfully decompressed 0,451 KB to 0,926 KB data.
+2024-06-28 12:01:56.367 [09] - DEBUG: [BinaryParser] Attempting to parse plain data block...
+2024-06-28 12:01:56.369 [09] - DEBUG: [XmlParser] Found root node, starting to parse data...
+2024-06-28 12:01:56.372 [09] - DEBUG: [XmlParser] Finished parsing -> Result: Success.
+2024-06-28 12:01:56.373 [09] - INFO: [ConfigurationRepository] Tried to parse data from 'System.IO.FileStream' using BinaryParser -> Result: Success.
+2024-06-28 12:01:56.395 [09] - INFO: The configuration was successful.
+2024-06-28 12:01:56.398 [09] - INFO: Initializing server...
+2024-06-28 12:01:56.585 [09] - DEBUG: [ServerProxy] Completed request: GET 'https://sebserver.mattzi.de/exam-api/discovery' -> 200 OK OK
+2024-06-28 12:01:56.593 [09] - INFO: [ServerProxy] Successfully loaded server API.
+2024-06-28 12:01:56.697 [09] - DEBUG: [ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/oauth/token' -> 200 OK OK
+2024-06-28 12:01:56.698 [09] - INFO: [ServerProxy] Successfully retrieved OAuth2 token.
+2024-06-28 12:01:56.793 [09] - DEBUG: [ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 400 BadRequest Bad Request
+2024-06-28 12:01:56.867 [09] - DEBUG: [ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 400 BadRequest Bad Request
+2024-06-28 12:01:56.922 [09] - DEBUG: [ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 400 BadRequest Bad Request
+2024-06-28 12:01:57.019 [09] - DEBUG: [ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 400 BadRequest Bad Request
+2024-06-28 12:01:57.102 [09] - DEBUG: [ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 400 BadRequest Bad Request
+2024-06-28 12:01:57.102 [09] - ERROR: [ServerProxy] Failed to retrieve available exams!
+2024-06-28 12:02:18.745 [09] - INFO: The user aborted the server operation.
+2024-06-28 12:02:18.772 [09] - INFO: Finalizing server...
+2024-06-28 12:02:18.921 [09] - DEBUG: [ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 404 NotFound Not Found
+2024-06-28 12:02:19.026 [09] - DEBUG: [ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 404 NotFound Not Found
+2024-06-28 12:02:19.115 [09] - DEBUG: [ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 404 NotFound Not Found
+2024-06-28 12:02:19.190 [09] - DEBUG: [ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 404 NotFound Not Found
+2024-06-28 12:02:19.293 [09] - DEBUG: [ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -> 404 NotFound Not Found
+2024-06-28 12:02:19.294 [09] - ERROR: [ServerProxy] Failed to terminate connection!
+2024-06-28 12:02:19.297 [09] - INFO: ### ------------------------------------- Session Start Aborted -------------------------------------- ###
+
+2024-06-28 12:02:19.545 [09] - INFO: Initiating shutdown procedure...
+2024-06-28 12:02:19.548 [09] - INFO: Stopping communication host...
+2024-06-28 12:02:19.549 [09] - DEBUG: [RuntimeHost] Communication host is closing...
+2024-06-28 12:02:19.566 [09] - DEBUG: [RuntimeHost] Communication host has been closed.
+2024-06-28 12:02:19.567 [09] - DEBUG: [RuntimeHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/88788687-bd6a-49e8-8004-86e54453f064'.
+2024-06-28 12:02:19.567 [09] - INFO: Application successfully finalized.
+
+# Application terminated at 2024-06-28 12:02:19.606
