@@ -1,0 +1,186 @@
+﻿# New client instance started at 2024-01-12 14:43:53.808
+
+2024-01-12 14:43:53.813 [01] - INFO: Initiating startup procedure...
+2024-01-12 14:43:53.827 [01] - INFO: Loading text data...
+2024-01-12 14:43:53.829 [01] - DEBUG: [Text] System language is 'en', trying to load data...
+2024-01-12 14:43:53.836 [01] - DEBUG: [Text] Data successfully loaded.
+2024-01-12 14:43:53.836 [01] - INFO: Initializing runtime connection...
+2024-01-12 14:43:53.845 [01] - DEBUG: [RuntimeProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/runtime/0c7f3152-ef60-4e68-9787-7467d7656f86' with authentication token '1eecbb9c-6d0c-468c-b11e-c50802005f38'...
+2024-01-12 14:43:53.886 [01] - DEBUG: [RuntimeProxy] Communication channel is opening...
+2024-01-12 14:43:53.920 [01] - DEBUG: [RuntimeProxy] Communication channel has been opened.
+2024-01-12 14:43:53.951 [01] - DEBUG: [RuntimeProxy] Connection was established.
+2024-01-12 14:43:53.952 [01] - INFO: Successfully connected to the runtime.
+2024-01-12 14:43:53.953 [01] - INFO: Initializing application configuration...
+2024-01-12 14:43:53.956 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ConfigurationNeeded'...
+2024-01-12 14:43:54.167 [01] - DEBUG: [RuntimeProxy] Received response 'ConfigurationResponse' for message 'SimpleMessage -> ConfigurationNeeded'.
+2024-01-12 14:43:54.168 [01] - DEBUG: [RuntimeProxy] Received configuration response.
+2024-01-12 14:43:54.168 [01] - INFO: Successfully retrieved the application configuration from the runtime.
+2024-01-12 14:43:54.168 [01] - INFO:  -> Client-ID: e30d1fec-a72f-46b1-8b8d-da74eb480098
+2024-01-12 14:43:54.168 [01] - INFO:  -> Runtime-ID: ff395a14-97bf-4a2f-9cea-914f4981d08f
+2024-01-12 14:43:54.169 [01] - INFO:  -> Session-ID: a5002f57-2c4b-47cb-9899-536929c40aac
+2024-01-12 14:43:54.173 [01] - INFO: Starting communication host...
+2024-01-12 14:43:54.177 [08] - DEBUG: [ClientHost] Communication host is opening...
+2024-01-12 14:43:54.190 [08] - DEBUG: [ClientHost] Communication host has been opened.
+2024-01-12 14:43:54.190 [08] - DEBUG: [ClientHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/48db138e-20fc-44e0-be80-5f9f229f103c'.
+2024-01-12 14:43:54.192 [01] - INFO: Starting keyboard interception...
+2024-01-12 14:43:54.197 [01] - INFO: Starting mouse interception...
+2024-01-12 14:43:54.199 [01] - INFO: Initializing applications...
+2024-01-12 14:43:54.864 [01] - DEBUG: [ApplicationMonitor] Initialized 306 currently running processes.
+2024-01-12 14:43:54.866 [01] - DEBUG: [ApplicationMonitor] Initialized blacklist with 0 applications.
+2024-01-12 14:43:54.868 [01] - DEBUG: [ApplicationMonitor] Initialized whitelist with 0 applications.
+2024-01-12 14:43:54.869 [01] - INFO: [ApplicationMonitor] Started monitoring applications.
+2024-01-12 14:43:54.872 [01] - INFO: [ApplicationMonitor] Registered system capture start event with ID = 8b589b4f-7a88-4d0e-92a5-968c0ab215be.
+2024-01-12 14:43:54.874 [01] - INFO: [ApplicationMonitor] Registered system foreground event with ID = 2bb096b6-82e6-48b9-a812-9901a8c04f1c.
+2024-01-12 14:43:54.875 [01] - INFO: Initializing working area...
+2024-01-12 14:43:54.875 [01] - INFO: [DisplayMonitor] Disabled sleep mode and display timeout.
+2024-01-12 14:43:54.883 [01] - DEBUG: [Taskbar] Calculated physical taskbar height is 50px.
+2024-01-12 14:43:54.887 [01] - INFO: [DisplayMonitor] Saved original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-12 14:43:54.887 [01] - INFO: [DisplayMonitor] Trying to set new working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-12 14:43:54.888 [01] - INFO: [DisplayMonitor] Working area of DISPLAY1 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-12 14:43:54.889 [01] - INFO: [DisplayMonitor] Started monitoring display changes.
+2024-01-12 14:43:54.890 [01] - INFO: Initializing system events...
+2024-01-12 14:43:54.891 [01] - INFO: [SystemMonitor] Started monitoring the operating system.
+2024-01-12 14:43:54.895 [01] - INFO: Initializing shell...
+2024-01-12 14:43:54.953 [01] - INFO: [Audio] Found 'Kopfhörer (Jabra Link 380)' to be the active audio device.
+2024-01-12 14:43:55.083 [01] - INFO: [Audio] Started monitoring the audio device.
+2024-01-12 14:43:55.086 [01] - INFO: [Keyboard] Saved current keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-12 14:43:55.087 [01] - INFO: [Keyboard] Detected keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-12 14:43:55.087 [01] - INFO: [Keyboard] Detected keyboard layout 'English (United States)' [ENG, US].
+2024-01-12 14:43:55.196 [01] - INFO: [NetworkAdapter] Connection established.
+2024-01-12 14:43:55.196 [01] - INFO: [NetworkAdapter] Started monitoring the network adapter.
+2024-01-12 14:43:55.197 [01] - INFO: [PowerSupply] Started monitoring the power supply.
+2024-01-12 14:43:55.197 [01] - INFO: Initializing action center...
+2024-01-12 14:43:55.229 [01] - DEBUG: [PowerSupply] Power grid is connected, battery charge at 100%.
+2024-01-12 14:43:55.232 [01] - INFO: Initializing taskbar...
+2024-01-12 14:43:55.259 [01] - INFO: Initializing task view...
+2024-01-12 14:43:55.271 [01] - INFO: Initializing browser...
+2024-01-12 14:43:55.277 [01] - INFO: [BrowserApplication] Starting initialization...
+2024-01-12 14:43:55.358 [01] - DEBUG: [BrowserApplication] Accept Language: en-US
+2024-01-12 14:43:55.359 [01] - DEBUG: [BrowserApplication] Cache Path: C:\Users\pasca\AppData\Local\SafeExamBrowser\Cache
+2024-01-12 14:43:55.359 [01] - DEBUG: [BrowserApplication] Engine Version: Chromium 118.0.5993.117, CEF r118.6.8+ge44bee1+chromium-118.0.5993.117, CefSharp 118.6.80.0
+2024-01-12 14:43:55.360 [01] - DEBUG: [BrowserApplication] Log File: C:\Users\pasca\AppData\Local\SafeExamBrowser\Logs\2024-01-12_14h43m49s_Browser.log
+2024-01-12 14:43:55.360 [01] - DEBUG: [BrowserApplication] Log Severity: Info.
+2024-01-12 14:43:55.360 [01] - DEBUG: [BrowserApplication] PDF Reader: Enabled.
+2024-01-12 14:43:55.360 [01] - DEBUG: [BrowserApplication] Session Persistence: Enabled.
+2024-01-12 14:43:55.421 [01] - DEBUG: [BrowserApplication] Browser Exam Key (BEK) transmission is disabled.
+2024-01-12 14:43:55.421 [01] - DEBUG: [BrowserApplication] Configuration Key (CK) transmission is disabled.
+2024-01-12 14:43:55.422 [01] - DEBUG: [BrowserApplication] The browser application will be using the default browser exam key.
+2024-01-12 14:43:55.427 [01] - DEBUG: [BrowserApplication] Successfully initiated cookie deletion.
+2024-01-12 14:43:55.428 [01] - INFO: [BrowserApplication] Initialized browser.
+2024-01-12 14:43:55.452 [01] - INFO: Initializing clipboard...
+2024-01-12 14:43:55.455 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-12 14:43:55.455 [01] - DEBUG: [Clipboard] Started clipboard monitoring with interval 50 ms.
+2024-01-12 14:43:55.455 [01] - INFO: [Clipboard] Initialized clipboard for policy 'Isolated'.
+2024-01-12 14:43:55.500 [01] - DEBUG: [Taskbar] Set taskbar bounds to 1536x40 at (0/824), in physical pixels: 1920x50 at (0/1030).
+2024-01-12 14:43:55.502 [01] - INFO: Auto-starting browser...
+2024-01-12 14:43:55.564 [32] - DEBUG: [BrowserApplication] Deleted 0 cookies.
+2024-01-12 14:43:55.576 [01] - DEBUG: [Browser Window #1] Initialized browser control.
+2024-01-12 14:43:55.702 [01] - DEBUG: [Browser Window #1] Initialized browser window.
+2024-01-12 14:43:55.702 [01] - INFO: [BrowserApplication] Created browser window #1.
+2024-01-12 14:43:55.711 [01] - DEBUG: [Registry] Started monitoring value 'ContactVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '1'.
+2024-01-12 14:43:55.712 [01] - DEBUG: [Registry] Started monitoring value 'CursorBaseSize' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '32'.
+2024-01-12 14:43:55.712 [01] - DEBUG: [Registry] Started monitoring value 'GestureVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '31'.
+2024-01-12 14:43:55.712 [01] - DEBUG: [Registry] Started monitoring value 'Scheme Source' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '2'.
+2024-01-12 14:43:55.713 [01] - DEBUG: [Registry] Started monitoring value 'AppStarting' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_working.ani'.
+2024-01-12 14:43:55.713 [01] - DEBUG: [Registry] Started monitoring value 'Arrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_arrow.cur'.
+2024-01-12 14:43:55.713 [01] - DEBUG: [Registry] Started monitoring value 'Crosshair' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-12 14:43:55.713 [01] - DEBUG: [Registry] Started monitoring value 'Hand' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_link.cur'.
+2024-01-12 14:43:55.713 [01] - DEBUG: [Registry] Started monitoring value 'Help' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_helpsel.cur'.
+2024-01-12 14:43:55.714 [01] - DEBUG: [Registry] Started monitoring value 'IBeam' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-12 14:43:55.714 [01] - DEBUG: [Registry] Started monitoring value 'No' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_unavail.cur'.
+2024-01-12 14:43:55.714 [01] - DEBUG: [Registry] Started monitoring value 'NWPen' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_pen.cur'.
+2024-01-12 14:43:55.714 [01] - DEBUG: [Registry] Started monitoring value 'SizeAll' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_move.cur'.
+2024-01-12 14:43:55.715 [01] - DEBUG: [Registry] Started monitoring value 'SizeNESW' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nesw.cur'.
+2024-01-12 14:43:55.718 [01] - DEBUG: [Registry] Started monitoring value 'SizeNS' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ns.cur'.
+2024-01-12 14:43:55.718 [01] - DEBUG: [Registry] Started monitoring value 'SizeNWSE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nwse.cur'.
+2024-01-12 14:43:55.718 [01] - DEBUG: [Registry] Started monitoring value 'SizeWE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ew.cur'.
+2024-01-12 14:43:55.718 [01] - DEBUG: [Registry] Started monitoring value 'UpArrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_up.cur'.
+2024-01-12 14:43:55.719 [01] - DEBUG: [Registry] Started monitoring value 'Wait' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_busy.ani'.
+2024-01-12 14:43:55.719 [01] - DEBUG: [Registry] Started monitoring value '' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'Windows-Voreinstellung'.
+2024-01-12 14:43:55.719 [01] - DEBUG: [Registry] Started monitoring value 'Debugger' from registry key 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Utilman.exe'. Initial value: ''.
+2024-01-12 14:43:55.720 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ClientIsReady'...
+2024-01-12 14:43:55.724 [23] - DEBUG: [ApplicationMonitor] Window has changed from  to 'Taskbar' (199854).
+2024-01-12 14:43:55.727 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> ClientIsReady'.
+2024-01-12 14:43:55.727 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged that the client is ready.
+2024-01-12 14:43:55.728 [01] - INFO: Application successfully initialized.
+
+2024-01-12 14:43:55.729 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (199854) to '' (396568).
+2024-01-12 14:43:55.785 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (396568) to 'ActionCenter' (396288).
+2024-01-12 14:43:55.786 [11] - DEBUG: [ClientHost] Received connection request with authentication token '1eecbb9c-6d0c-468c-b11e-c50802005f38'.
+2024-01-12 14:43:55.788 [11] - DEBUG: [ClientHost] Accepted connection request.
+2024-01-12 14:43:55.845 [04] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Authenticate', sending response 'AuthenticationResponse'.
+2024-01-12 14:43:57.512 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (2660) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:43:57.513 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (26508) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:43:57.513 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (7952) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:43:57.513 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (20660) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:43:57.514 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (172) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:43:58.401 [30] - ERROR: [Browser Window #1] Failed to initialize JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:43:58.401 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'ActionCenter' (396288) to '' (396568).
+2024-01-12 14:43:58.401 [35] - ERROR: [Browser Window #1] Failed to execute JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:43:59.906 [22] - DEBUG: [ApplicationMonitor] Window has changed from '' (396568) to 'Taskbar' (199854).
+2024-01-12 14:43:59.906 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (396568) to 'Taskbar' (199854).
+2024-01-12 14:43:59.985 [33] - ERROR: [Browser Window #1] Failed to execute JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:43:59.985 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (199854) to '' (396568).
+2024-01-12 14:43:59.985 [30] - ERROR: [Browser Window #1] Failed to initialize JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:44:00.799 [22] - DEBUG: [ApplicationMonitor] Window has changed from '' (396568) to '' (461960).
+2024-01-12 14:44:01.687 [30] - ERROR: [Browser Window #1] Failed to initialize JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:44:01.687 [33] - ERROR: [Browser Window #1] Failed to execute JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:44:05.928 [22] - DEBUG: [ApplicationMonitor] Window has changed from '' (461960) to '' (1640970).
+2024-01-12 14:44:06.092 [31] - DEBUG: [KeyGenerator] Initializing browser exam key...
+2024-01-12 14:44:06.092 [31] - WARNING: [KeyGenerator] The current configuration does not contain a value for the configuration key!
+2024-01-12 14:44:06.093 [31] - WARNING: [KeyGenerator] The current configuration does not contain a salt value for the browser exam key!
+2024-01-12 14:44:07.960 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (1640970) to 'Taskbar' (199854).
+2024-01-12 14:44:08.704 [31] - DEBUG: [KeyGenerator] Successfully calculated browser exam key using integrity module.
+2024-01-12 14:44:08.725 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (199854) to 'Quit?' (330898).
+2024-01-12 14:44:10.007 [22] - DEBUG: [ApplicationMonitor] Window has changed from 'Quit?' (330898) to '&Yes' (265324).
+2024-01-12 14:44:10.067 [01] - INFO: The user chose to terminate the application.
+2024-01-12 14:44:10.068 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> RequestShutdown'...
+2024-01-12 14:44:10.069 [23] - DEBUG: [ApplicationMonitor] Window has changed from '&Yes' (265324) to 'Taskbar' (199854).
+2024-01-12 14:44:10.070 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> RequestShutdown'.
+2024-01-12 14:44:10.071 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged shutdown request.
+2024-01-12 14:44:10.089 [11] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Shutdown', sending response 'SimpleResponse -> Acknowledged'.
+
+2024-01-12 14:44:10.090 [01] - INFO: Initiating shutdown procedure...
+2024-01-12 14:44:10.097 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (199854) to 'SplashScreen' (199840).
+2024-01-12 14:44:10.107 [04] - DEBUG: [ClientHost] Received disconnection request with message 'DisconnectionMessage'.
+2024-01-12 14:44:10.136 [01] - DEBUG: [Registry] Stopped monitoring the registry.
+2024-01-12 14:44:10.138 [01] - INFO: Finalizing clipboard...
+2024-01-12 14:44:10.139 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-12 14:44:10.139 [01] - DEBUG: [Clipboard] Stopped clipboard monitoring.
+2024-01-12 14:44:10.140 [01] - INFO: [Clipboard] Finalized clipboard.
+2024-01-12 14:44:10.141 [01] - INFO: Terminating browser...
+2024-01-12 14:44:10.144 [01] - INFO: [BrowserApplication] Initiating termination...
+2024-01-12 14:44:10.661 [01] - DEBUG: [Browser Window #1] Window is closing...
+2024-01-12 14:44:10.666 [01] - DEBUG: [Browser Window #1] Window has been closed.
+2024-01-12 14:44:10.693 [01] - INFO: [BrowserApplication] Closed browser window #1.
+2024-01-12 14:44:10.807 [01] - INFO: [BrowserApplication] Terminated browser.
+2024-01-12 14:44:10.807 [01] - INFO: [BrowserApplication] Retained browser cache.
+2024-01-12 14:44:10.807 [01] - INFO: Terminating shell...
+2024-01-12 14:44:10.813 [01] - INFO: [Audio] Stopped monitoring the audio device.
+2024-01-12 14:44:10.814 [01] - INFO: [Keyboard] Restored original keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-12 14:44:10.815 [01] - INFO: [NetworkAdapter] Stopped monitoring the network adapter.
+2024-01-12 14:44:10.815 [01] - INFO: [PowerSupply] Stopped monitoring the power supply.
+2024-01-12 14:44:10.815 [01] - INFO: Finalizing system events...
+2024-01-12 14:44:10.816 [01] - INFO: [SystemMonitor] Stopped monitoring the operating system.
+2024-01-12 14:44:10.817 [01] - INFO: Restoring working area...
+2024-01-12 14:44:10.817 [01] - INFO: [DisplayMonitor] Stopped monitoring display changes.
+2024-01-12 14:44:10.818 [01] - INFO: [DisplayMonitor] Restored original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-12 14:44:10.818 [01] - INFO: Finalizing applications...
+2024-01-12 14:44:10.821 [01] - INFO: [ApplicationMonitor] Stopped monitoring applications.
+2024-01-12 14:44:10.823 [01] - INFO: [ApplicationMonitor] Unregistered system capture start event with ID = 8b589b4f-7a88-4d0e-92a5-968c0ab215be.
+2024-01-12 14:44:10.824 [01] - INFO: [ApplicationMonitor] Unregistered system foreground event with ID = 2bb096b6-82e6-48b9-a812-9901a8c04f1c.
+2024-01-12 14:44:10.824 [01] - INFO: Stopping mouse interception...
+2024-01-12 14:44:10.825 [01] - INFO: Stopping keyboard interception...
+2024-01-12 14:44:10.826 [01] - INFO: The runtime has already disconnected from the client communication host.
+2024-01-12 14:44:10.827 [01] - INFO: Stopping communication host...
+2024-01-12 14:44:10.827 [01] - DEBUG: [ClientHost] Communication host is closing...
+2024-01-12 14:44:10.832 [01] - DEBUG: [ClientHost] Communication host has been closed.
+2024-01-12 14:44:10.833 [01] - DEBUG: [ClientHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/48db138e-20fc-44e0-be80-5f9f229f103c'.
+2024-01-12 14:44:10.833 [01] - INFO: Closing runtime connection...
+2024-01-12 14:44:10.844 [01] - DEBUG: [RuntimeProxy] Communication channel is closing...
+2024-01-12 14:44:10.845 [01] - DEBUG: [RuntimeProxy] Communication channel has been closed.
+2024-01-12 14:44:10.846 [01] - DEBUG: [RuntimeProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/runtime/0c7f3152-ef60-4e68-9787-7467d7656f86'.
+2024-01-12 14:44:10.846 [01] - INFO: Successfully disconnected from the runtime.
+2024-01-12 14:44:10.846 [01] - INFO: Application successfully finalized.
+
+# Client instance terminated at 2024-01-12 14:44:10.852
