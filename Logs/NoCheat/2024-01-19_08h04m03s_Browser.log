@@ -1,0 +1,5 @@
+[0119/080414.507:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0119/080419.211:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/080430.354:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0119/080450.020:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0119/080452.673:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)

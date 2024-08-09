@@ -1,0 +1,2 @@
+[0112/144319.183:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0112/144335.557:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from LoadNelPoliciesAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_reporting_and_nel_store.cc:1324 to client_task_runner_.

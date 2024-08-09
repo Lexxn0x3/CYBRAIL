@@ -1,0 +1,563 @@
+﻿/* Safe Exam Browser, Version 3.6.0 (x64), Build 3.6.0.633
+/* Copyright © 2023 ETH Zürich, Educational Development and Technology (LET)
+/* 
+/* Please visit https://www.github.com/SafeExamBrowser for more information.
+
+# Application started at 2024-01-19 13:54:23.156
+# Running on Windows 11, Microsoft Windows NT 10.0.22621.0 (x64)
+# Computer 'PASCALSLAPTOP' is a Nitro 5 Nitro AN515-55 manufactured by Acer
+# Runtime-ID: 8d1a1349-edb3-43bb-8beb-b8cf22f2ce58
+
+2024-01-19 13:54:24.867 [09] - INFO: Initiating startup procedure...
+2024-01-19 13:54:24.943 [09] - INFO: Loading text data...
+2024-01-19 13:54:24.949 [09] - DEBUG: [Text] System language is 'en', trying to load data...
+2024-01-19 13:54:24.957 [09] - DEBUG: [Text] Data successfully loaded.
+2024-01-19 13:54:24.957 [09] - INFO: Starting communication host...
+2024-01-19 13:54:24.992 [06] - DEBUG: [RuntimeHost] Communication host is opening...
+2024-01-19 13:54:25.031 [06] - DEBUG: [RuntimeHost] Communication host has been opened.
+2024-01-19 13:54:25.031 [06] - DEBUG: [RuntimeHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/3b37083f-29ae-4e93-a13f-43ec617198c1'.
+2024-01-19 13:54:25.032 [09] - INFO: Attempting to verify application integrity...
+2024-01-19 13:54:25.154 [09] - INFO: Application integrity successfully verified.
+2024-01-19 13:54:25.156 [09] - INFO: Application successfully initialized.
+
+2024-01-19 13:54:25.194 [09] - INFO: ### ------------------------------------ Session Start Procedure ------------------------------------- ###
+2024-01-19 13:54:25.197 [09] - INFO: Initializing new session configuration...
+2024-01-19 13:54:25.199 [09] - INFO:  -> Client-ID: a3f59293-b194-461a-84d2-e8b6d62fed59
+2024-01-19 13:54:25.200 [09] - INFO:  -> Runtime-ID: 8d1a1349-edb3-43bb-8beb-b8cf22f2ce58
+2024-01-19 13:54:25.200 [09] - INFO:  -> Session-ID: 5997cb9b-aa16-4f01-96a9-b8b807aac72a
+2024-01-19 13:54:25.201 [09] - INFO: Initializing application configuration...
+2024-01-19 13:54:25.203 [09] - INFO: Found command-line argument for configuration resource: 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503', the URI is valid.
+2024-01-19 13:54:25.209 [09] - INFO: [ConfigurationRepository] Initialized default settings, now attempting to load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503'...
+2024-01-19 13:54:25.225 [09] - DEBUG: [FileResourceLoader] Can't load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' as it isn't an existing file.
+2024-01-19 13:54:25.225 [09] - DEBUG: [NetworkResourceLoader] Sending HEAD request for 'https://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503'...
+2024-01-19 13:54:25.522 [09] - DEBUG: [NetworkResourceLoader] Received response '200 - OK'.
+2024-01-19 13:54:25.522 [09] - DEBUG: [NetworkResourceLoader] Can load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' as it references an existing network resource.
+2024-01-19 13:54:25.522 [09] - DEBUG: [NetworkResourceLoader] Sending GET request for 'https://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503'...
+2024-01-19 13:54:25.772 [09] - DEBUG: [NetworkResourceLoader] Received response '200 - OK'.
+2024-01-19 13:54:25.772 [09] - DEBUG: [NetworkResourceLoader] The  response data is HTML.
+2024-01-19 13:54:25.772 [09] - INFO: [ConfigurationRepository] Tried to load data from 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' using NetworkResourceLoader -> Result: LoadWithBrowser.
+2024-01-19 13:54:25.772 [09] - INFO: The configuration resource needs authentication or is a webpage, using 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' as start URL for the browser.
+2024-01-19 13:54:25.787 [09] - INFO: The configuration was successful.
+2024-01-19 13:54:25.787 [09] - INFO: Validating version restrictions...
+2024-01-19 13:54:25.803 [09] - INFO: There are no version restrictions for the configuration.
+2024-01-19 13:54:25.803 [09] - INFO: Remote proctoring is disabled, skipping disclaimer.
+2024-01-19 13:54:25.803 [09] - INFO: Validating remote session policy...
+2024-01-19 13:54:25.803 [09] - DEBUG: [RemoteSessionDetector] System appears not to be running in a remote session.
+2024-01-19 13:54:25.819 [09] - INFO: Attempting to verify cursor configuration...
+2024-01-19 13:54:25.834 [09] - INFO: Cursor configuration successfully verified.
+2024-01-19 13:54:25.834 [09] - INFO: Attempting to verify ease of access configuration...
+2024-01-19 13:54:25.834 [09] - INFO: Ease of access configuration successfully verified.
+2024-01-19 13:54:25.834 [09] - INFO: Validating virtual machine policy...
+2024-01-19 13:54:25.850 [09] - INFO: Validating display configuration...
+2024-01-19 13:54:25.881 [09] - INFO: [DisplayMonitor] Detected active, internal display 'DISPLAY\NCP004D\4&fcd0332&0&UID265988_0' connected via 'Internal'.
+2024-01-19 13:54:25.881 [09] - INFO: [DisplayMonitor] Detected 1 active displays, 10 are allowed.
+2024-01-19 13:54:25.881 [09] - INFO: Display configuration is allowed.
+2024-01-19 13:54:25.881 [09] - INFO: Initializing service...
+2024-01-19 13:54:25.881 [09] - INFO: The service will be ignored for the next session.
+2024-01-19 13:54:25.881 [09] - INFO: Initializing kiosk mode 'CreateNewDesktop'...
+2024-01-19 13:54:25.897 [09] - DEBUG: [DesktopFactory] Found desktop handle for thread with ID = 24048. Attempting to get desktop name...
+2024-01-19 13:54:25.897 [09] - DEBUG: [DesktopFactory] Successfully determined current desktop 'Default' [280].
+2024-01-19 13:54:25.897 [09] - INFO: Current desktop is 'Default' [280].
+2024-01-19 13:54:25.897 [09] - DEBUG: [DesktopFactory] Attempting to create random desktop...
+2024-01-19 13:54:25.897 [09] - DEBUG: [DesktopFactory] Successfully created random desktop 'WxdRehTEhvDzFkAsRMV' [8795].
+2024-01-19 13:54:25.897 [09] - INFO: Created custom desktop 'WxdRehTEhvDzFkAsRMV' [8795].
+2024-01-19 13:54:25.944 [09] - INFO: Successfully activated custom desktop.
+2024-01-19 13:54:25.944 [09] - INFO: [DesktopMonitor] Started monitoring desktop 'WxdRehTEhvDzFkAsRMV' [8795].
+2024-01-19 13:54:25.944 [09] - INFO: Starting new client process...
+2024-01-19 13:54:25.944 [09] - INFO: [ProcessFactory] Attempting to start process 'C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Client.exe'...
+2024-01-19 13:54:26.037 [09] - INFO: [ProcessFactory] Successfully started process 'C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Client.exe' with ID = 23392.
+2024-01-19 13:54:26.037 [09] - DEBUG: [Process 'SafeExamBrowser.Client.exe' (23392)] Initialized termination event.
+2024-01-19 13:54:26.037 [09] - INFO: Waiting for client to complete initialization...
+2024-01-19 13:54:27.788 [12] - DEBUG: [RuntimeHost] Received connection request with authentication token '02dbed7a-771d-4c05-9800-de1ac0bd1755'.
+2024-01-19 13:54:27.788 [12] - DEBUG: [RuntimeHost] Accepted connection request.
+2024-01-19 13:54:27.803 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> ConfigurationNeeded', sending response 'ConfigurationResponse'.
+2024-01-19 13:54:29.382 [12] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> ClientIsReady', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:54:29.382 [09] - INFO: Client has been successfully started and initialized. Creating communication proxy for client host...
+2024-01-19 13:54:29.397 [09] - DEBUG: [ClientProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/client/b112bd73-a8da-4ba2-8452-bbf4470d25f2' with authentication token '02dbed7a-771d-4c05-9800-de1ac0bd1755'...
+2024-01-19 13:54:29.397 [09] - DEBUG: [ClientProxy] Communication channel is opening...
+2024-01-19 13:54:29.428 [09] - DEBUG: [ClientProxy] Communication channel has been opened.
+2024-01-19 13:54:29.460 [09] - DEBUG: [ClientProxy] Connection was established.
+2024-01-19 13:54:29.460 [09] - INFO: Connection with client has been established. Requesting authentication...
+2024-01-19 13:54:29.460 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Authenticate'...
+2024-01-19 13:54:29.507 [09] - DEBUG: [ClientProxy] Received response 'AuthenticationResponse' for message 'SimpleMessage -> Authenticate'.
+2024-01-19 13:54:29.507 [09] - DEBUG: [ClientProxy] Received authentication response.
+2024-01-19 13:54:29.507 [09] - INFO: Authentication of client has been successful, client is ready to operate.
+2024-01-19 13:54:29.507 [09] - INFO: Successfully started new client instance.
+2024-01-19 13:54:29.507 [09] - INFO: Successfully activated first session '5997cb9b-aa16-4f01-96a9-b8b807aac72a'.
+2024-01-19 13:54:29.507 [09] - INFO: ### ---------------------------------------- Session Running ----------------------------------------- ###
+2024-01-19 13:54:42.258 [23] - INFO: Accepted request for reconfiguration with 'C:\Users\pasca\AppData\Local\SafeExamBrowser\Temp\config.seb'.
+2024-01-19 13:54:42.259 [15] - DEBUG: [RuntimeHost] Received message 'ReconfigurationMessage', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:54:42.263 [23] - INFO: ### ------------------------------------ Session Start Procedure ------------------------------------- ###
+2024-01-19 13:54:42.267 [23] - INFO: Initializing new session configuration...
+2024-01-19 13:54:42.267 [23] - INFO:  -> Client-ID: 6bbd2658-1e2a-45e6-ab33-82d3c1fec799
+2024-01-19 13:54:42.268 [23] - INFO:  -> Runtime-ID: 8d1a1349-edb3-43bb-8beb-b8cf22f2ce58
+2024-01-19 13:54:42.268 [23] - INFO:  -> Session-ID: 6e178a5b-a695-4327-b2d4-b27a77326fe7
+2024-01-19 13:54:42.269 [23] - INFO: Initializing new application configuration...
+2024-01-19 13:54:42.271 [23] - INFO: [ConfigurationRepository] Initialized default settings, now attempting to load 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'...
+2024-01-19 13:54:42.272 [23] - DEBUG: [FileResourceLoader] Can load 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb' as it is an existing file.
+2024-01-19 13:54:42.273 [23] - DEBUG: [FileResourceLoader] Loading data from 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'...
+2024-01-19 13:54:42.274 [23] - DEBUG: [FileResourceLoader] Created 'System.IO.FileStream' for 0,923 KB data in 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'.
+2024-01-19 13:54:42.275 [23] - INFO: [ConfigurationRepository] Tried to load data from 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb' using FileResourceLoader -> Result: Success.
+2024-01-19 13:54:42.281 [23] - DEBUG: [BinaryParser] 'System.IO.FileStream' starting with '<?xm' does not match the Binary format.
+2024-01-19 13:54:42.282 [23] - DEBUG: [XmlParser] 'System.IO.FileStream' starting with '<?xm' matches the Xml format.
+2024-01-19 13:54:42.285 [23] - DEBUG: [XmlParser] Found root node, starting to parse data...
+2024-01-19 13:54:42.288 [23] - DEBUG: [XmlParser] Finished parsing -> Result: Success.
+2024-01-19 13:54:42.289 [23] - INFO: [ConfigurationRepository] Tried to parse data from 'System.IO.FileStream' using XmlParser -> Result: Success.
+2024-01-19 13:54:42.316 [23] - INFO: Deleted temporary configuration file 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'.
+2024-01-19 13:54:42.316 [23] - INFO: The configuration was successful.
+2024-01-19 13:54:42.317 [23] - INFO: Validating version restrictions...
+2024-01-19 13:54:42.317 [23] - INFO: There are no version restrictions for the configuration.
+2024-01-19 13:54:42.320 [23] - INFO: Remote proctoring is disabled, skipping disclaimer.
+2024-01-19 13:54:42.322 [23] - INFO: Validating remote session policy...
+2024-01-19 13:54:42.323 [23] - DEBUG: [RemoteSessionDetector] System appears not to be running in a remote session.
+2024-01-19 13:54:42.324 [23] - INFO: Attempting to verify cursor configuration...
+2024-01-19 13:54:42.326 [23] - INFO: Cursor configuration successfully verified.
+2024-01-19 13:54:42.326 [23] - INFO: Attempting to verify ease of access configuration...
+2024-01-19 13:54:42.327 [23] - INFO: Ease of access configuration successfully verified.
+2024-01-19 13:54:42.327 [23] - INFO: Validating virtual machine policy...
+2024-01-19 13:54:42.337 [23] - DEBUG: [VirtualMachineDetector] Computer 'PASCALSLAPTOP' appears not to be a virtual machine.
+2024-01-19 13:54:42.337 [23] - INFO: Validating display configuration...
+2024-01-19 13:54:42.348 [23] - INFO: [DisplayMonitor] Detected active, internal display 'DISPLAY\NCP004D\4&fcd0332&0&UID265988_0' connected via 'Internal'.
+2024-01-19 13:54:42.348 [23] - INFO: [DisplayMonitor] Detected 1 active displays, 1 are allowed.
+2024-01-19 13:54:42.349 [23] - INFO: Display configuration is allowed.
+2024-01-19 13:54:42.350 [23] - INFO: Initializing service...
+2024-01-19 13:54:42.351 [23] - INFO: The service will be ignored for the next session.
+2024-01-19 13:54:42.355 [23] - INFO: Instructing client to initiate shutdown procedure.
+2024-01-19 13:54:42.356 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Shutdown'...
+2024-01-19 13:54:42.359 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Shutdown'.
+2024-01-19 13:54:42.360 [23] - DEBUG: [ClientProxy] Client acknowledged shutdown request.
+2024-01-19 13:54:42.360 [23] - INFO: Disconnecting from client communication host.
+2024-01-19 13:54:42.370 [23] - DEBUG: [ClientProxy] Communication channel is closing...
+2024-01-19 13:54:42.371 [23] - DEBUG: [ClientProxy] Communication channel has been closed.
+2024-01-19 13:54:42.372 [23] - DEBUG: [ClientProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/client/b112bd73-a8da-4ba2-8452-bbf4470d25f2'.
+2024-01-19 13:54:42.375 [23] - INFO: Waiting for client to disconnect from runtime communication host...
+2024-01-19 13:54:43.112 [12] - DEBUG: [RuntimeHost] Received disconnection request with message 'DisconnectionMessage'.
+2024-01-19 13:54:43.114 [23] - INFO: Waiting for client process to terminate...
+2024-01-19 13:54:43.215 [19] - DEBUG: [Process 'SafeExamBrowser.Client.exe' (23392)] Process has terminated.
+2024-01-19 13:54:43.215 [23] - INFO: Client has been successfully terminated.
+2024-01-19 13:54:43.218 [23] - INFO: New kiosk mode 'CreateNewDesktop' is the same as the currently active mode, skipping re-initialization...
+2024-01-19 13:54:43.218 [23] - INFO: Starting new client process...
+2024-01-19 13:54:43.219 [23] - INFO: [ProcessFactory] Attempting to start process 'C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Client.exe'...
+2024-01-19 13:54:43.302 [23] - INFO: [ProcessFactory] Successfully started process 'C:\Program Files\SafeExamBrowser\Application\SafeExamBrowser.Client.exe' with ID = 3232.
+2024-01-19 13:54:43.303 [23] - DEBUG: [Process 'SafeExamBrowser.Client.exe' (3232)] Initialized termination event.
+2024-01-19 13:54:43.303 [23] - INFO: Waiting for client to complete initialization...
+2024-01-19 13:54:45.098 [19] - DEBUG: [RuntimeHost] Received connection request with authentication token 'b8e08dbb-eb07-4300-b35c-8074e7493650'.
+2024-01-19 13:54:45.099 [19] - DEBUG: [RuntimeHost] Accepted connection request.
+2024-01-19 13:54:45.112 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> ConfigurationNeeded', sending response 'ConfigurationResponse'.
+2024-01-19 13:54:46.631 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> ClientIsReady', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:54:46.631 [23] - INFO: Client has been successfully started and initialized. Creating communication proxy for client host...
+2024-01-19 13:54:46.635 [23] - DEBUG: [ClientProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/client/ff00028c-b775-465f-b0db-eb1b44b16759' with authentication token 'b8e08dbb-eb07-4300-b35c-8074e7493650'...
+2024-01-19 13:54:46.637 [23] - DEBUG: [ClientProxy] Communication channel is opening...
+2024-01-19 13:54:46.667 [23] - DEBUG: [ClientProxy] Communication channel has been opened.
+2024-01-19 13:54:46.685 [23] - DEBUG: [ClientProxy] Connection was established.
+2024-01-19 13:54:46.686 [23] - INFO: Connection with client has been established. Requesting authentication...
+2024-01-19 13:54:46.687 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Authenticate'...
+2024-01-19 13:54:46.696 [23] - DEBUG: [ClientProxy] Received response 'AuthenticationResponse' for message 'SimpleMessage -> Authenticate'.
+2024-01-19 13:54:46.697 [23] - DEBUG: [ClientProxy] Received authentication response.
+2024-01-19 13:54:46.698 [23] - INFO: Authentication of client has been successful, client is ready to operate.
+2024-01-19 13:54:46.699 [23] - INFO: Successfully started new client instance.
+2024-01-19 13:54:46.702 [23] - INFO: Successfully terminated old session '5997cb9b-aa16-4f01-96a9-b8b807aac72a' and activated new session '6e178a5b-a695-4327-b2d4-b27a77326fe7'.
+2024-01-19 13:54:46.703 [23] - INFO: ### ---------------------------------------- Session Running ----------------------------------------- ###
+2024-01-19 13:55:45.121 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:55:46.693 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 13:55:46.695 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 13:55:46.695 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 13:56:45.129 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:56:46.698 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 13:56:46.699 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 13:56:46.700 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 13:57:45.132 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:57:46.722 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 13:57:46.726 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 13:57:46.728 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 13:58:45.135 [05] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:58:46.726 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 13:58:46.731 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 13:58:46.732 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 13:59:45.137 [05] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 13:59:46.738 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 13:59:46.766 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 13:59:46.770 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:00:45.152 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:00:46.746 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:00:46.752 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:00:46.755 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:01:45.167 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:01:46.758 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:01:46.765 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:01:46.769 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:02:45.177 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:02:46.764 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:02:46.765 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:02:46.766 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:03:45.181 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:03:46.768 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:03:46.772 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:03:46.774 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:04:45.183 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:04:46.772 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:04:46.777 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:04:46.780 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:05:45.186 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:05:46.774 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:05:46.775 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:05:46.776 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:06:45.194 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:06:46.788 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:06:46.794 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:06:46.797 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:07:45.212 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:07:46.794 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:07:46.801 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:07:46.804 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:08:45.215 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:08:46.803 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:08:46.807 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:08:46.808 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:09:45.228 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:09:46.810 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:09:46.814 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:09:46.817 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:10:45.243 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:10:46.816 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:10:46.820 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:10:46.820 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:11:45.253 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:11:46.821 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:11:46.828 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:11:46.831 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:12:45.263 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:12:46.835 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:12:46.837 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:12:46.837 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:13:45.273 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:13:46.862 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:13:46.866 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:13:46.868 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:14:45.277 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:14:46.864 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:14:46.866 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:14:46.866 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:15:45.283 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:15:46.871 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:15:46.876 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:15:46.879 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:16:45.291 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:16:46.883 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:16:46.889 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:16:46.892 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:17:45.295 [17] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:17:46.885 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:17:46.887 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:17:46.887 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:18:45.307 [17] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:18:46.889 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:18:46.893 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:18:46.895 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:19:45.317 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:19:46.905 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:19:46.907 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:19:46.907 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:20:45.322 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:20:46.910 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:20:46.911 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:20:46.912 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:21:45.333 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:21:46.923 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:21:46.925 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:21:46.925 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:22:45.339 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:22:46.930 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:22:46.934 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:22:46.936 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:23:45.342 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:23:46.943 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:23:46.948 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:23:46.951 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:24:45.355 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:24:46.950 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:24:46.955 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:24:46.956 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:25:45.370 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:25:46.959 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:25:46.965 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:25:46.966 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:26:45.371 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:26:46.987 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:26:46.991 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:26:46.993 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:27:45.382 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:27:46.991 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:27:46.999 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:27:47.002 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:28:45.386 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:28:46.992 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:28:46.999 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:28:47.003 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:29:45.403 [17] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:29:47.007 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:29:47.008 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:29:47.009 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:30:45.409 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:30:47.013 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:30:47.018 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:30:47.020 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:31:45.413 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:31:47.017 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:31:47.023 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:31:47.025 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:32:45.431 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:32:47.028 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:32:47.029 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:32:47.030 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:33:45.438 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:33:47.038 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:33:47.042 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:33:47.044 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:34:45.446 [12] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:34:47.039 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:34:47.047 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:34:47.050 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:35:45.451 [12] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:35:47.053 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:35:47.058 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:35:47.061 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:36:45.457 [12] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:36:47.062 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:36:47.066 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:36:47.068 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:37:45.461 [12] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:37:47.081 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:37:47.086 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:37:47.087 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:38:45.470 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:38:47.085 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:38:47.087 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:38:47.088 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:39:45.487 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:39:47.086 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:39:47.091 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:39:47.093 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:40:45.506 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:40:47.094 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:40:47.096 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:40:47.096 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:41:45.512 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:41:47.100 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:41:47.103 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:41:47.104 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:42:45.522 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:42:47.116 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:42:47.122 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:42:47.126 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:43:45.536 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:43:47.121 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:43:47.122 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:43:47.123 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:44:45.538 [18] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:44:47.133 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:44:47.135 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:44:47.137 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:45:45.553 [12] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:45:47.145 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:45:47.149 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:45:47.151 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:46:45.554 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:46:47.155 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:46:47.162 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:46:47.163 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:47:45.565 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:47:47.158 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:47:47.160 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:47:47.160 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:48:45.573 [14] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:48:47.163 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:48:47.168 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:48:47.169 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:49:45.575 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:49:47.177 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:49:47.185 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:49:47.187 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:50:45.575 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:50:47.182 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:50:47.189 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:50:47.191 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:51:45.590 [17] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:51:47.198 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:51:47.199 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:51:47.200 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:52:45.596 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:52:47.212 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:52:47.213 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:52:47.214 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:53:45.602 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:53:47.237 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:53:47.241 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:53:47.243 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:54:45.603 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:54:47.252 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:54:47.253 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:54:47.254 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:55:45.614 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:55:47.264 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:55:47.267 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:55:47.269 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:56:45.618 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:56:47.285 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:56:47.289 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:56:47.291 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:57:45.626 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:57:47.291 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:57:47.295 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:57:47.297 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:58:45.634 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:58:47.301 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:58:47.303 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:58:47.303 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 14:59:45.647 [19] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 14:59:47.312 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 14:59:47.313 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 14:59:47.314 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:00:45.652 [13] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:00:47.318 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:00:47.319 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:00:47.320 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:01:45.665 [13] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:01:47.318 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:01:47.321 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:01:47.322 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:02:45.671 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:02:47.322 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:02:47.323 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:02:47.324 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:03:45.673 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:03:47.323 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:03:47.330 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:03:47.332 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:04:45.680 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:04:47.324 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:04:47.330 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:04:47.333 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:05:45.687 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:05:47.329 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:05:47.331 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:05:47.332 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:06:45.696 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:06:47.339 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:06:47.341 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:06:47.341 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:07:45.699 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:07:47.340 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:07:47.342 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:07:47.342 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:08:45.713 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:08:47.351 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:08:47.352 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:08:47.353 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:09:45.727 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:09:47.364 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:09:47.372 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:09:47.374 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:10:45.730 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:10:47.370 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:10:47.372 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:10:47.373 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:11:45.736 [05] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:11:47.373 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:11:47.375 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:11:47.375 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:12:45.737 [20] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:12:47.386 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:12:47.390 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:12:47.391 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:13:45.749 [17] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:13:47.401 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:13:47.405 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:13:47.407 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:14:45.761 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:14:47.411 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:14:47.419 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:14:47.422 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:15:45.761 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:15:47.417 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:15:47.423 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:15:47.425 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:16:45.774 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:16:47.429 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:16:47.433 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:16:47.434 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:17:45.787 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:17:47.432 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:17:47.438 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:17:47.439 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:18:45.793 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:18:47.445 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:18:47.452 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:18:47.454 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:19:45.800 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:19:47.449 [08] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:19:47.454 [08] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:19:47.456 [08] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:20:45.804 [04] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:20:47.454 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:20:47.460 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:20:47.463 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:21:45.821 [05] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:21:47.467 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:21:47.469 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:21:47.469 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:22:45.823 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:22:47.483 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:22:47.484 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:22:47.485 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:23:45.835 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:23:47.503 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:23:47.508 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:23:47.511 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:24:45.851 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:24:47.516 [22] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:24:47.521 [22] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:24:47.522 [22] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:25:45.862 [15] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:25:47.528 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:25:47.529 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:25:47.530 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:26:45.870 [24] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:26:47.534 [09] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:26:47.538 [09] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:26:47.539 [09] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:27:45.881 [17] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> Ping', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:27:47.544 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Ping'...
+2024-01-19 15:27:47.546 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Ping'.
+2024-01-19 15:27:47.547 [23] - INFO: [ClientProxy] Pinged host, connection is alive.
+2024-01-19 15:28:05.709 [11] - INFO: Received shutdown request from the client application.
+2024-01-19 15:28:05.710 [11] - DEBUG: [RuntimeHost] Received message 'SimpleMessage -> RequestShutdown', sending response 'SimpleResponse -> Acknowledged'.
+2024-01-19 15:28:05.713 [23] - INFO: ### ------------------------------------- Session Stop Procedure ------------------------------------- ###
+2024-01-19 15:28:05.715 [23] - INFO: Instructing client to initiate shutdown procedure.
+2024-01-19 15:28:05.727 [23] - DEBUG: [ClientProxy] Sending message 'SimpleMessage -> Shutdown'...
+2024-01-19 15:28:05.729 [23] - DEBUG: [ClientProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> Shutdown'.
+2024-01-19 15:28:05.730 [23] - DEBUG: [ClientProxy] Client acknowledged shutdown request.
+2024-01-19 15:28:05.730 [23] - INFO: Disconnecting from client communication host.
+2024-01-19 15:28:05.737 [23] - DEBUG: [ClientProxy] Communication channel is closing...
+2024-01-19 15:28:05.739 [23] - DEBUG: [ClientProxy] Communication channel has been closed.
+2024-01-19 15:28:05.741 [23] - DEBUG: [ClientProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/client/ff00028c-b775-465f-b0db-eb1b44b16759'.
+2024-01-19 15:28:05.743 [23] - INFO: Waiting for client to disconnect from runtime communication host...
+2024-01-19 15:28:06.566 [13] - DEBUG: [RuntimeHost] Received disconnection request with message 'DisconnectionMessage'.
+2024-01-19 15:28:06.566 [23] - INFO: Waiting for client process to terminate...
+2024-01-19 15:28:06.653 [11] - DEBUG: [Process 'SafeExamBrowser.Client.exe' (3232)] Process has terminated.
+2024-01-19 15:28:06.653 [23] - INFO: Client has been successfully terminated.
+2024-01-19 15:28:06.655 [23] - INFO: Reverting kiosk mode 'CreateNewDesktop'...
+2024-01-19 15:28:06.656 [23] - INFO: [DesktopMonitor] Stopped monitoring desktop 'WxdRehTEhvDzFkAsRMV' [8795].
+2024-01-19 15:28:06.673 [23] - INFO: Switched back to original desktop 'Default' [280].
+2024-01-19 15:28:06.688 [23] - INFO: Closed custom desktop 'WxdRehTEhvDzFkAsRMV' [8795].
+2024-01-19 15:28:06.690 [23] - INFO: Finalizing service...
+2024-01-19 15:28:06.692 [23] - INFO: ### --------------------------------------- Session Terminated --------------------------------------- ###
+
+2024-01-19 15:28:06.808 [23] - INFO: Initiating shutdown procedure...
+2024-01-19 15:28:06.809 [23] - INFO: Stopping communication host...
+2024-01-19 15:28:06.810 [23] - DEBUG: [RuntimeHost] Communication host is closing...
+2024-01-19 15:28:06.816 [23] - DEBUG: [RuntimeHost] Communication host has been closed.
+2024-01-19 15:28:06.816 [23] - DEBUG: [RuntimeHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/3b37083f-29ae-4e93-a13f-43ec617198c1'.
+2024-01-19 15:28:06.817 [23] - INFO: Application successfully finalized.
+
+# Application terminated at 2024-01-19 15:28:06.851
