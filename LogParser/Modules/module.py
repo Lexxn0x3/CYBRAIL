@@ -29,7 +29,20 @@ class ReturnJSON:
         self.status = status
         self.results = results
         self.errors = errors
-
+def compare_version_or_build(current, expected):
+    current_parts = [int(part) for part in current.split('.')]
+    expected_parts = [int(part) for part in expected.split('.')]
+    
+    # Compare each part
+    for curr, exp in zip(current_parts, expected_parts):
+        if curr < exp:
+            return False
+        elif curr > exp:
+            return True
+    
+    # If all parts are equal but current has more parts
+    return len(current_parts) >= len(expected_parts)
+    
 def check_for_suspicious_activity(log_data: dict) -> List[Error]:
     errors = []
 
@@ -38,11 +51,17 @@ def check_for_suspicious_activity(log_data: dict) -> List[Error]:
     if app_info.get('name') == "Safe Exam Browser":
         version = app_info.get('version')
         build = app_info.get('build')
-        if version != "3.7.0" or build != "3.7.0.682":
+
+        expected_version = "3.6.0"
+        expected_build = "3.6.0.0"
+        # Compare the current version and build with the expected version and build
+        
+        if not compare_version_or_build(version, expected_version) or not compare_version_or_build(build, expected_build):
             errors.append(Error(
                 message="Suspicious Application Version or Build",
-                details=f"Expected version 3.7.0 and build 3.7.0.682 but found version {version} and build {build}"
+                details=f"Expected version >= {expected_version} and build >= {expected_build} but found version {version} and build {build}"
             ))
+
 
     # Check for suspicious system info
     system_info = log_data.get('system', {})

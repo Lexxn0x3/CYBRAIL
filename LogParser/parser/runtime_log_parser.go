@@ -2,7 +2,6 @@ package parser
 
 import (
 	"encoding/json"
-	"fmt"
 	"regexp"
 	"strings"
 )
@@ -130,7 +129,7 @@ func parseLogEntry(line string) (struct {
 			Thread    string `json:"thread"`
 			Level     string `json:"level"`
 			Message   string `json:"message"`
-		}{}, fmt.Errorf("log line does not match expected format: %s", line)
+		}{},nil 
 	}
 
 	timestamp := matches[1]

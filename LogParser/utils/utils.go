@@ -3,6 +3,7 @@ package utils
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -97,4 +98,12 @@ func PrintIndented(message, indent string, isLast bool) {
 			fmt.Printf("%s|-- %s\n", indent, line)
 		}
 	}
+}
+
+func FileExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return !info.IsDir()
 }
