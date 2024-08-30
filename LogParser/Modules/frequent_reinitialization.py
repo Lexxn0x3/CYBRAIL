@@ -1,6 +1,9 @@
 import sys
 from log_checker import StatusEnum, Error, ReturnJSON, load_log_file, output_result
 from typing import List
+from helper import parse_config
+
+parsed_config = parse_config("frequent_reinitialization.config")
 
 def check_frequent_reinitialization(log_data: dict) -> List[Error]:
     errors = []
@@ -10,7 +13,9 @@ def check_frequent_reinitialization(log_data: dict) -> List[Error]:
         if log_entry['level'] == 'INFO' and 'Initializing new session configuration' in log_entry['message']:
             reinitialization_count += 1
 
-    if reinitialization_count > 1:
+    reinitialization_border = parsed_config["reinitialization_border"]
+
+    if reinitialization_count > reinitialization_border:
         errors.append(Error(
             message="Frequent Reinitialization Detected",
             details=f"Multiple session initializations detected: {reinitialization_count} times."
