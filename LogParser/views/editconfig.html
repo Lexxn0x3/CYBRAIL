@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Configuration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Edit Configuration: {{.FileName}}</h1>
+
+        {{if eq .Status "success"}}
+        <div class="alert alert-success" role="alert">
+            {{.Message}}
+        </div>
+        {{else if eq .Status "error"}}
+        <div class="alert alert-danger" role="alert">
+            {{.Message}}
+        </div>
+        {{end}}
+
+        <form action="/save-module-config" method="POST" class="bg-light p-4 rounded">
+            <!-- Hidden input to pass FileName -->
+            <input type="hidden" name="FileName" value="{{.FileName}}">
+
+            {{range $key, $value := .Config}}
+            <div class="mb-3">
+                <label for="{{$key}}" class="form-label">{{$key}} ({{$value.type}})</label>
+                {{if eq $value.type "string"}}
+                <input type="text" class="form-control" id="{{$key}}" name="{{$key}}" value="{{$value.value}}">
+                {{else if eq $value.type "integer"}}
+                <input type="number" class="form-control" id="{{$key}}" name="{{$key}}" value="{{$value.value}}">
+                {{else if eq $value.type "boolean"}}
+                <select class="form-control" id="{{$key}}" name="{{$key}}">
+                    <option value="true" {{if eq $value.value true}}selected{{end}}>True</option>
+                    <option value="false" {{if eq $value.value false}}selected{{end}}>False</option>
+                </select>
+                {{else if eq $value.type "list"}}
+                <ul>
+                    {{range $item := $value.value}}
+                    <li>{{$item}}</li>
+                    {{end}}
+                </ul>
+                <textarea class="form-control" id="{{$key}}" name="{{$key}}" rows="4">{{range $i, $item := $value.value}}{{if $i}},{{end}}{{$item}}{{end}}</textarea>
+                
+                {{else}}
+                <input type="text" class="form-control" id="{{$key}}" name="{{$key}}" value="{{$value.value}}">
+                {{end}}
+                <input type="hidden" name="{{$key}}_type" value="{{$value.type}}">
+            </div>
+            {{end}}
+            <button type="submit" class="btn btn-success">Save Configuration</button>
+        </form>
+        <a href="/" class="btn btn-secondary mt-3">Go Back</a>
+    </div>
+</body>
+</html>
