@@ -1,0 +1,18 @@
+[0117/112548.678:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0117/112554.712:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112623.778:WARNING:policy_logger.cc(148)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[0117/112626.942:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112631.821:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112648.205:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112648.534:INFO:CONSOLE(28528)] "Invalid value passed for the moodle:draftitemid option. The value must be a number.", source: https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js (28528)
+[0117/112649.127:INFO:CONSOLE(621)] "tiny_autosave/q57972:3_answer_id: Skipping draft restoration. The editor is not empty.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (621)
+[0117/112658.706:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112705.267:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112712.493:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112722.297:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112733.989:INFO:CONSOLE(574)] "Starting Moodle session keep-alive.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)
+[0117/112734.154:INFO:CONSOLE(28528)] "Invalid value passed for the moodle:draftitemid option. The value must be a number.", source: https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js (28528)
+[0117/112734.518:INFO:CONSOLE(621)] "tiny_autosave/q57972:4_answer_id: Skipping draft restoration. The editor is not empty.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (621)
+[0117/112956.641:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0117/112956.656:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0117/113019.747:INFO:CONSOLE(574)] "Starting Moodle session timeout warning.", source: https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js (574)

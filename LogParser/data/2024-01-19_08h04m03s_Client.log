@@ -1,0 +1,718 @@
+﻿# New client instance started at 2024-01-19 08:04:12.169
+
+2024-01-19 08:04:12.185 [01] - INFO: Initiating startup procedure...
+2024-01-19 08:04:12.201 [01] - INFO: Loading text data...
+2024-01-19 08:04:12.201 [01] - DEBUG: [Text] System language is 'en', trying to load data...
+2024-01-19 08:04:12.201 [01] - DEBUG: [Text] Data successfully loaded.
+2024-01-19 08:04:12.201 [01] - INFO: Initializing runtime connection...
+2024-01-19 08:04:12.216 [01] - DEBUG: [RuntimeProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/runtime/88bcdada-49dc-4e01-b3a9-6aa8ffdeb116' with authentication token '76b6d5ab-94b5-4faf-8361-be6fc37afe21'...
+2024-01-19 08:04:12.264 [01] - DEBUG: [RuntimeProxy] Communication channel is opening...
+2024-01-19 08:04:12.311 [01] - DEBUG: [RuntimeProxy] Communication channel has been opened.
+2024-01-19 08:04:12.358 [01] - DEBUG: [RuntimeProxy] Connection was established.
+2024-01-19 08:04:12.358 [01] - INFO: Successfully connected to the runtime.
+2024-01-19 08:04:12.358 [01] - INFO: Initializing application configuration...
+2024-01-19 08:04:12.358 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ConfigurationNeeded'...
+2024-01-19 08:04:12.554 [01] - DEBUG: [RuntimeProxy] Received response 'ConfigurationResponse' for message 'SimpleMessage -> ConfigurationNeeded'.
+2024-01-19 08:04:12.554 [01] - DEBUG: [RuntimeProxy] Received configuration response.
+2024-01-19 08:04:12.554 [01] - INFO: Successfully retrieved the application configuration from the runtime.
+2024-01-19 08:04:12.554 [01] - INFO:  -> Client-ID: 360bad56-89f8-4538-b3d9-d89889fa915a
+2024-01-19 08:04:12.554 [01] - INFO:  -> Runtime-ID: ebb7f7b0-7626-4470-ae97-a09b3c2b695f
+2024-01-19 08:04:12.554 [01] - INFO:  -> Session-ID: f62f73e9-2d41-48f1-9a92-c3322890ba31
+2024-01-19 08:04:12.562 [01] - INFO: Starting communication host...
+2024-01-19 08:04:12.562 [08] - DEBUG: [ClientHost] Communication host is opening...
+2024-01-19 08:04:12.578 [08] - DEBUG: [ClientHost] Communication host has been opened.
+2024-01-19 08:04:12.578 [08] - DEBUG: [ClientHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/e7a2ef54-5f20-4b6e-83c1-8be2c8c8444a'.
+2024-01-19 08:04:12.578 [01] - INFO: Starting keyboard interception...
+2024-01-19 08:04:12.578 [01] - INFO: Starting mouse interception...
+2024-01-19 08:04:12.578 [01] - INFO: Initializing applications...
+2024-01-19 08:04:13.550 [01] - DEBUG: [ApplicationMonitor] Initialized 311 currently running processes.
+2024-01-19 08:04:13.550 [01] - DEBUG: [ApplicationMonitor] Initialized blacklist with 0 applications.
+2024-01-19 08:04:13.550 [01] - DEBUG: [ApplicationMonitor] Initialized whitelist with 0 applications.
+2024-01-19 08:04:13.556 [01] - INFO: [ApplicationMonitor] Started monitoring applications.
+2024-01-19 08:04:13.556 [01] - INFO: [ApplicationMonitor] Registered system capture start event with ID = de0a538c-ed75-494b-ac19-b187fadd3970.
+2024-01-19 08:04:13.556 [01] - INFO: [ApplicationMonitor] Registered system foreground event with ID = 0ba3f99f-cb22-41ca-95fe-cedef69d3f18.
+2024-01-19 08:04:13.556 [01] - INFO: Initializing working area...
+2024-01-19 08:04:13.556 [01] - INFO: [DisplayMonitor] Disabled sleep mode and display timeout.
+2024-01-19 08:04:13.566 [01] - DEBUG: [Taskbar] Calculated physical taskbar height is 50px.
+2024-01-19 08:04:13.566 [01] - INFO: [DisplayMonitor] Saved original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-19 08:04:13.566 [01] - INFO: [DisplayMonitor] Trying to set new working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-19 08:04:13.566 [01] - INFO: [DisplayMonitor] Working area of DISPLAY1 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-19 08:04:13.566 [01] - INFO: [DisplayMonitor] Started monitoring display changes.
+2024-01-19 08:04:13.566 [01] - INFO: Initializing system events...
+2024-01-19 08:04:13.566 [01] - INFO: [SystemMonitor] Started monitoring the operating system.
+2024-01-19 08:04:13.566 [01] - INFO: Initializing shell...
+2024-01-19 08:04:13.644 [01] - INFO: [Audio] Found 'Lautsprecher (Realtek(R) Audio)' to be the active audio device.
+2024-01-19 08:04:13.816 [01] - INFO: [Audio] Started monitoring the audio device.
+2024-01-19 08:04:13.832 [01] - INFO: [Keyboard] Saved current keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-19 08:04:13.832 [01] - INFO: [Keyboard] Detected keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-19 08:04:13.832 [01] - INFO: [Keyboard] Detected keyboard layout 'English (United States)' [ENG, US].
+2024-01-19 08:04:13.958 [01] - INFO: [NetworkAdapter] Connection established.
+2024-01-19 08:04:13.958 [01] - INFO: [NetworkAdapter] Started monitoring the network adapter.
+2024-01-19 08:04:13.958 [01] - INFO: [PowerSupply] Started monitoring the power supply.
+2024-01-19 08:04:13.958 [01] - INFO: Initializing action center...
+2024-01-19 08:04:14.020 [01] - DEBUG: [PowerSupply] Power grid is connected, battery charge at 100%.
+2024-01-19 08:04:14.020 [01] - INFO: Initializing taskbar...
+2024-01-19 08:04:14.052 [01] - INFO: Initializing task view...
+2024-01-19 08:04:14.057 [01] - INFO: Initializing browser...
+2024-01-19 08:04:14.068 [01] - INFO: [BrowserApplication] Starting initialization...
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] Accept Language: en-US
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] Cache Path: C:\Users\pasca\AppData\Local\SafeExamBrowser\Cache
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] Engine Version: Chromium 118.0.5993.117, CEF r118.6.8+ge44bee1+chromium-118.0.5993.117, CefSharp 118.6.80.0
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] Log File: C:\Users\pasca\AppData\Local\SafeExamBrowser\Logs\2024-01-19_08h04m03s_Browser.log
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] Log Severity: Info.
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] PDF Reader: Enabled.
+2024-01-19 08:04:14.224 [01] - DEBUG: [BrowserApplication] Session Persistence: Enabled.
+2024-01-19 08:04:14.633 [01] - DEBUG: [BrowserApplication] Browser Exam Key (BEK) transmission is disabled.
+2024-01-19 08:04:14.633 [01] - DEBUG: [BrowserApplication] Configuration Key (CK) transmission is disabled.
+2024-01-19 08:04:14.633 [01] - DEBUG: [BrowserApplication] The browser application will be using the default browser exam key.
+2024-01-19 08:04:14.648 [01] - DEBUG: [BrowserApplication] Successfully initiated cookie deletion.
+2024-01-19 08:04:14.648 [01] - INFO: [BrowserApplication] Initialized browser.
+2024-01-19 08:04:14.695 [01] - INFO: Initializing clipboard...
+2024-01-19 08:04:14.695 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-19 08:04:14.695 [01] - DEBUG: [Clipboard] Started clipboard monitoring with interval 50 ms.
+2024-01-19 08:04:14.695 [01] - INFO: [Clipboard] Initialized clipboard for policy 'Isolated'.
+2024-01-19 08:04:14.742 [01] - DEBUG: [Taskbar] Set taskbar bounds to 1536x40 at (0/824), in physical pixels: 1920x50 at (0/1030).
+2024-01-19 08:04:14.742 [01] - INFO: Auto-starting browser...
+2024-01-19 08:04:14.805 [32] - DEBUG: [BrowserApplication] Deleted 0 cookies.
+2024-01-19 08:04:14.805 [01] - DEBUG: [Browser Window #1] Initialized browser control.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Browser Window #1] Initialized browser window.
+2024-01-19 08:04:15.009 [01] - INFO: [BrowserApplication] Created browser window #1.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'ContactVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '1'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'CursorBaseSize' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '32'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'GestureVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '31'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'Scheme Source' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '2'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'AppStarting' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_working.ani'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'Arrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_arrow.cur'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'Crosshair' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'Hand' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_link.cur'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'Help' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_helpsel.cur'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'IBeam' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'No' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_unavail.cur'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'NWPen' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_pen.cur'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'SizeAll' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_move.cur'.
+2024-01-19 08:04:15.009 [01] - DEBUG: [Registry] Started monitoring value 'SizeNESW' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nesw.cur'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value 'SizeNS' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ns.cur'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value 'SizeNWSE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nwse.cur'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value 'SizeWE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ew.cur'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value 'UpArrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_up.cur'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value 'Wait' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_busy.ani'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value '' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'Windows-Voreinstellung'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [Registry] Started monitoring value 'Debugger' from registry key 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Utilman.exe'. Initial value: ''.
+2024-01-19 08:04:15.025 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ClientIsReady'...
+2024-01-19 08:04:15.025 [23] - DEBUG: [ApplicationMonitor] Window has changed from  to 'Taskbar' (331470).
+2024-01-19 08:04:15.025 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (331470) to '' (134980).
+2024-01-19 08:04:15.025 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> ClientIsReady'.
+2024-01-19 08:04:15.025 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged that the client is ready.
+2024-01-19 08:04:15.025 [01] - INFO: Application successfully initialized.
+
+2024-01-19 08:04:15.088 [13] - DEBUG: [ClientHost] Received connection request with authentication token '76b6d5ab-94b5-4faf-8361-be6fc37afe21'.
+2024-01-19 08:04:15.103 [13] - DEBUG: [ClientHost] Accepted connection request.
+2024-01-19 08:04:15.119 [06] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Authenticate', sending response 'AuthenticationResponse'.
+2024-01-19 08:04:15.119 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (134980) to 'ActionCenter' (200460).
+2024-01-19 08:04:15.644 [31] - INFO: [Browser Window #1] Navigated.
+2024-01-19 08:04:15.689 [31] - DEBUG: [KeyGenerator] Initializing browser exam key...
+2024-01-19 08:04:15.690 [31] - WARNING: [KeyGenerator] The current configuration does not contain a value for the configuration key!
+2024-01-19 08:04:15.690 [31] - WARNING: [KeyGenerator] The current configuration does not contain a salt value for the browser exam key!
+2024-01-19 08:04:16.191 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (27396) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:16.192 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (23736) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:16.192 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (14052) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:16.192 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (19604) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:16.193 [32] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (11872) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:16.193 [32] - DEBUG: [ApplicationMonitor] Process 'svchost.exe' (15408) has been terminated.
+2024-01-19 08:04:17.728 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'ActionCenter' (200460) to '' (134980).
+2024-01-19 08:04:18.248 [31] - DEBUG: [KeyGenerator] Successfully calculated browser exam key using integrity module.
+2024-01-19 08:04:18.269 [22] - DEBUG: [ApplicationMonitor] Window has changed from '' (134980) to '' (134928).
+2024-01-19 08:04:29.990 [31] - INFO: [Browser Window #1] Navigated.
+2024-01-19 08:04:31.841 [32] - DEBUG: [ApplicationMonitor] Process 'chrome.exe' (4996) has been terminated.
+2024-01-19 08:04:31.841 [32] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (24164) has been terminated.
+2024-01-19 08:04:42.181 [35] - DEBUG: [ApplicationMonitor] Process 'WmiPrvSE.exe' (17308) has been terminated.
+2024-01-19 08:04:42.789 [31] - INFO: [Browser Window #1] Request was aborted.
+2024-01-19 08:04:42.821 [31] - DEBUG: [DownloadHandler #1] Detected download request.
+2024-01-19 08:04:42.837 [33] - DEBUG: [DownloadHandler #1] Handling download of configuration file 'config.seb'.
+2024-01-19 08:04:42.837 [33] - DEBUG: [Browser Window #1] Forwarding download request for configuration file 'config.seb'.
+2024-01-19 08:04:42.837 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (134928) to 'SplashScreen' (396862).
+2024-01-19 08:04:42.837 [33] - INFO: Allowed download request for configuration file 'config.seb'.
+2024-01-19 08:04:42.852 [33] - DEBUG: [Browser Window #1] Download request for configuration file 'config.seb' was granted.
+2024-01-19 08:04:42.852 [33] - DEBUG: [DownloadHandler #1] Starting download of configuration file 'config.seb'...
+2024-01-19 08:04:43.186 [31] - DEBUG: [DownloadHandler #1] Download of 'C:\Users\pasca\AppData\Local\SafeExamBrowser\Temp\config.seb' is complete.
+2024-01-19 08:04:43.188 [32] - DEBUG: [RuntimeProxy] Sending message 'ReconfigurationMessage'...
+2024-01-19 08:04:43.205 [32] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'ReconfigurationMessage'.
+2024-01-19 08:04:43.205 [32] - DEBUG: [RuntimeProxy] Runtime acknowledged reconfiguration request.
+2024-01-19 08:04:43.205 [32] - INFO: Sent reconfiguration request for 'C:\Users\pasca\AppData\Local\SafeExamBrowser\Temp\config.seb' to the runtime.
+2024-01-19 08:04:43.303 [13] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Shutdown', sending response 'SimpleResponse -> Acknowledged'.
+
+2024-01-19 08:04:43.303 [01] - INFO: Initiating shutdown procedure...
+2024-01-19 08:04:43.314 [06] - DEBUG: [ClientHost] Received disconnection request with message 'DisconnectionMessage'.
+2024-01-19 08:04:43.318 [01] - DEBUG: [Registry] Stopped monitoring the registry.
+2024-01-19 08:04:43.320 [01] - INFO: Finalizing clipboard...
+2024-01-19 08:04:43.321 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-19 08:04:43.321 [01] - DEBUG: [Clipboard] Stopped clipboard monitoring.
+2024-01-19 08:04:43.321 [01] - INFO: [Clipboard] Finalized clipboard.
+2024-01-19 08:04:43.322 [01] - INFO: Terminating browser...
+2024-01-19 08:04:43.324 [01] - INFO: [BrowserApplication] Initiating termination...
+2024-01-19 08:04:43.826 [01] - DEBUG: [Browser Window #1] Window is closing...
+2024-01-19 08:04:43.834 [01] - DEBUG: [Browser Window #1] Window has been closed.
+2024-01-19 08:04:43.850 [01] - INFO: [BrowserApplication] Closed browser window #1.
+2024-01-19 08:04:44.011 [01] - INFO: [BrowserApplication] Terminated browser.
+2024-01-19 08:04:44.011 [01] - INFO: [BrowserApplication] Retained browser cache.
+2024-01-19 08:04:44.011 [01] - INFO: Terminating shell...
+2024-01-19 08:04:44.017 [01] - INFO: [Audio] Stopped monitoring the audio device.
+2024-01-19 08:04:44.018 [01] - INFO: [Keyboard] Restored original keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-19 08:04:44.019 [01] - INFO: [NetworkAdapter] Stopped monitoring the network adapter.
+2024-01-19 08:04:44.019 [01] - INFO: [PowerSupply] Stopped monitoring the power supply.
+2024-01-19 08:04:44.019 [01] - INFO: Finalizing system events...
+2024-01-19 08:04:44.020 [01] - INFO: [SystemMonitor] Stopped monitoring the operating system.
+2024-01-19 08:04:44.021 [01] - INFO: Restoring working area...
+2024-01-19 08:04:44.021 [01] - INFO: [DisplayMonitor] Stopped monitoring display changes.
+2024-01-19 08:04:44.022 [01] - INFO: [DisplayMonitor] Restored original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-19 08:04:44.022 [01] - INFO: Finalizing applications...
+2024-01-19 08:04:44.024 [01] - INFO: [ApplicationMonitor] Stopped monitoring applications.
+2024-01-19 08:04:44.026 [01] - INFO: [ApplicationMonitor] Unregistered system capture start event with ID = de0a538c-ed75-494b-ac19-b187fadd3970.
+2024-01-19 08:04:44.027 [01] - INFO: [ApplicationMonitor] Unregistered system foreground event with ID = 0ba3f99f-cb22-41ca-95fe-cedef69d3f18.
+2024-01-19 08:04:44.027 [01] - INFO: Stopping mouse interception...
+2024-01-19 08:04:44.028 [01] - INFO: Stopping keyboard interception...
+2024-01-19 08:04:44.030 [01] - INFO: The runtime has already disconnected from the client communication host.
+2024-01-19 08:04:44.030 [01] - INFO: Stopping communication host...
+2024-01-19 08:04:44.031 [01] - DEBUG: [ClientHost] Communication host is closing...
+2024-01-19 08:04:44.041 [01] - DEBUG: [ClientHost] Communication host has been closed.
+2024-01-19 08:04:44.041 [01] - DEBUG: [ClientHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/e7a2ef54-5f20-4b6e-83c1-8be2c8c8444a'.
+2024-01-19 08:04:44.042 [01] - INFO: Closing runtime connection...
+2024-01-19 08:04:44.050 [01] - DEBUG: [RuntimeProxy] Communication channel is closing...
+2024-01-19 08:04:44.052 [01] - DEBUG: [RuntimeProxy] Communication channel has been closed.
+2024-01-19 08:04:44.052 [01] - DEBUG: [RuntimeProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/runtime/88bcdada-49dc-4e01-b3a9-6aa8ffdeb116'.
+2024-01-19 08:04:44.052 [01] - INFO: Successfully disconnected from the runtime.
+2024-01-19 08:04:44.052 [01] - INFO: Application successfully finalized.
+
+# Client instance terminated at 2024-01-19 08:04:44.066
+# New client instance started at 2024-01-19 08:04:45.952
+
+2024-01-19 08:04:45.952 [01] - INFO: Initiating startup procedure...
+2024-01-19 08:04:45.968 [01] - INFO: Loading text data...
+2024-01-19 08:04:45.968 [01] - DEBUG: [Text] System language is 'en', trying to load data...
+2024-01-19 08:04:45.984 [01] - DEBUG: [Text] Data successfully loaded.
+2024-01-19 08:04:45.984 [01] - INFO: Initializing runtime connection...
+2024-01-19 08:04:45.984 [01] - DEBUG: [RuntimeProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/runtime/88bcdada-49dc-4e01-b3a9-6aa8ffdeb116' with authentication token '390f9887-03a2-4628-a4d4-02056d4cdd97'...
+2024-01-19 08:04:46.031 [01] - DEBUG: [RuntimeProxy] Communication channel is opening...
+2024-01-19 08:04:46.047 [01] - DEBUG: [RuntimeProxy] Communication channel has been opened.
+2024-01-19 08:04:46.062 [01] - DEBUG: [RuntimeProxy] Connection was established.
+2024-01-19 08:04:46.062 [01] - INFO: Successfully connected to the runtime.
+2024-01-19 08:04:46.062 [01] - INFO: Initializing application configuration...
+2024-01-19 08:04:46.062 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ConfigurationNeeded'...
+2024-01-19 08:04:46.203 [01] - DEBUG: [RuntimeProxy] Received response 'ConfigurationResponse' for message 'SimpleMessage -> ConfigurationNeeded'.
+2024-01-19 08:04:46.203 [01] - DEBUG: [RuntimeProxy] Received configuration response.
+2024-01-19 08:04:46.203 [01] - INFO: Successfully retrieved the application configuration from the runtime.
+2024-01-19 08:04:46.203 [01] - INFO:  -> Client-ID: 137bb2a9-33ca-45cd-8a45-42217ec8f4c8
+2024-01-19 08:04:46.203 [01] - INFO:  -> Runtime-ID: ebb7f7b0-7626-4470-ae97-a09b3c2b695f
+2024-01-19 08:04:46.203 [01] - INFO:  -> Session-ID: ffa4408a-5b56-4ab1-8afe-b317f3bfaa24
+2024-01-19 08:04:46.203 [01] - INFO: Starting communication host...
+2024-01-19 08:04:46.203 [08] - DEBUG: [ClientHost] Communication host is opening...
+2024-01-19 08:04:46.219 [08] - DEBUG: [ClientHost] Communication host has been opened.
+2024-01-19 08:04:46.219 [08] - DEBUG: [ClientHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/b44f0b5d-7efa-4bd3-a5f3-00a7d7916f00'.
+2024-01-19 08:04:46.219 [01] - INFO: Starting keyboard interception...
+2024-01-19 08:04:46.219 [01] - INFO: Starting mouse interception...
+2024-01-19 08:04:46.235 [01] - INFO: Initializing applications...
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Initialized 307 currently running processes.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Initialized blacklist with 46 applications: AA_v3.exe, AeroAdmin.exe, beamyourscreen-host.exe, CamPlay.exe, Camtasia.exe, CamtasiaStudio.exe, Camtasia_Studio.exe, CamRecorder.exe, CamtasiaUtl.exe, chromoting.exe, CiscoCollabHost.exe, CiscoWebExStart.exe, Discord.exe, Element.exe, g2mcomm.exe, g2mcomm.exe, g2mlauncher.exe, g2mstart.exe, GotoMeetingWinStore.exe, join.me.exe, join.me.sentinel.exe, Mikogo-host.exe, MS-teams.exe, obs32.exe, obs64.exe, PCMonitorSrv.exe, pcmontask.exe, ptoneclk.exe, RemotePCDesktop.exe, remoting_host.exe, RPCService.exe, RPCSuite.exe, Skype.exe, SkypeApp.exe, SkypeHost.exe, slack.exe, SRServer.exe, strwinclt.exe, Teams.exe, TeamViewer.exe, Telegram.exe, vncserver.exe, vncviewer.exe, vncserverui.exe, webexmta.exe, Zoom.exe
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (4460) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (5100) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23520) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (8764) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (10048) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23744) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (27676) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.863 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (20652) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-19 08:04:46.879 [01] - DEBUG: [ApplicationMonitor] Initialized whitelist with 0 applications.
+2024-01-19 08:04:46.879 [01] - INFO: The following applications need to be terminated: Teams.exe.
+2024-01-19 08:04:49.109 [01] - INFO: The user chose to automatically terminate all running applications.
+2024-01-19 08:04:49.109 [01] - DEBUG: [Process 'Teams.exe' (4460)] Attempting to close process...
+2024-01-19 08:04:49.126 [01] - WARNING: [Process 'Teams.exe' (4460)] Failed to send close message to main window!
+2024-01-19 08:04:49.126 [01] - DEBUG: [Process 'Teams.exe' (4460)] Attempting to close process...
+2024-01-19 08:04:49.141 [01] - WARNING: [Process 'Teams.exe' (4460)] Failed to send close message to main window!
+2024-01-19 08:04:49.141 [01] - DEBUG: [Process 'Teams.exe' (4460)] Attempting to close process...
+2024-01-19 08:04:49.156 [01] - WARNING: [Process 'Teams.exe' (4460)] Failed to send close message to main window!
+2024-01-19 08:04:49.156 [01] - DEBUG: [Process 'Teams.exe' (4460)] Attempting to close process...
+2024-01-19 08:04:49.156 [01] - WARNING: [Process 'Teams.exe' (4460)] Failed to send close message to main window!
+2024-01-19 08:04:49.156 [01] - DEBUG: [Process 'Teams.exe' (4460)] Attempting to close process...
+2024-01-19 08:04:49.172 [01] - WARNING: [Process 'Teams.exe' (4460)] Failed to send close message to main window!
+2024-01-19 08:04:49.172 [01] - DEBUG: [Process 'Teams.exe' (4460)] Attempting to kill process...
+2024-01-19 08:04:49.226 [01] - DEBUG: [Process 'Teams.exe' (4460)] Process has terminated within 500ms.
+2024-01-19 08:04:49.226 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (4460).
+2024-01-19 08:04:49.226 [01] - DEBUG: [Process 'Teams.exe' (5100)] Attempting to close process...
+2024-01-19 08:04:49.235 [01] - WARNING: [Process 'Teams.exe' (5100)] Failed to send close message to main window!
+2024-01-19 08:04:49.235 [01] - DEBUG: [Process 'Teams.exe' (5100)] Attempting to close process...
+2024-01-19 08:04:49.235 [01] - WARNING: [Process 'Teams.exe' (5100)] Failed to send close message to main window!
+2024-01-19 08:04:49.235 [01] - DEBUG: [Process 'Teams.exe' (5100)] Attempting to close process...
+2024-01-19 08:04:49.235 [01] - WARNING: [Process 'Teams.exe' (5100)] Failed to send close message to main window!
+2024-01-19 08:04:49.235 [01] - DEBUG: [Process 'Teams.exe' (5100)] Attempting to close process...
+2024-01-19 08:04:49.251 [01] - WARNING: [Process 'Teams.exe' (5100)] Failed to send close message to main window!
+2024-01-19 08:04:49.251 [01] - DEBUG: [Process 'Teams.exe' (5100)] Attempting to close process...
+2024-01-19 08:04:49.251 [01] - WARNING: [Process 'Teams.exe' (5100)] Failed to send close message to main window!
+2024-01-19 08:04:49.251 [01] - DEBUG: [Process 'Teams.exe' (5100)] Attempting to kill process...
+2024-01-19 08:04:49.298 [01] - DEBUG: [Process 'Teams.exe' (5100)] Process has terminated within 500ms.
+2024-01-19 08:04:49.298 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (5100).
+2024-01-19 08:04:49.298 [01] - DEBUG: [Process 'Teams.exe' (23520)] Attempting to close process...
+2024-01-19 08:04:49.327 [01] - ERROR: [Process 'Teams.exe' (23520)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.327 [01] - DEBUG: [Process 'Teams.exe' (23520)] Attempting to close process...
+2024-01-19 08:04:49.329 [01] - ERROR: [Process 'Teams.exe' (23520)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.329 [01] - DEBUG: [Process 'Teams.exe' (23520)] Attempting to close process...
+2024-01-19 08:04:49.329 [01] - ERROR: [Process 'Teams.exe' (23520)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.329 [01] - DEBUG: [Process 'Teams.exe' (23520)] Attempting to close process...
+2024-01-19 08:04:49.329 [01] - ERROR: [Process 'Teams.exe' (23520)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.329 [01] - DEBUG: [Process 'Teams.exe' (23520)] Attempting to close process...
+2024-01-19 08:04:49.329 [01] - ERROR: [Process 'Teams.exe' (23520)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.345 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (23520).
+2024-01-19 08:04:49.345 [01] - DEBUG: [Process 'Teams.exe' (8764)] Attempting to close process...
+2024-01-19 08:04:49.345 [01] - WARNING: [Process 'Teams.exe' (8764)] Failed to send close message to main window!
+2024-01-19 08:04:49.345 [01] - DEBUG: [Process 'Teams.exe' (8764)] Attempting to close process...
+2024-01-19 08:04:49.345 [01] - WARNING: [Process 'Teams.exe' (8764)] Failed to send close message to main window!
+2024-01-19 08:04:49.345 [01] - DEBUG: [Process 'Teams.exe' (8764)] Attempting to close process...
+2024-01-19 08:04:49.345 [01] - WARNING: [Process 'Teams.exe' (8764)] Failed to send close message to main window!
+2024-01-19 08:04:49.345 [01] - DEBUG: [Process 'Teams.exe' (8764)] Attempting to close process...
+2024-01-19 08:04:49.360 [01] - WARNING: [Process 'Teams.exe' (8764)] Failed to send close message to main window!
+2024-01-19 08:04:49.360 [01] - DEBUG: [Process 'Teams.exe' (8764)] Attempting to close process...
+2024-01-19 08:04:49.360 [01] - WARNING: [Process 'Teams.exe' (8764)] Failed to send close message to main window!
+2024-01-19 08:04:49.360 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (8764).
+2024-01-19 08:04:49.360 [01] - DEBUG: [Process 'Teams.exe' (10048)] Attempting to close process...
+2024-01-19 08:04:49.360 [01] - ERROR: [Process 'Teams.exe' (10048)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.360 [01] - DEBUG: [Process 'Teams.exe' (10048)] Attempting to close process...
+2024-01-19 08:04:49.360 [01] - ERROR: [Process 'Teams.exe' (10048)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.360 [01] - DEBUG: [Process 'Teams.exe' (10048)] Attempting to close process...
+2024-01-19 08:04:49.376 [01] - ERROR: [Process 'Teams.exe' (10048)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.376 [01] - DEBUG: [Process 'Teams.exe' (10048)] Attempting to close process...
+2024-01-19 08:04:49.376 [01] - ERROR: [Process 'Teams.exe' (10048)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.376 [01] - DEBUG: [Process 'Teams.exe' (10048)] Attempting to close process...
+2024-01-19 08:04:49.376 [01] - ERROR: [Process 'Teams.exe' (10048)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.376 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (10048).
+2024-01-19 08:04:49.376 [01] - DEBUG: [Process 'Teams.exe' (23744)] Attempting to close process...
+2024-01-19 08:04:49.376 [01] - ERROR: [Process 'Teams.exe' (23744)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.392 [01] - DEBUG: [Process 'Teams.exe' (23744)] Attempting to close process...
+2024-01-19 08:04:49.392 [01] - ERROR: [Process 'Teams.exe' (23744)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.392 [01] - DEBUG: [Process 'Teams.exe' (23744)] Attempting to close process...
+2024-01-19 08:04:49.392 [01] - ERROR: [Process 'Teams.exe' (23744)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.392 [01] - DEBUG: [Process 'Teams.exe' (23744)] Attempting to close process...
+2024-01-19 08:04:49.392 [01] - ERROR: [Process 'Teams.exe' (23744)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.392 [01] - DEBUG: [Process 'Teams.exe' (23744)] Attempting to close process...
+2024-01-19 08:04:49.407 [01] - ERROR: [Process 'Teams.exe' (23744)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.407 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (23744).
+2024-01-19 08:04:49.407 [01] - DEBUG: [Process 'Teams.exe' (27676)] Attempting to close process...
+2024-01-19 08:04:49.407 [01] - ERROR: [Process 'Teams.exe' (27676)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.407 [01] - DEBUG: [Process 'Teams.exe' (27676)] Attempting to close process...
+2024-01-19 08:04:49.407 [01] - ERROR: [Process 'Teams.exe' (27676)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.407 [01] - DEBUG: [Process 'Teams.exe' (27676)] Attempting to close process...
+2024-01-19 08:04:49.407 [01] - ERROR: [Process 'Teams.exe' (27676)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.407 [01] - DEBUG: [Process 'Teams.exe' (27676)] Attempting to close process...
+2024-01-19 08:04:49.427 [01] - ERROR: [Process 'Teams.exe' (27676)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.427 [01] - DEBUG: [Process 'Teams.exe' (27676)] Attempting to close process...
+2024-01-19 08:04:49.427 [01] - ERROR: [Process 'Teams.exe' (27676)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.427 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (27676).
+2024-01-19 08:04:49.427 [01] - DEBUG: [Process 'Teams.exe' (20652)] Attempting to close process...
+2024-01-19 08:04:49.439 [01] - ERROR: [Process 'Teams.exe' (20652)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.439 [01] - DEBUG: [Process 'Teams.exe' (20652)] Attempting to close process...
+2024-01-19 08:04:49.439 [01] - ERROR: [Process 'Teams.exe' (20652)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.439 [01] - DEBUG: [Process 'Teams.exe' (20652)] Attempting to close process...
+2024-01-19 08:04:49.439 [01] - ERROR: [Process 'Teams.exe' (20652)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.439 [01] - DEBUG: [Process 'Teams.exe' (20652)] Attempting to close process...
+2024-01-19 08:04:49.439 [01] - ERROR: [Process 'Teams.exe' (20652)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.439 [01] - DEBUG: [Process 'Teams.exe' (20652)] Attempting to close process...
+2024-01-19 08:04:49.455 [01] - ERROR: [Process 'Teams.exe' (20652)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-19 08:04:49.455 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (20652).
+2024-01-19 08:04:49.455 [01] - INFO: Successfully terminated application 'Teams.exe'.
+2024-01-19 08:04:49.470 [01] - INFO: [ApplicationMonitor] Started monitoring applications.
+2024-01-19 08:04:49.470 [01] - INFO: [ApplicationMonitor] Registered system capture start event with ID = b6d2db22-4e9f-47e1-9dbf-e96916038105.
+2024-01-19 08:04:49.470 [01] - INFO: [ApplicationMonitor] Registered system foreground event with ID = b6d2a1f0-cc00-482c-82bc-0dd91990a2e6.
+2024-01-19 08:04:49.470 [01] - INFO: Initializing working area...
+2024-01-19 08:04:49.470 [01] - INFO: [DisplayMonitor] Disabled sleep mode and display timeout.
+2024-01-19 08:04:49.470 [01] - DEBUG: [Taskbar] Calculated physical taskbar height is 50px.
+2024-01-19 08:04:49.486 [01] - INFO: [DisplayMonitor] Saved original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-19 08:04:49.486 [01] - INFO: [DisplayMonitor] Trying to set new working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-19 08:04:49.486 [01] - INFO: [DisplayMonitor] Working area of DISPLAY1 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-19 08:04:49.486 [01] - INFO: [DisplayMonitor] Started monitoring display changes.
+2024-01-19 08:04:49.486 [01] - INFO: Initializing system events...
+2024-01-19 08:04:49.486 [01] - INFO: [SystemMonitor] Started monitoring the operating system.
+2024-01-19 08:04:49.486 [01] - INFO: Initializing shell...
+2024-01-19 08:04:49.565 [01] - INFO: [Audio] Found 'Lautsprecher (Realtek(R) Audio)' to be the active audio device.
+2024-01-19 08:04:49.737 [01] - INFO: [Audio] Started monitoring the audio device.
+2024-01-19 08:04:49.737 [01] - INFO: [Keyboard] Saved current keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-19 08:04:49.737 [01] - INFO: [Keyboard] Detected keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-19 08:04:49.737 [01] - INFO: [Keyboard] Detected keyboard layout 'English (United States)' [ENG, US].
+2024-01-19 08:04:49.847 [01] - INFO: [NetworkAdapter] Connection established.
+2024-01-19 08:04:49.847 [01] - INFO: [NetworkAdapter] Started monitoring the network adapter.
+2024-01-19 08:04:49.847 [01] - INFO: [PowerSupply] Started monitoring the power supply.
+2024-01-19 08:04:49.847 [01] - INFO: Initializing action center...
+2024-01-19 08:04:49.878 [01] - DEBUG: [PowerSupply] Power grid is connected, battery charge at 100%.
+2024-01-19 08:04:49.878 [01] - INFO: Initializing taskbar...
+2024-01-19 08:04:49.910 [01] - INFO: Initializing task view...
+2024-01-19 08:04:49.910 [01] - INFO: Initializing browser...
+2024-01-19 08:04:49.910 [01] - INFO: [BrowserApplication] Starting initialization...
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] Accept Language: en-US
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] Cache Path: C:\Users\pasca\AppData\Local\SafeExamBrowser\Cache
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] Engine Version: Chromium 118.0.5993.117, CEF r118.6.8+ge44bee1+chromium-118.0.5993.117, CefSharp 118.6.80.0
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] Log File: C:\Users\pasca\AppData\Local\SafeExamBrowser\Logs\2024-01-19_08h04m03s_Browser.log
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] Log Severity: Info.
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] PDF Reader: Enabled.
+2024-01-19 08:04:49.988 [01] - DEBUG: [BrowserApplication] Session Persistence: Enabled.
+2024-01-19 08:04:50.051 [01] - DEBUG: [BrowserApplication] Browser Exam Key (BEK) transmission is enabled.
+2024-01-19 08:04:50.051 [01] - DEBUG: [BrowserApplication] Configuration Key (CK) transmission is enabled.
+2024-01-19 08:04:50.051 [01] - DEBUG: [BrowserApplication] The browser application will be using the default browser exam key.
+2024-01-19 08:04:50.051 [01] - INFO: [BrowserApplication] Initialized browser.
+2024-01-19 08:04:50.067 [01] - INFO: Initializing clipboard...
+2024-01-19 08:04:50.067 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-19 08:04:50.067 [01] - DEBUG: [Clipboard] Started clipboard monitoring with interval 50 ms.
+2024-01-19 08:04:50.067 [01] - INFO: [Clipboard] Initialized clipboard for policy 'Isolated'.
+2024-01-19 08:04:50.098 [01] - DEBUG: [Taskbar] Set taskbar bounds to 1536x40 at (0/824), in physical pixels: 1920x50 at (0/1030).
+2024-01-19 08:04:50.114 [01] - INFO: Auto-starting browser...
+2024-01-19 08:04:50.161 [01] - DEBUG: [Browser Window #1] Initialized browser control.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Browser Window #1] Initialized browser window.
+2024-01-19 08:04:50.302 [01] - INFO: [BrowserApplication] Created browser window #1.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'ContactVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '1'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'CursorBaseSize' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '32'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'GestureVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '31'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'Scheme Source' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '2'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'AppStarting' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_working.ani'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'Arrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_arrow.cur'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'Crosshair' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'Hand' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_link.cur'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'Help' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_helpsel.cur'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'IBeam' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'No' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_unavail.cur'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'NWPen' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_pen.cur'.
+2024-01-19 08:04:50.302 [01] - DEBUG: [Registry] Started monitoring value 'SizeAll' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_move.cur'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'SizeNESW' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nesw.cur'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'SizeNS' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ns.cur'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'SizeNWSE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nwse.cur'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'SizeWE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ew.cur'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'UpArrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_up.cur'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'Wait' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_busy.ani'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value '' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'Windows-Voreinstellung'.
+2024-01-19 08:04:50.318 [01] - DEBUG: [Registry] Started monitoring value 'Debugger' from registry key 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Utilman.exe'. Initial value: ''.
+2024-01-19 08:04:50.318 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ClientIsReady'...
+2024-01-19 08:04:50.329 [24] - DEBUG: [ApplicationMonitor] Window has changed from  to 'Taskbar' (2033624).
+2024-01-19 08:04:50.329 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> ClientIsReady'.
+2024-01-19 08:04:50.329 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged that the client is ready.
+2024-01-19 08:04:50.329 [01] - INFO: Application successfully initialized.
+
+2024-01-19 08:04:50.334 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (2033624) to '' (2100532).
+2024-01-19 08:04:50.365 [18] - DEBUG: [ClientHost] Received connection request with authentication token '390f9887-03a2-4628-a4d4-02056d4cdd97'.
+2024-01-19 08:04:50.365 [18] - DEBUG: [ClientHost] Accepted connection request.
+2024-01-19 08:04:50.365 [24] - DEBUG: [ApplicationMonitor] Window has changed from '' (2100532) to 'ActionCenter' (1573488).
+2024-01-19 08:04:50.381 [04] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Authenticate', sending response 'AuthenticationResponse'.
+2024-01-19 08:04:50.542 [37] - DEBUG: [KeyGenerator] Initializing browser exam key...
+2024-01-19 08:04:50.542 [37] - WARNING: [KeyGenerator] The current configuration does not contain a salt value for the browser exam key!
+2024-01-19 08:04:52.017 [37] - DEBUG: [KeyGenerator] Successfully calculated browser exam key using integrity module.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (9476) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (28440) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (14848) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (13824) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (18988) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (4460) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (5100) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23520) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (8764) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (10048) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23744) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (27676) has been terminated.
+2024-01-19 08:04:52.033 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (20652) has been terminated.
+2024-01-19 08:04:52.379 [31] - INFO: [Browser Window #1] Navigated.
+2024-01-19 08:04:52.953 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'ActionCenter' (1573488) to 'PM-Klausur23/24 Geier: Probeklausur' (2100532).
+2024-01-19 08:04:56.298 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'PM-Klausur23/24 Geier: Probeklausur' (2100532) to '' (2424992).
+2024-01-19 08:05:02.985 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (2424992) to 'PM-Klausur23/24 Geier: Probeklausur' (2100532).
+2024-01-19 08:05:05.446 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'PM-Klausur23/24 Geier: Probeklausur' (2100532) to '' (1969116).
+2024-01-19 08:05:05.546 [01] - DEBUG: [Browser Window #1] Decreased page zoom to 95%.
+2024-01-19 08:05:06.153 [01] - DEBUG: [Browser Window #1] Decreased page zoom to 90%.
+2024-01-19 08:05:07.008 [01] - DEBUG: [Browser Window #1] Decreased page zoom to 85%.
+2024-01-19 08:05:11.561 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (1969116) to '' (2424992).
+2024-01-19 08:05:12.841 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (2424992) to 'PM-Klausur23/24 Geier: Probeklausur' (2100532).
+2024-01-19 08:05:12.958 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'PM-Klausur23/24 Geier: Probeklausur' (2100532) to 'Reload?' (3279892).
+2024-01-19 08:05:15.401 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Reload?' (3279892) to '&No' (5901586).
+2024-01-19 08:05:15.517 [01] - DEBUG: [Browser Window #1] The user aborted reloading the current page.
+2024-01-19 08:05:15.517 [24] - DEBUG: [ApplicationMonitor] Window has changed from '&No' (5901586) to 'PM-Klausur23/24 Geier: Probeklausur' (2100532).
+2024-01-19 08:05:16.520 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'PM-Klausur23/24 Geier: Probeklausur' (2100532) to 'Taskbar' (2033624).
+2024-01-19 08:05:16.520 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'PM-Klausur23/24 Geier: Probeklausur' (2100532) to 'Taskbar' (2033624).
+2024-01-19 08:05:16.608 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (2033624) to 'Quit?' (3345428).
+2024-01-19 08:05:17.967 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Quit?' (3345428) to '&Yes' (593500).
+2024-01-19 08:05:18.049 [01] - INFO: The user chose to terminate the application.
+2024-01-19 08:05:18.050 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> RequestShutdown'...
+2024-01-19 08:05:18.051 [24] - DEBUG: [ApplicationMonitor] Window has changed from '&Yes' (593500) to 'Taskbar' (2033624).
+2024-01-19 08:05:18.053 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> RequestShutdown'.
+2024-01-19 08:05:18.053 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged shutdown request.
+2024-01-19 08:05:18.062 [04] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Shutdown', sending response 'SimpleResponse -> Acknowledged'.
+
+2024-01-19 08:05:18.063 [01] - INFO: Initiating shutdown procedure...
+2024-01-19 08:05:18.071 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (2033624) to 'SplashScreen' (331526).
+2024-01-19 08:05:18.075 [14] - DEBUG: [ClientHost] Received disconnection request with message 'DisconnectionMessage'.
+2024-01-19 08:05:18.116 [01] - DEBUG: [Registry] Stopped monitoring the registry.
+2024-01-19 08:05:18.118 [01] - INFO: Finalizing clipboard...
+2024-01-19 08:05:18.119 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-19 08:05:18.120 [01] - DEBUG: [Clipboard] Stopped clipboard monitoring.
+2024-01-19 08:05:18.120 [01] - INFO: [Clipboard] Finalized clipboard.
+2024-01-19 08:05:18.121 [01] - INFO: Terminating browser...
+2024-01-19 08:05:18.123 [01] - INFO: [BrowserApplication] Initiating termination...
+2024-01-19 08:05:18.640 [01] - DEBUG: [Browser Window #1] Window is closing...
+2024-01-19 08:05:18.664 [01] - DEBUG: [Browser Window #1] Window has been closed.
+2024-01-19 08:05:18.709 [01] - INFO: [BrowserApplication] Closed browser window #1.
+2024-01-19 08:05:18.730 [01] - DEBUG: [BrowserApplication] Successfully initiated cookie deletion.
+2024-01-19 08:05:18.754 [35] - DEBUG: [BrowserApplication] Deleted 2 cookies.
+2024-01-19 08:05:18.860 [01] - INFO: [BrowserApplication] Terminated browser.
+2024-01-19 08:05:18.891 [01] - ERROR: [BrowserApplication] Failed to delete browser cache!
+
+   Exception Message: The process cannot access the file 'Visited Links' because it is being used by another process.
+   Exception Type: System.IO.IOException
+
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at SafeExamBrowser.Browser.BrowserApplication.DeleteCache() in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.Browser\BrowserApplication.cs:line 264
+
+2024-01-19 08:05:18.892 [01] - INFO: Terminating shell...
+2024-01-19 08:05:18.897 [01] - INFO: [Audio] Stopped monitoring the audio device.
+2024-01-19 08:05:18.898 [01] - INFO: [Keyboard] Restored original keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-19 08:05:18.898 [01] - INFO: [NetworkAdapter] Stopped monitoring the network adapter.
+2024-01-19 08:05:18.898 [01] - INFO: [PowerSupply] Stopped monitoring the power supply.
+2024-01-19 08:05:18.899 [01] - INFO: Finalizing system events...
+2024-01-19 08:05:18.900 [01] - INFO: [SystemMonitor] Stopped monitoring the operating system.
+2024-01-19 08:05:18.900 [01] - INFO: Restoring working area...
+2024-01-19 08:05:18.900 [01] - INFO: [DisplayMonitor] Stopped monitoring display changes.
+2024-01-19 08:05:18.901 [01] - INFO: [DisplayMonitor] Restored original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-19 08:05:18.902 [01] - INFO: Finalizing applications...
+2024-01-19 08:05:18.903 [01] - INFO: [ApplicationMonitor] Stopped monitoring applications.
+2024-01-19 08:05:18.905 [01] - INFO: [ApplicationMonitor] Unregistered system capture start event with ID = b6d2db22-4e9f-47e1-9dbf-e96916038105.
+2024-01-19 08:05:18.906 [01] - INFO: [ApplicationMonitor] Unregistered system foreground event with ID = b6d2a1f0-cc00-482c-82bc-0dd91990a2e6.
+2024-01-19 08:05:18.906 [01] - INFO: Stopping mouse interception...
+2024-01-19 08:05:18.907 [01] - INFO: Stopping keyboard interception...
+2024-01-19 08:05:18.908 [01] - INFO: The runtime has already disconnected from the client communication host.
+2024-01-19 08:05:18.908 [01] - INFO: Stopping communication host...
+2024-01-19 08:05:18.909 [01] - DEBUG: [ClientHost] Communication host is closing...
+2024-01-19 08:05:18.913 [01] - DEBUG: [ClientHost] Communication host has been closed.
+2024-01-19 08:05:18.914 [01] - DEBUG: [ClientHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/b44f0b5d-7efa-4bd3-a5f3-00a7d7916f00'.
+2024-01-19 08:05:18.914 [01] - INFO: Closing runtime connection...
+2024-01-19 08:05:18.920 [01] - DEBUG: [RuntimeProxy] Communication channel is closing...
+2024-01-19 08:05:18.921 [01] - DEBUG: [RuntimeProxy] Communication channel has been closed.
+2024-01-19 08:05:18.921 [01] - DEBUG: [RuntimeProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/runtime/88bcdada-49dc-4e01-b3a9-6aa8ffdeb116'.
+2024-01-19 08:05:18.921 [01] - INFO: Successfully disconnected from the runtime.
+2024-01-19 08:05:18.921 [01] - INFO: Application successfully finalized.
+
+# Client instance terminated at 2024-01-19 08:05:18.925

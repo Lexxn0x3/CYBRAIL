@@ -1,0 +1,826 @@
+﻿# New client instance started at 2024-01-12 14:46:09.784
+
+2024-01-12 14:46:09.790 [01] - INFO: Initiating startup procedure...
+2024-01-12 14:46:09.804 [01] - INFO: Loading text data...
+2024-01-12 14:46:09.806 [01] - DEBUG: [Text] System language is 'en', trying to load data...
+2024-01-12 14:46:09.813 [01] - DEBUG: [Text] Data successfully loaded.
+2024-01-12 14:46:09.814 [01] - INFO: Initializing runtime connection...
+2024-01-12 14:46:09.823 [01] - DEBUG: [RuntimeProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/runtime/0d630d30-b919-498f-b6cd-994ac8ce2280' with authentication token '4e9a09b8-fd83-4793-bdd2-a675a2b27785'...
+2024-01-12 14:46:09.880 [01] - DEBUG: [RuntimeProxy] Communication channel is opening...
+2024-01-12 14:46:09.917 [01] - DEBUG: [RuntimeProxy] Communication channel has been opened.
+2024-01-12 14:46:09.947 [01] - DEBUG: [RuntimeProxy] Connection was established.
+2024-01-12 14:46:09.948 [01] - INFO: Successfully connected to the runtime.
+2024-01-12 14:46:09.949 [01] - INFO: Initializing application configuration...
+2024-01-12 14:46:09.952 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ConfigurationNeeded'...
+2024-01-12 14:46:10.165 [01] - DEBUG: [RuntimeProxy] Received response 'ConfigurationResponse' for message 'SimpleMessage -> ConfigurationNeeded'.
+2024-01-12 14:46:10.165 [01] - DEBUG: [RuntimeProxy] Received configuration response.
+2024-01-12 14:46:10.165 [01] - INFO: Successfully retrieved the application configuration from the runtime.
+2024-01-12 14:46:10.165 [01] - INFO:  -> Client-ID: 4d03c88a-8a12-4718-b8f3-487a0ac3e93c
+2024-01-12 14:46:10.166 [01] - INFO:  -> Runtime-ID: f3b4795b-09c1-46d1-a9c8-66690de08ed7
+2024-01-12 14:46:10.166 [01] - INFO:  -> Session-ID: abf0b7e9-7ff8-426a-b218-e0e0eccfc236
+2024-01-12 14:46:10.171 [01] - INFO: Starting communication host...
+2024-01-12 14:46:10.176 [08] - DEBUG: [ClientHost] Communication host is opening...
+2024-01-12 14:46:10.191 [08] - DEBUG: [ClientHost] Communication host has been opened.
+2024-01-12 14:46:10.191 [08] - DEBUG: [ClientHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/bbb74020-1841-4709-a541-5e85d5d54789'.
+2024-01-12 14:46:10.193 [01] - INFO: Starting keyboard interception...
+2024-01-12 14:46:10.197 [01] - INFO: Starting mouse interception...
+2024-01-12 14:46:10.200 [01] - INFO: Initializing applications...
+2024-01-12 14:46:10.864 [01] - DEBUG: [ApplicationMonitor] Initialized 303 currently running processes.
+2024-01-12 14:46:10.867 [01] - DEBUG: [ApplicationMonitor] Initialized blacklist with 46 applications: AA_v3.exe, AeroAdmin.exe, beamyourscreen-host.exe, CamPlay.exe, Camtasia.exe, CamtasiaStudio.exe, Camtasia_Studio.exe, CamRecorder.exe, CamtasiaUtl.exe, chromoting.exe, CiscoCollabHost.exe, CiscoWebExStart.exe, Discord.exe, Element.exe, g2mcomm.exe, g2mcomm.exe, g2mlauncher.exe, g2mstart.exe, GotoMeetingWinStore.exe, join.me.exe, join.me.sentinel.exe, Mikogo-host.exe, MS-teams.exe, obs32.exe, obs64.exe, PCMonitorSrv.exe, pcmontask.exe, ptoneclk.exe, RemotePCDesktop.exe, remoting_host.exe, RPCService.exe, RPCSuite.exe, Skype.exe, SkypeApp.exe, SkypeHost.exe, slack.exe, SRServer.exe, strwinclt.exe, Teams.exe, TeamViewer.exe, Telegram.exe, vncserver.exe, vncviewer.exe, vncserverui.exe, webexmta.exe, Zoom.exe
+2024-01-12 14:46:10.868 [01] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (17116) belongs to application 'Discord.exe' and needs to be terminated.
+2024-01-12 14:46:10.869 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (18344) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.869 [01] - DEBUG: [ApplicationMonitor] Process 'obs64.exe' (21884) belongs to application 'obs64.exe' and needs to be terminated.
+2024-01-12 14:46:10.869 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23668) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.869 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (15876) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.869 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (17168) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.869 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (5916) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23540) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (17488) belongs to application 'Discord.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (22404) belongs to application 'Discord.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (16944) belongs to application 'Discord.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (13184) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (15776) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (12120) belongs to application 'Teams.exe' and needs to be terminated.
+2024-01-12 14:46:10.871 [01] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (16428) belongs to application 'Discord.exe' and needs to be terminated.
+2024-01-12 14:46:10.872 [01] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (16396) belongs to application 'Discord.exe' and needs to be terminated.
+2024-01-12 14:46:10.873 [01] - DEBUG: [ApplicationMonitor] Initialized whitelist with 0 applications.
+2024-01-12 14:46:10.876 [01] - INFO: The following applications need to be terminated: Discord.exe, Teams.exe, obs64.exe.
+2024-01-12 14:46:20.725 [01] - INFO: The user chose to automatically terminate all running applications.
+2024-01-12 14:46:20.726 [01] - DEBUG: [Process 'Discord.exe' (17116)] Attempting to close process...
+2024-01-12 14:46:20.731 [01] - WARNING: [Process 'Discord.exe' (17116)] Failed to send close message to main window!
+2024-01-12 14:46:20.731 [01] - DEBUG: [Process 'Discord.exe' (17116)] Attempting to close process...
+2024-01-12 14:46:20.737 [01] - WARNING: [Process 'Discord.exe' (17116)] Failed to send close message to main window!
+2024-01-12 14:46:20.737 [01] - DEBUG: [Process 'Discord.exe' (17116)] Attempting to close process...
+2024-01-12 14:46:20.741 [01] - WARNING: [Process 'Discord.exe' (17116)] Failed to send close message to main window!
+2024-01-12 14:46:20.742 [01] - DEBUG: [Process 'Discord.exe' (17116)] Attempting to close process...
+2024-01-12 14:46:20.745 [01] - WARNING: [Process 'Discord.exe' (17116)] Failed to send close message to main window!
+2024-01-12 14:46:20.746 [01] - DEBUG: [Process 'Discord.exe' (17116)] Attempting to close process...
+2024-01-12 14:46:20.750 [01] - WARNING: [Process 'Discord.exe' (17116)] Failed to send close message to main window!
+2024-01-12 14:46:20.751 [01] - DEBUG: [Process 'Discord.exe' (17116)] Attempting to kill process...
+2024-01-12 14:46:20.819 [01] - DEBUG: [Process 'Discord.exe' (17116)] Process has terminated within 500ms.
+2024-01-12 14:46:20.820 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Discord.exe' (17116).
+2024-01-12 14:46:20.820 [01] - DEBUG: [Process 'Discord.exe' (17488)] Attempting to close process...
+2024-01-12 14:46:20.826 [01] - WARNING: [Process 'Discord.exe' (17488)] Failed to send close message to main window!
+2024-01-12 14:46:20.827 [01] - DEBUG: [Process 'Discord.exe' (17488)] Attempting to close process...
+2024-01-12 14:46:20.830 [01] - WARNING: [Process 'Discord.exe' (17488)] Failed to send close message to main window!
+2024-01-12 14:46:20.830 [01] - DEBUG: [Process 'Discord.exe' (17488)] Attempting to close process...
+2024-01-12 14:46:20.834 [01] - WARNING: [Process 'Discord.exe' (17488)] Failed to send close message to main window!
+2024-01-12 14:46:20.835 [01] - DEBUG: [Process 'Discord.exe' (17488)] Attempting to close process...
+2024-01-12 14:46:20.840 [01] - WARNING: [Process 'Discord.exe' (17488)] Failed to send close message to main window!
+2024-01-12 14:46:20.841 [01] - DEBUG: [Process 'Discord.exe' (17488)] Attempting to close process...
+2024-01-12 14:46:20.845 [01] - WARNING: [Process 'Discord.exe' (17488)] Failed to send close message to main window!
+2024-01-12 14:46:20.845 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Discord.exe' (17488).
+2024-01-12 14:46:20.846 [01] - DEBUG: [Process 'Discord.exe' (22404)] Attempting to close process...
+2024-01-12 14:46:20.872 [01] - ERROR: [Process 'Discord.exe' (22404)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.873 [01] - DEBUG: [Process 'Discord.exe' (22404)] Attempting to close process...
+2024-01-12 14:46:20.877 [01] - ERROR: [Process 'Discord.exe' (22404)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.877 [01] - DEBUG: [Process 'Discord.exe' (22404)] Attempting to close process...
+2024-01-12 14:46:20.881 [01] - ERROR: [Process 'Discord.exe' (22404)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.882 [01] - DEBUG: [Process 'Discord.exe' (22404)] Attempting to close process...
+2024-01-12 14:46:20.886 [01] - ERROR: [Process 'Discord.exe' (22404)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.887 [01] - DEBUG: [Process 'Discord.exe' (22404)] Attempting to close process...
+2024-01-12 14:46:20.891 [01] - ERROR: [Process 'Discord.exe' (22404)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.892 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Discord.exe' (22404).
+2024-01-12 14:46:20.892 [01] - DEBUG: [Process 'Discord.exe' (16944)] Attempting to close process...
+2024-01-12 14:46:20.897 [01] - ERROR: [Process 'Discord.exe' (16944)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.899 [01] - DEBUG: [Process 'Discord.exe' (16944)] Attempting to close process...
+2024-01-12 14:46:20.904 [01] - ERROR: [Process 'Discord.exe' (16944)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.904 [01] - DEBUG: [Process 'Discord.exe' (16944)] Attempting to close process...
+2024-01-12 14:46:20.909 [01] - ERROR: [Process 'Discord.exe' (16944)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.910 [01] - DEBUG: [Process 'Discord.exe' (16944)] Attempting to close process...
+2024-01-12 14:46:20.913 [01] - ERROR: [Process 'Discord.exe' (16944)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.914 [01] - DEBUG: [Process 'Discord.exe' (16944)] Attempting to close process...
+2024-01-12 14:46:20.918 [01] - ERROR: [Process 'Discord.exe' (16944)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.918 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Discord.exe' (16944).
+2024-01-12 14:46:20.918 [01] - DEBUG: [Process 'Discord.exe' (16428)] Attempting to close process...
+2024-01-12 14:46:20.922 [01] - ERROR: [Process 'Discord.exe' (16428)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.923 [01] - DEBUG: [Process 'Discord.exe' (16428)] Attempting to close process...
+2024-01-12 14:46:20.927 [01] - ERROR: [Process 'Discord.exe' (16428)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.929 [01] - DEBUG: [Process 'Discord.exe' (16428)] Attempting to close process...
+2024-01-12 14:46:20.933 [01] - ERROR: [Process 'Discord.exe' (16428)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.934 [01] - DEBUG: [Process 'Discord.exe' (16428)] Attempting to close process...
+2024-01-12 14:46:20.939 [01] - ERROR: [Process 'Discord.exe' (16428)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.939 [01] - DEBUG: [Process 'Discord.exe' (16428)] Attempting to close process...
+2024-01-12 14:46:20.944 [01] - ERROR: [Process 'Discord.exe' (16428)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.945 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Discord.exe' (16428).
+2024-01-12 14:46:20.945 [01] - DEBUG: [Process 'Discord.exe' (16396)] Attempting to close process...
+2024-01-12 14:46:20.949 [01] - ERROR: [Process 'Discord.exe' (16396)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.950 [01] - DEBUG: [Process 'Discord.exe' (16396)] Attempting to close process...
+2024-01-12 14:46:20.954 [01] - ERROR: [Process 'Discord.exe' (16396)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.955 [01] - DEBUG: [Process 'Discord.exe' (16396)] Attempting to close process...
+2024-01-12 14:46:20.959 [01] - ERROR: [Process 'Discord.exe' (16396)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.959 [01] - DEBUG: [Process 'Discord.exe' (16396)] Attempting to close process...
+2024-01-12 14:46:20.963 [01] - ERROR: [Process 'Discord.exe' (16396)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.964 [01] - DEBUG: [Process 'Discord.exe' (16396)] Attempting to close process...
+2024-01-12 14:46:20.969 [01] - ERROR: [Process 'Discord.exe' (16396)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:20.969 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Discord.exe' (16396).
+2024-01-12 14:46:20.970 [01] - INFO: Successfully terminated application 'Discord.exe'.
+2024-01-12 14:46:20.970 [01] - DEBUG: [Process 'Teams.exe' (18344)] Attempting to close process...
+2024-01-12 14:46:20.973 [01] - WARNING: [Process 'Teams.exe' (18344)] Failed to send close message to main window!
+2024-01-12 14:46:20.974 [01] - DEBUG: [Process 'Teams.exe' (18344)] Attempting to close process...
+2024-01-12 14:46:20.977 [01] - WARNING: [Process 'Teams.exe' (18344)] Failed to send close message to main window!
+2024-01-12 14:46:20.978 [01] - DEBUG: [Process 'Teams.exe' (18344)] Attempting to close process...
+2024-01-12 14:46:20.984 [01] - WARNING: [Process 'Teams.exe' (18344)] Failed to send close message to main window!
+2024-01-12 14:46:20.984 [01] - DEBUG: [Process 'Teams.exe' (18344)] Attempting to close process...
+2024-01-12 14:46:20.987 [01] - WARNING: [Process 'Teams.exe' (18344)] Failed to send close message to main window!
+2024-01-12 14:46:20.989 [01] - DEBUG: [Process 'Teams.exe' (18344)] Attempting to close process...
+2024-01-12 14:46:20.992 [01] - WARNING: [Process 'Teams.exe' (18344)] Failed to send close message to main window!
+2024-01-12 14:46:20.992 [01] - DEBUG: [Process 'Teams.exe' (18344)] Attempting to kill process...
+2024-01-12 14:46:21.143 [01] - DEBUG: [Process 'Teams.exe' (18344)] Process has terminated within 500ms.
+2024-01-12 14:46:21.143 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (18344).
+2024-01-12 14:46:21.144 [01] - DEBUG: [Process 'Teams.exe' (23668)] Attempting to close process...
+2024-01-12 14:46:21.148 [01] - ERROR: [Process 'Teams.exe' (23668)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.149 [01] - DEBUG: [Process 'Teams.exe' (23668)] Attempting to close process...
+2024-01-12 14:46:21.153 [01] - ERROR: [Process 'Teams.exe' (23668)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.153 [01] - DEBUG: [Process 'Teams.exe' (23668)] Attempting to close process...
+2024-01-12 14:46:21.157 [01] - ERROR: [Process 'Teams.exe' (23668)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.157 [01] - DEBUG: [Process 'Teams.exe' (23668)] Attempting to close process...
+2024-01-12 14:46:21.162 [01] - ERROR: [Process 'Teams.exe' (23668)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.163 [01] - DEBUG: [Process 'Teams.exe' (23668)] Attempting to close process...
+2024-01-12 14:46:21.167 [01] - ERROR: [Process 'Teams.exe' (23668)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.187 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (23668).
+2024-01-12 14:46:21.197 [01] - DEBUG: [Process 'Teams.exe' (15876)] Attempting to close process...
+2024-01-12 14:46:21.200 [01] - WARNING: [Process 'Teams.exe' (15876)] Failed to send close message to main window!
+2024-01-12 14:46:21.201 [01] - DEBUG: [Process 'Teams.exe' (15876)] Attempting to close process...
+2024-01-12 14:46:21.205 [01] - WARNING: [Process 'Teams.exe' (15876)] Failed to send close message to main window!
+2024-01-12 14:46:21.205 [01] - DEBUG: [Process 'Teams.exe' (15876)] Attempting to close process...
+2024-01-12 14:46:21.210 [01] - WARNING: [Process 'Teams.exe' (15876)] Failed to send close message to main window!
+2024-01-12 14:46:21.211 [01] - DEBUG: [Process 'Teams.exe' (15876)] Attempting to close process...
+2024-01-12 14:46:21.215 [01] - WARNING: [Process 'Teams.exe' (15876)] Failed to send close message to main window!
+2024-01-12 14:46:21.216 [01] - DEBUG: [Process 'Teams.exe' (15876)] Attempting to close process...
+2024-01-12 14:46:21.220 [01] - WARNING: [Process 'Teams.exe' (15876)] Failed to send close message to main window!
+2024-01-12 14:46:21.221 [01] - DEBUG: [Process 'Teams.exe' (15876)] Attempting to kill process...
+2024-01-12 14:46:21.281 [01] - DEBUG: [Process 'Teams.exe' (15876)] Process has terminated within 500ms.
+2024-01-12 14:46:21.281 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (15876).
+2024-01-12 14:46:21.282 [01] - DEBUG: [Process 'Teams.exe' (17168)] Attempting to close process...
+2024-01-12 14:46:21.286 [01] - WARNING: [Process 'Teams.exe' (17168)] Failed to send close message to main window!
+2024-01-12 14:46:21.286 [01] - DEBUG: [Process 'Teams.exe' (17168)] Attempting to close process...
+2024-01-12 14:46:21.291 [01] - WARNING: [Process 'Teams.exe' (17168)] Failed to send close message to main window!
+2024-01-12 14:46:21.291 [01] - DEBUG: [Process 'Teams.exe' (17168)] Attempting to close process...
+2024-01-12 14:46:21.296 [01] - WARNING: [Process 'Teams.exe' (17168)] Failed to send close message to main window!
+2024-01-12 14:46:21.296 [01] - DEBUG: [Process 'Teams.exe' (17168)] Attempting to close process...
+2024-01-12 14:46:21.301 [01] - WARNING: [Process 'Teams.exe' (17168)] Failed to send close message to main window!
+2024-01-12 14:46:21.302 [01] - DEBUG: [Process 'Teams.exe' (17168)] Attempting to close process...
+2024-01-12 14:46:21.307 [01] - WARNING: [Process 'Teams.exe' (17168)] Failed to send close message to main window!
+2024-01-12 14:46:21.307 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (17168).
+2024-01-12 14:46:21.307 [01] - DEBUG: [Process 'Teams.exe' (5916)] Attempting to close process...
+2024-01-12 14:46:21.313 [01] - WARNING: [Process 'Teams.exe' (5916)] Failed to send close message to main window!
+2024-01-12 14:46:21.314 [01] - DEBUG: [Process 'Teams.exe' (5916)] Attempting to close process...
+2024-01-12 14:46:21.318 [01] - WARNING: [Process 'Teams.exe' (5916)] Failed to send close message to main window!
+2024-01-12 14:46:21.318 [01] - DEBUG: [Process 'Teams.exe' (5916)] Attempting to close process...
+2024-01-12 14:46:21.322 [01] - WARNING: [Process 'Teams.exe' (5916)] Failed to send close message to main window!
+2024-01-12 14:46:21.323 [01] - DEBUG: [Process 'Teams.exe' (5916)] Attempting to close process...
+2024-01-12 14:46:21.327 [01] - WARNING: [Process 'Teams.exe' (5916)] Failed to send close message to main window!
+2024-01-12 14:46:21.327 [01] - DEBUG: [Process 'Teams.exe' (5916)] Attempting to close process...
+2024-01-12 14:46:21.331 [01] - WARNING: [Process 'Teams.exe' (5916)] Failed to send close message to main window!
+2024-01-12 14:46:21.332 [01] - DEBUG: [Process 'Teams.exe' (5916)] Attempting to kill process...
+2024-01-12 14:46:21.543 [01] - DEBUG: [Process 'Teams.exe' (5916)] Process has terminated within 500ms.
+2024-01-12 14:46:21.543 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (5916).
+2024-01-12 14:46:21.543 [01] - DEBUG: [Process 'Teams.exe' (23540)] Attempting to close process...
+2024-01-12 14:46:21.547 [01] - ERROR: [Process 'Teams.exe' (23540)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.548 [01] - DEBUG: [Process 'Teams.exe' (23540)] Attempting to close process...
+2024-01-12 14:46:21.552 [01] - ERROR: [Process 'Teams.exe' (23540)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.552 [01] - DEBUG: [Process 'Teams.exe' (23540)] Attempting to close process...
+2024-01-12 14:46:21.556 [01] - ERROR: [Process 'Teams.exe' (23540)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.557 [01] - DEBUG: [Process 'Teams.exe' (23540)] Attempting to close process...
+2024-01-12 14:46:21.561 [01] - ERROR: [Process 'Teams.exe' (23540)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.562 [01] - DEBUG: [Process 'Teams.exe' (23540)] Attempting to close process...
+2024-01-12 14:46:21.566 [01] - ERROR: [Process 'Teams.exe' (23540)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.566 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (23540).
+2024-01-12 14:46:21.566 [01] - DEBUG: [Process 'Teams.exe' (13184)] Attempting to close process...
+2024-01-12 14:46:21.569 [01] - ERROR: [Process 'Teams.exe' (13184)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.569 [01] - DEBUG: [Process 'Teams.exe' (13184)] Attempting to close process...
+2024-01-12 14:46:21.573 [01] - ERROR: [Process 'Teams.exe' (13184)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.573 [01] - DEBUG: [Process 'Teams.exe' (13184)] Attempting to close process...
+2024-01-12 14:46:21.577 [01] - ERROR: [Process 'Teams.exe' (13184)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.577 [01] - DEBUG: [Process 'Teams.exe' (13184)] Attempting to close process...
+2024-01-12 14:46:21.582 [01] - ERROR: [Process 'Teams.exe' (13184)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.582 [01] - DEBUG: [Process 'Teams.exe' (13184)] Attempting to close process...
+2024-01-12 14:46:21.586 [01] - ERROR: [Process 'Teams.exe' (13184)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.587 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (13184).
+2024-01-12 14:46:21.587 [01] - DEBUG: [Process 'Teams.exe' (15776)] Attempting to close process...
+2024-01-12 14:46:21.591 [01] - ERROR: [Process 'Teams.exe' (15776)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.592 [01] - DEBUG: [Process 'Teams.exe' (15776)] Attempting to close process...
+2024-01-12 14:46:21.596 [01] - ERROR: [Process 'Teams.exe' (15776)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.596 [01] - DEBUG: [Process 'Teams.exe' (15776)] Attempting to close process...
+2024-01-12 14:46:21.600 [01] - ERROR: [Process 'Teams.exe' (15776)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.600 [01] - DEBUG: [Process 'Teams.exe' (15776)] Attempting to close process...
+2024-01-12 14:46:21.604 [01] - ERROR: [Process 'Teams.exe' (15776)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.605 [01] - DEBUG: [Process 'Teams.exe' (15776)] Attempting to close process...
+2024-01-12 14:46:21.618 [01] - ERROR: [Process 'Teams.exe' (15776)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.619 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (15776).
+2024-01-12 14:46:21.619 [01] - DEBUG: [Process 'Teams.exe' (12120)] Attempting to close process...
+2024-01-12 14:46:21.623 [01] - ERROR: [Process 'Teams.exe' (12120)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.623 [01] - DEBUG: [Process 'Teams.exe' (12120)] Attempting to close process...
+2024-01-12 14:46:21.628 [01] - ERROR: [Process 'Teams.exe' (12120)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.628 [01] - DEBUG: [Process 'Teams.exe' (12120)] Attempting to close process...
+2024-01-12 14:46:21.632 [01] - ERROR: [Process 'Teams.exe' (12120)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.633 [01] - DEBUG: [Process 'Teams.exe' (12120)] Attempting to close process...
+2024-01-12 14:46:21.636 [01] - ERROR: [Process 'Teams.exe' (12120)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.637 [01] - DEBUG: [Process 'Teams.exe' (12120)] Attempting to close process...
+2024-01-12 14:46:21.641 [01] - ERROR: [Process 'Teams.exe' (12120)] Failed to close main window!
+
+   Exception Message: Process has exited, so the requested information is not available.
+   Exception Type: System.InvalidOperationException
+
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_MainWindowHandle()
+   at System.Diagnostics.Process.CloseMainWindow()
+   at SafeExamBrowser.WindowsApi.Processes.Process.TryClose(Int32 timeout_ms) in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.WindowsApi\Processes\Process.cs:line 75
+
+2024-01-12 14:46:21.642 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'Teams.exe' (12120).
+2024-01-12 14:46:21.642 [01] - INFO: Successfully terminated application 'Teams.exe'.
+2024-01-12 14:46:21.643 [01] - DEBUG: [Process 'obs64.exe' (21884)] Attempting to close process...
+2024-01-12 14:46:21.646 [01] - WARNING: [Process 'obs64.exe' (21884)] Failed to send close message to main window!
+2024-01-12 14:46:21.647 [01] - DEBUG: [Process 'obs64.exe' (21884)] Attempting to close process...
+2024-01-12 14:46:21.650 [01] - WARNING: [Process 'obs64.exe' (21884)] Failed to send close message to main window!
+2024-01-12 14:46:21.650 [01] - DEBUG: [Process 'obs64.exe' (21884)] Attempting to close process...
+2024-01-12 14:46:21.653 [01] - WARNING: [Process 'obs64.exe' (21884)] Failed to send close message to main window!
+2024-01-12 14:46:21.654 [01] - DEBUG: [Process 'obs64.exe' (21884)] Attempting to close process...
+2024-01-12 14:46:21.657 [01] - WARNING: [Process 'obs64.exe' (21884)] Failed to send close message to main window!
+2024-01-12 14:46:21.659 [01] - DEBUG: [Process 'obs64.exe' (21884)] Attempting to close process...
+2024-01-12 14:46:21.663 [01] - WARNING: [Process 'obs64.exe' (21884)] Failed to send close message to main window!
+2024-01-12 14:46:21.663 [01] - DEBUG: [Process 'obs64.exe' (21884)] Attempting to kill process...
+2024-01-12 14:46:21.819 [01] - DEBUG: [Process 'obs64.exe' (21884)] Process has terminated within 500ms.
+2024-01-12 14:46:21.819 [01] - INFO: [ApplicationMonitor] Successfully terminated process 'obs64.exe' (21884).
+2024-01-12 14:46:21.819 [01] - INFO: Successfully terminated application 'obs64.exe'.
+2024-01-12 14:46:21.819 [01] - INFO: [ApplicationMonitor] Started monitoring applications.
+2024-01-12 14:46:21.819 [01] - INFO: [ApplicationMonitor] Registered system capture start event with ID = 7ac8241a-9ea4-49e8-8ba5-68aa4b585233.
+2024-01-12 14:46:21.819 [01] - INFO: [ApplicationMonitor] Registered system foreground event with ID = 44faf7a6-2c07-4e52-9105-73f29b45e942.
+2024-01-12 14:46:21.819 [01] - INFO: Initializing working area...
+2024-01-12 14:46:21.829 [01] - INFO: [DisplayMonitor] Disabled sleep mode and display timeout.
+2024-01-12 14:46:21.829 [01] - DEBUG: [Taskbar] Calculated physical taskbar height is 50px.
+2024-01-12 14:46:21.829 [01] - INFO: [DisplayMonitor] Saved original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-12 14:46:21.829 [01] - INFO: [DisplayMonitor] Trying to set new working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-12 14:46:21.829 [01] - INFO: [DisplayMonitor] Working area of DISPLAY1 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1030.
+2024-01-12 14:46:21.829 [01] - INFO: [DisplayMonitor] Started monitoring display changes.
+2024-01-12 14:46:21.829 [01] - INFO: Initializing system events...
+2024-01-12 14:46:21.844 [01] - INFO: [SystemMonitor] Started monitoring the operating system.
+2024-01-12 14:46:21.844 [01] - INFO: Initializing shell...
+2024-01-12 14:46:21.905 [01] - INFO: [Audio] Found 'Kopfhörer (Jabra Link 380)' to be the active audio device.
+2024-01-12 14:46:22.030 [01] - INFO: [Audio] Started monitoring the audio device.
+2024-01-12 14:46:22.046 [01] - INFO: [Keyboard] Saved current keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-12 14:46:22.046 [01] - INFO: [Keyboard] Detected keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-12 14:46:22.046 [01] - INFO: [Keyboard] Detected keyboard layout 'English (United States)' [ENG, US].
+2024-01-12 14:46:22.139 [01] - INFO: [NetworkAdapter] Connection established.
+2024-01-12 14:46:22.139 [01] - INFO: [NetworkAdapter] Started monitoring the network adapter.
+2024-01-12 14:46:22.139 [01] - INFO: [PowerSupply] Started monitoring the power supply.
+2024-01-12 14:46:22.155 [01] - INFO: Initializing action center...
+2024-01-12 14:46:22.171 [01] - DEBUG: [PowerSupply] Power grid is connected, battery charge at 100%.
+2024-01-12 14:46:22.186 [01] - INFO: Initializing taskbar...
+2024-01-12 14:46:22.202 [01] - INFO: Initializing task view...
+2024-01-12 14:46:22.217 [01] - INFO: Initializing browser...
+2024-01-12 14:46:22.217 [01] - INFO: [BrowserApplication] Starting initialization...
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] Accept Language: en-US
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] Cache Path: C:\Users\pasca\AppData\Local\SafeExamBrowser\Cache
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] Engine Version: Chromium 118.0.5993.117, CEF r118.6.8+ge44bee1+chromium-118.0.5993.117, CefSharp 118.6.80.0
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] Log File: C:\Users\pasca\AppData\Local\SafeExamBrowser\Logs\2024-01-12_14h46m05s_Browser.log
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] Log Severity: Info.
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] PDF Reader: Enabled.
+2024-01-12 14:46:22.311 [01] - DEBUG: [BrowserApplication] Session Persistence: Enabled.
+2024-01-12 14:46:22.389 [01] - DEBUG: [BrowserApplication] Browser Exam Key (BEK) transmission is enabled.
+2024-01-12 14:46:22.389 [01] - DEBUG: [BrowserApplication] Configuration Key (CK) transmission is enabled.
+2024-01-12 14:46:22.389 [01] - DEBUG: [BrowserApplication] The browser application will be using the default browser exam key.
+2024-01-12 14:46:22.389 [01] - INFO: [BrowserApplication] Initialized browser.
+2024-01-12 14:46:22.405 [01] - INFO: Initializing clipboard...
+2024-01-12 14:46:22.405 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-12 14:46:22.405 [01] - DEBUG: [Clipboard] Started clipboard monitoring with interval 50 ms.
+2024-01-12 14:46:22.405 [01] - INFO: [Clipboard] Initialized clipboard for policy 'Isolated'.
+2024-01-12 14:46:22.436 [01] - DEBUG: [Taskbar] Set taskbar bounds to 1536x40 at (0/824), in physical pixels: 1920x50 at (0/1030).
+2024-01-12 14:46:22.436 [01] - INFO: Auto-starting browser...
+2024-01-12 14:46:22.499 [01] - DEBUG: [Browser Window #1] Initialized browser control.
+2024-01-12 14:46:22.608 [01] - DEBUG: [Browser Window #1] Initialized browser window.
+2024-01-12 14:46:22.608 [01] - INFO: [BrowserApplication] Created browser window #1.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'ContactVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '1'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'CursorBaseSize' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '32'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'GestureVisualization' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '31'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'Scheme Source' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: '2'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'AppStarting' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_working.ani'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'Arrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_arrow.cur'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'Crosshair' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'Hand' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_link.cur'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'Help' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_helpsel.cur'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'IBeam' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: ''.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'No' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_unavail.cur'.
+2024-01-12 14:46:22.624 [01] - DEBUG: [Registry] Started monitoring value 'NWPen' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_pen.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'SizeAll' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_move.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'SizeNESW' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nesw.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'SizeNS' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ns.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'SizeNWSE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_nwse.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'SizeWE' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_ew.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'UpArrow' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_up.cur'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'Wait' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'C:\Windows\cursors\aero_busy.ani'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value '' from registry key 'HKEY_CURRENT_USER\Control Panel\Cursors'. Initial value: 'Windows-Voreinstellung'.
+2024-01-12 14:46:22.640 [01] - DEBUG: [Registry] Started monitoring value 'Debugger' from registry key 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Utilman.exe'. Initial value: ''.
+2024-01-12 14:46:22.640 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> ClientIsReady'...
+2024-01-12 14:46:22.655 [24] - DEBUG: [ApplicationMonitor] Window has changed from  to 'Taskbar' (461754).
+2024-01-12 14:46:22.655 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (461754) to '' (265330).
+2024-01-12 14:46:22.655 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> ClientIsReady'.
+2024-01-12 14:46:22.655 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged that the client is ready.
+2024-01-12 14:46:22.655 [01] - INFO: Application successfully initialized.
+
+2024-01-12 14:46:22.702 [24] - DEBUG: [ApplicationMonitor] Window has changed from '' (265330) to 'ActionCenter' (134156).
+2024-01-12 14:46:22.718 [16] - DEBUG: [ClientHost] Received connection request with authentication token '4e9a09b8-fd83-4793-bdd2-a675a2b27785'.
+2024-01-12 14:46:22.718 [16] - DEBUG: [ClientHost] Accepted connection request.
+2024-01-12 14:46:22.749 [07] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Authenticate', sending response 'AuthenticationResponse'.
+2024-01-12 14:46:22.892 [37] - DEBUG: [KeyGenerator] Initializing browser exam key...
+2024-01-12 14:46:22.893 [37] - WARNING: [KeyGenerator] The current configuration does not contain a salt value for the browser exam key!
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'SearchFilterHost.exe' (25704) has been started [Original Name: n/a, Path: n/a, Signature: n/a].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'SearchProtocolHost.exe' (24216) has been started [Original Name: n/a, Path: n/a, Signature: n/a].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (10256) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (10756) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (19048) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (21976) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (20660) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\Program Files\SafeExamBrowser\Application\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2].
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (17116) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (18344) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'obs64.exe' (21884) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23668) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (15876) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'conhost.exe' (26452) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (17168) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (5916) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (23540) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (17488) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (22404) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (16944) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (13184) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'svchost.exe' (9356) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'obs-ffmpeg-mux.exe' (7696) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'RuntimeBroker.exe' (7832) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (15776) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Teams.exe' (12120) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (16428) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'Discord.exe' (16396) has been terminated.
+2024-01-12 14:46:24.352 [33] - DEBUG: [ApplicationMonitor] Process 'chrome.exe' (13364) has been terminated.
+2024-01-12 14:46:24.461 [37] - DEBUG: [KeyGenerator] Successfully calculated browser exam key using integrity module.
+2024-01-12 14:46:25.300 [35] - ERROR: [Browser Window #1] Failed to initialize JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:46:25.300 [34] - ERROR: [Browser Window #1] Failed to execute JavaScript: JavaScript can't be executed in main frame!
+2024-01-12 14:46:25.307 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'ActionCenter' (134156) to '' (265330).
+2024-01-12 14:46:27.299 [24] - DEBUG: [ApplicationMonitor] Window has changed from '' (265330) to 'Reload?' (789056).
+2024-01-12 14:46:29.236 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Reload?' (789056) to '&Yes' (199688).
+2024-01-12 14:46:29.346 [01] - DEBUG: [Browser Window #1] The user confirmed reloading the current page...
+2024-01-12 14:46:29.346 [24] - DEBUG: [ApplicationMonitor] Window has changed from '&Yes' (199688) to '' (265330).
+2024-01-12 14:46:29.361 [31] - INFO: [Browser Window #1] Request was aborted.
+2024-01-12 14:46:31.760 [24] - DEBUG: [ApplicationMonitor] Window has changed from '' (265330) to 'Taskbar' (461754).
+2024-01-12 14:46:31.760 [23] - DEBUG: [ApplicationMonitor] Window has changed from '' (265330) to 'Taskbar' (461754).
+2024-01-12 14:46:31.921 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (461754) to 'Quit?' (854592).
+2024-01-12 14:46:31.959 [35] - DEBUG: [ApplicationMonitor] Process 'svchost.exe' (7228) has been terminated.
+2024-01-12 14:46:33.135 [23] - DEBUG: [ApplicationMonitor] Window has changed from 'Quit?' (854592) to '&Yes' (986078).
+2024-01-12 14:46:33.202 [01] - INFO: The user chose to terminate the application.
+2024-01-12 14:46:33.203 [01] - DEBUG: [RuntimeProxy] Sending message 'SimpleMessage -> RequestShutdown'...
+2024-01-12 14:46:33.204 [24] - DEBUG: [ApplicationMonitor] Window has changed from '&Yes' (986078) to 'Taskbar' (461754).
+2024-01-12 14:46:33.206 [01] - DEBUG: [RuntimeProxy] Received response 'SimpleResponse -> Acknowledged' for message 'SimpleMessage -> RequestShutdown'.
+2024-01-12 14:46:33.206 [01] - DEBUG: [RuntimeProxy] Runtime acknowledged shutdown request.
+2024-01-12 14:46:33.221 [16] - DEBUG: [ClientHost] Received message 'SimpleMessage -> Shutdown', sending response 'SimpleResponse -> Acknowledged'.
+
+2024-01-12 14:46:33.222 [01] - INFO: Initiating shutdown procedure...
+2024-01-12 14:46:33.235 [24] - DEBUG: [ApplicationMonitor] Window has changed from 'Taskbar' (461754) to 'SplashScreen' (331002).
+2024-01-12 14:46:33.238 [07] - DEBUG: [ClientHost] Received disconnection request with message 'DisconnectionMessage'.
+2024-01-12 14:46:33.276 [01] - DEBUG: [Registry] Stopped monitoring the registry.
+2024-01-12 14:46:33.278 [01] - INFO: Finalizing clipboard...
+2024-01-12 14:46:33.279 [01] - DEBUG: [Clipboard] Cleared clipboard.
+2024-01-12 14:46:33.279 [01] - DEBUG: [Clipboard] Stopped clipboard monitoring.
+2024-01-12 14:46:33.279 [01] - INFO: [Clipboard] Finalized clipboard.
+2024-01-12 14:46:33.281 [01] - INFO: Terminating browser...
+2024-01-12 14:46:33.284 [01] - INFO: [BrowserApplication] Initiating termination...
+2024-01-12 14:46:33.797 [01] - DEBUG: [Browser Window #1] Window is closing...
+2024-01-12 14:46:33.832 [01] - DEBUG: [Browser Window #1] Window has been closed.
+2024-01-12 14:46:33.863 [01] - INFO: [BrowserApplication] Closed browser window #1.
+2024-01-12 14:46:33.871 [01] - DEBUG: [BrowserApplication] Successfully initiated cookie deletion.
+2024-01-12 14:46:33.873 [22] - DEBUG: [BrowserApplication] Deleted 0 cookies.
+2024-01-12 14:46:33.976 [01] - INFO: [BrowserApplication] Terminated browser.
+2024-01-12 14:46:34.005 [01] - ERROR: [BrowserApplication] Failed to delete browser cache!
+
+   Exception Message: The process cannot access the file 'Visited Links' because it is being used by another process.
+   Exception Type: System.IO.IOException
+
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at SafeExamBrowser.Browser.BrowserApplication.DeleteCache() in C:\Users\appveyor\projects\seb-win-refactoring-phv3mbelx16fm9ou\SafeExamBrowser.Browser\BrowserApplication.cs:line 264
+
+2024-01-12 14:46:34.006 [01] - INFO: Terminating shell...
+2024-01-12 14:46:34.012 [01] - INFO: [Audio] Stopped monitoring the audio device.
+2024-01-12 14:46:34.013 [01] - INFO: [Keyboard] Restored original keyboard layout 'Deutsch (Deutschland)' [DEU, German].
+2024-01-12 14:46:34.013 [01] - INFO: [NetworkAdapter] Stopped monitoring the network adapter.
+2024-01-12 14:46:34.013 [01] - INFO: [PowerSupply] Stopped monitoring the power supply.
+2024-01-12 14:46:34.014 [01] - INFO: Finalizing system events...
+2024-01-12 14:46:34.015 [01] - INFO: [SystemMonitor] Stopped monitoring the operating system.
+2024-01-12 14:46:34.015 [01] - INFO: Restoring working area...
+2024-01-12 14:46:34.016 [01] - INFO: [DisplayMonitor] Stopped monitoring display changes.
+2024-01-12 14:46:34.017 [01] - INFO: [DisplayMonitor] Restored original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1020.
+2024-01-12 14:46:34.017 [01] - INFO: Finalizing applications...
+2024-01-12 14:46:34.019 [01] - INFO: [ApplicationMonitor] Stopped monitoring applications.
+2024-01-12 14:46:34.020 [01] - INFO: [ApplicationMonitor] Unregistered system capture start event with ID = 7ac8241a-9ea4-49e8-8ba5-68aa4b585233.
+2024-01-12 14:46:34.021 [01] - INFO: [ApplicationMonitor] Unregistered system foreground event with ID = 44faf7a6-2c07-4e52-9105-73f29b45e942.
+2024-01-12 14:46:34.021 [01] - INFO: Stopping mouse interception...
+2024-01-12 14:46:34.022 [01] - INFO: Stopping keyboard interception...
+2024-01-12 14:46:34.023 [01] - INFO: The runtime has already disconnected from the client communication host.
+2024-01-12 14:46:34.024 [01] - INFO: Stopping communication host...
+2024-01-12 14:46:34.025 [01] - DEBUG: [ClientHost] Communication host is closing...
+2024-01-12 14:46:34.030 [01] - DEBUG: [ClientHost] Communication host has been closed.
+2024-01-12 14:46:34.030 [01] - DEBUG: [ClientHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/bbb74020-1841-4709-a541-5e85d5d54789'.
+2024-01-12 14:46:34.031 [01] - INFO: Closing runtime connection...
+2024-01-12 14:46:34.040 [01] - DEBUG: [RuntimeProxy] Communication channel is closing...
+2024-01-12 14:46:34.041 [01] - DEBUG: [RuntimeProxy] Communication channel has been closed.
+2024-01-12 14:46:34.042 [01] - DEBUG: [RuntimeProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/runtime/0d630d30-b919-498f-b6cd-994ac8ce2280'.
+2024-01-12 14:46:34.042 [01] - INFO: Successfully disconnected from the runtime.
+2024-01-12 14:46:34.042 [01] - INFO: Application successfully finalized.
+
+# Client instance terminated at 2024-01-12 14:46:34.047
