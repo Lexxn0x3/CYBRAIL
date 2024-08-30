@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI Output</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .indented {
+            padding-left: 20px; /* Adjust the padding as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">CLI Output</h1>
+        
+        <!-- Edit Config Button -->
+        <a href="/logfilelist" class="btn btn-warning mb-4">Edit Config</a>
+        
+        <div class="p-4 bg-dark text-light rounded">
+            {{range .Output}}
+            <div>
+                <h4>{{.student}}</h4>
+                <p>Status: 
+                    <span class="{{if eq .status "cheating"}}text-danger{{else if eq .status "success"}}text-success{{else}}text-warning{{end}}">
+                        {{.status}}
+                    </span>
+                </p>
+                {{if eq .status "cheating"}}
+                <p>Details:</p>
+                <ul>
+                    {{range $detail := .details}}
+                        {{if contains $detail "Module:"}}
+                        <li><strong>{{.}}</strong></li>
+                        {{else}}
+                        <li class="indented">{{.}}</li>
+                        {{end}}
+                    {{end}}
+                </ul>
+                {{end}}
+                <hr>
+            </div>
+            {{end}}
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Go Back</a>
+    </div>
+</body>
+</html>

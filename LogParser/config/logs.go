@@ -1,8 +1,8 @@
-package models
+package config
 
 import (
-    "path/filepath"
-    "strings"
+	"path/filepath"
+	"strings"
 )
 
 type LogPaths struct {
