@@ -1,7 +1,9 @@
 import sys
 from typing import List
 from log_checker import StatusEnum, Error, ReturnJSON, load_log_file, output_result
+from helper import parse_config
 
+parsed_config = parse_config("unusual_shutdown_check.config")
 
 def check_unusual_shutdown_requests(log_data: dict) -> List[Error]:
     errors = []
@@ -40,8 +42,12 @@ def validate_shutdown_sequence(sequence: List[dict]) -> bool:
     if any(any(keyword in entry['message'].lower() for keyword in unexpected_keywords) for entry in sequence):
         return False
 
+    # Setting the borders to check against
+    unusual_number = parsed_config["unusual_number_of_threads"]
+    unusual_time = parsed_config["unusual_duration"]
+
     # Check for unusual number of different threads handling shutdown
-    if len(thread_ids) > 3:
+    if len(thread_ids) > unusual_number:
         return False
 
     # Check for unusual timing (e.g., shutdown sequence should not take too long)
@@ -49,7 +55,7 @@ def validate_shutdown_sequence(sequence: List[dict]) -> bool:
     if len(timestamps) >= 2:
         start_time = timestamps[0]
         end_time = timestamps[-1]
-        if (parse_timestamp(end_time) - parse_timestamp(start_time)).total_seconds() > 10:  # Assuming 10 seconds as an unusual duration
+        if (parse_timestamp(end_time) - parse_timestamp(start_time)).total_seconds() > unusual_time:  # Assuming 10 seconds as an unusual duration
             return False
 
     return True
