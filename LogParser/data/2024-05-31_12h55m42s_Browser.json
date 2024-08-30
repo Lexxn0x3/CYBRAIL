@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "0531/125553.233",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0531/125558.112",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 1192,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "http://84.163.97.156:3333/lib/requirejs.php/1715266843/core/first.js",
+    "source_line_number": 1192
+  }
+]

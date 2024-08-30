@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "0112/144644.287",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  }
+]

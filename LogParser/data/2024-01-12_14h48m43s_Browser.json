@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "0112/144849.230",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0112/144913.747",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core_form/events.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0112/144946.861",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0112/145009.224",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  }
+]

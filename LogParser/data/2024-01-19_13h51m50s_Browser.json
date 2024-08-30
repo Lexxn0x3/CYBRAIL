@@ -1,0 +1,97 @@
+[
+  {
+    "timestamp": "0119/135156.072",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0119/135159.461",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135214.423",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0119/135217.157",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135224.011",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135227.078",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135348.361",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135349.670",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135400.287",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135405.151",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135406.456",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  }
+]

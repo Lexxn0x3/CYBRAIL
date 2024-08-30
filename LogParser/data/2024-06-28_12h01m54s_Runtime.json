@@ -1,0 +1,371 @@
+{
+  "application": {
+    "name": "Safe Exam Browser",
+    "version": "3.6.0",
+    "build": "3.6.0.633"
+  },
+  "system": {
+    "start_time": "2024-06-28 12:01:54.262",
+    "os": "Windows 11",
+    "computer": "PASCALSLAPTOP",
+    "model": "Nitro 5 Nitro AN515-55",
+    "manufacturer": "Acer",
+    "runtime_id": "470a39cf-795e-4343-8ff2-30e966eb2c36"
+  },
+  "logs": [
+    {
+      "timestamp": "2024-06-28 12:01:55.941",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initiating startup procedure..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.062",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Loading text data..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.063",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Text] System language is 'en', trying to load data..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.071",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Text] Data successfully loaded."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.071",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Starting communication host..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.105",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host is opening..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.143",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host has been opened."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.143",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/88788687-bd6a-49e8-8004-86e54453f064'."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.145",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify application integrity..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.269",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application integrity successfully verified."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.271",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application successfully initialized."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.298",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ------------------------------------ Session Start Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.303",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing new session configuration..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.311",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Client-ID: 9efaed88-f4c8-4a83-b079-c59f022c9b3e"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.312",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Runtime-ID: 470a39cf-795e-4343-8ff2-30e966eb2c36"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.313",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Session-ID: 126d1c93-a5f9-4f88-b35b-715bb201d2f5"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.317",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing application configuration..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.321",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Found command-line argument for configuration resource: 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb', the URI is valid."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.336",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Initialized default settings, now attempting to load 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb'..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.351",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Can load 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb' as it is an existing file."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.352",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Loading data from 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb'..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.353",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Created 'System.IO.FileStream' for 0,478 KB data in 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb'."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.354",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to load data from 'file:///C:/Users/pasca/Downloads/testpas_2024-6-28 (1).seb' using FileResourceLoader -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.359",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[BinaryParser] 'System.IO.FileStream' starting with 'plnd' matches the Binary format."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.362",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[GZipCompressor] Starting decompression of 'System.IO.FileStream' with 0,478 KB data..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.363",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[GZipCompressor] Successfully decompressed 0,478 KB to 0,455 KB data."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.365",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[GZipCompressor] Starting decompression of 'SafeExamBrowser.Configuration.SubStream' with 0,451 KB data..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.366",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[GZipCompressor] Successfully decompressed 0,451 KB to 0,926 KB data."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.367",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[BinaryParser] Attempting to parse plain data block..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.369",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[XmlParser] Found root node, starting to parse data..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.372",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[XmlParser] Finished parsing -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.373",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to parse data from 'System.IO.FileStream' using BinaryParser -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.395",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The configuration was successful."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.398",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing server..."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.585",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: GET 'https://sebserver.mattzi.de/exam-api/discovery' -\u003e 200 OK OK"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.593",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ServerProxy] Successfully loaded server API."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.697",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/oauth/token' -\u003e 200 OK OK"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.698",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ServerProxy] Successfully retrieved OAuth2 token."
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.793",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 400 BadRequest Bad Request"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.867",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 400 BadRequest Bad Request"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:56.922",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 400 BadRequest Bad Request"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:57.019",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 400 BadRequest Bad Request"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:57.102",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: POST 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 400 BadRequest Bad Request"
+    },
+    {
+      "timestamp": "2024-06-28 12:01:57.102",
+      "thread": "09",
+      "level": "ERROR",
+      "message": "[ServerProxy] Failed to retrieve available exams!"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:18.745",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The user aborted the server operation."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:18.772",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Finalizing server..."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:18.921",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 404 NotFound Not Found"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.026",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 404 NotFound Not Found"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.115",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 404 NotFound Not Found"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.190",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 404 NotFound Not Found"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.293",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ServerProxy] Completed request: DELETE 'https://sebserver.mattzi.de/exam-api/v1/handshake' -\u003e 404 NotFound Not Found"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.294",
+      "thread": "09",
+      "level": "ERROR",
+      "message": "[ServerProxy] Failed to terminate connection!"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.297",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ------------------------------------- Session Start Aborted -------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.545",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initiating shutdown procedure..."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.548",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Stopping communication host..."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.549",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host is closing..."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.566",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host has been closed."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.567",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/88788687-bd6a-49e8-8004-86e54453f064'."
+    },
+    {
+      "timestamp": "2024-06-28 12:02:19.567",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application successfully finalized."
+    }
+  ]
+}

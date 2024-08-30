@@ -1,0 +1,2134 @@
+{
+  "sessions": [
+    {
+      "start_time": "2024-01-12 14:48:47.864",
+      "end_time": "2024-01-12 14:49:43.736",
+      "logs": [
+        {
+          "timestamp": "2024-01-12 14:48:47.880",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initiating startup procedure..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.880",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Loading text data..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.880",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Text] System language is 'en', trying to load data..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.895",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Text] Data successfully loaded."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.895",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing runtime connection..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.895",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/runtime/b974110a-c4ce-408f-a8d4-11bf5b2a8913' with authentication token '9f3286ce-e1f9-4991-9d8b-12e2f18ed4c3'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.958",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel is opening..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:47.989",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel has been opened."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.005",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Connection was established."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.005",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Successfully connected to the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.020",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing application configuration..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.020",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Sending message 'SimpleMessage -\u003e ConfigurationNeeded'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received response 'ConfigurationResponse' for message 'SimpleMessage -\u003e ConfigurationNeeded'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received configuration response."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Successfully retrieved the application configuration from the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": " -\u003e Client-ID: 742e1316-4895-4f02-aaf0-99943cba0e12"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": " -\u003e Runtime-ID: a571374a-4722-411f-b48c-1672e650bcc5"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": " -\u003e Session-ID: 257bb831-c2ba-446f-9c98-a29f8f6caaf0"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.208",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Starting communication host..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.224",
+          "thread_id": "08",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host is opening..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.224",
+          "thread_id": "08",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host has been opened."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.224",
+          "thread_id": "08",
+          "level": "DEBUG",
+          "message": "[ClientHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/34b138e6-2d9d-43ba-b56b-ff886165a63f'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.224",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Starting keyboard interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.239",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Starting mouse interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.239",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing applications..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Initialized 281 currently running processes."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Initialized blacklist with 0 applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Initialized whitelist with 0 applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Started monitoring applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Registered system capture start event with ID = a710964f-f48d-4056-bc51-627fad0e031d."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Registered system foreground event with ID = b6ad0496-a290-484f-a7e8-2788a8c00b03."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing working area..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.745",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Disabled sleep mode and display timeout."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Taskbar] Calculated physical taskbar height is 50px."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Saved original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Trying to set new working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Working area of DISPLAY1 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Started monitoring display changes."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing system events..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.761",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[SystemMonitor] Started monitoring the operating system."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.776",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing shell..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.823",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Audio] Found 'Kopfhorer (Jabra Link 380)' to be the active audio device."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.948",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Audio] Started monitoring the audio device."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.948",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Saved current keyboard layout 'Deutsch (Deutschland)' [DEU, German]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.948",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Detected keyboard layout 'Deutsch (Deutschland)' [DEU, German]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:48.948",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Detected keyboard layout 'English (United States)' [ENG, US]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.042",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[NetworkAdapter] Connection established."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.042",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[NetworkAdapter] Started monitoring the network adapter."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.042",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[PowerSupply] Started monitoring the power supply."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.042",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing action center..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.089",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[PowerSupply] Power grid is connected, battery charge at 100%."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.089",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing taskbar..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.104",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing task view..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.120",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing browser..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.120",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Starting initialization..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.183",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Accept Language: en-US"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.183",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Cache Path: C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Cache"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.183",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Engine Version: Chromium 118.0.5993.117, CEF r118.6.8+ge44bee1+chromium-118.0.5993.117, CefSharp 118.6.80.0"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.183",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Log File: C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Logs\\2024-01-12_14h48m43s_Browser.log"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.198",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Log Severity: Info."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.198",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] PDF Reader: Enabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.198",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Session Persistence: Enabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.245",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Browser Exam Key (BEK) transmission is disabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.245",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Configuration Key (CK) transmission is disabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.245",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] The browser application will be using the default browser exam key."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.261",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Successfully initiated cookie deletion."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.261",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Initialized browser."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.277",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing clipboard..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.292",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Cleared clipboard."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.292",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Started clipboard monitoring with interval 50 ms."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.292",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Clipboard] Initialized clipboard for policy 'Isolated'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.323",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Taskbar] Set taskbar bounds to 1536x40 at (0/824), in physical pixels: 1920x50 at (0/1030)."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.323",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Auto-starting browser..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.386",
+          "thread_id": "32",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Deleted 0 cookies."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.386",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Initialized browser control."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.495",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Initialized browser window."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Created browser window #1."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'ContactVisualization' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '1'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'CursorBaseSize' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '32'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'GestureVisualization' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '31'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Scheme Source' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '2'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'AppStarting' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_working.ani'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Arrow' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_arrow.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Crosshair' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: ''."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Hand' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_link.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Help' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_helpsel.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'IBeam' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: ''."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'No' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_unavail.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'NWPen' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_pen.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeAll' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_move.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.511",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeNESW' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_nesw.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeNS' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_ns.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeNWSE' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_nwse.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeWE' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_ew.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'UpArrow' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_up.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Wait' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_busy.ani'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value '' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'Windows-Voreinstellung'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Debugger' from registry key 'HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\Utilman.exe'. Initial value: ''."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Sending message 'SimpleMessage -\u003e ClientIsReady'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from  to 'Taskbar' (396322)."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e ClientIsReady'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Runtime acknowledged that the client is ready."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Application successfully initialized."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.527",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'Taskbar' (396322) to '' (396304)."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.589",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '' (396304) to 'ActionCenter' (3083060)."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.605",
+          "thread_id": "17",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received connection request with authentication token '9f3286ce-e1f9-4991-9d8b-12e2f18ed4c3'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.605",
+          "thread_id": "17",
+          "level": "DEBUG",
+          "message": "[ClientHost] Accepted connection request."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:49.636",
+          "thread_id": "15",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received message 'SimpleMessage -\u003e Authenticate', sending response 'AuthenticationResponse'."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:51.240",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (2312) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:51.240",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (11304) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:51.240",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (22492) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:51.240",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (17512) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:51.240",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (22864) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:52.166",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'ActionCenter' (3083060) to '' (396304)."
+        },
+        {
+          "timestamp": "2024-01-12 14:48:52.166",
+          "thread_id": "31",
+          "level": "ERROR",
+          "message": "[Browser Window #1] Failed to initialize JavaScript: JavaScript can't be executed in main frame!"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:52.166",
+          "thread_id": "32",
+          "level": "ERROR",
+          "message": "[Browser Window #1] Failed to execute JavaScript: JavaScript can't be executed in main frame!"
+        },
+        {
+          "timestamp": "2024-01-12 14:48:56.203",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'chrome.exe' (24324) has been terminated."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:10.797",
+          "thread_id": "30",
+          "level": "INFO",
+          "message": "[Browser Window #1] Navigated."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:10.837",
+          "thread_id": "30",
+          "level": "DEBUG",
+          "message": "[KeyGenerator] Initializing browser exam key..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:10.837",
+          "thread_id": "30",
+          "level": "WARNING",
+          "message": "[KeyGenerator] The current configuration does not contain a value for the configuration key!"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:10.853",
+          "thread_id": "30",
+          "level": "WARNING",
+          "message": "[KeyGenerator] The current configuration does not contain a salt value for the browser exam key!"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:12.361",
+          "thread_id": "30",
+          "level": "DEBUG",
+          "message": "[KeyGenerator] Successfully calculated browser exam key using integrity module."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:13.790",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'chrome.exe' (8868) has been started [Original Name: 'chrome.exe', Path: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', Signature: 2673ea6cc23beffda49ac715b121544098a1284c]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:13.790",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'svchost.exe' (24988) has been terminated."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:15.500",
+          "thread_id": "22",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '' (396304) to '' (723938)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.706",
+          "thread_id": "30",
+          "level": "INFO",
+          "message": "[Browser Window #1] Request was aborted."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.753",
+          "thread_id": "30",
+          "level": "DEBUG",
+          "message": "[DownloadHandler #1] Detected download request."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.753",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[DownloadHandler #1] Handling download of configuration file 'config.seb'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.753",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Forwarding download request for configuration file 'config.seb'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.768",
+          "thread_id": "35",
+          "level": "INFO",
+          "message": "Allowed download request for configuration file 'config.seb'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.768",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Download request for configuration file 'config.seb' was granted."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.768",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '' (723938) to 'SplashScreen' (5966900)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.768",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[DownloadHandler #1] Starting download of configuration file 'config.seb'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.882",
+          "thread_id": "30",
+          "level": "DEBUG",
+          "message": "[DownloadHandler #1] Download of 'C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Temp\\config.seb' is complete."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.884",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Sending message 'ReconfigurationMessage'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.898",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'ReconfigurationMessage'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.899",
+          "thread_id": "33",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Runtime acknowledged reconfiguration request."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.900",
+          "thread_id": "33",
+          "level": "INFO",
+          "message": "Sent reconfiguration request for 'C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Temp\\config.seb' to the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.989",
+          "thread_id": "14",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received message 'SimpleMessage -\u003e Shutdown', sending response 'SimpleResponse -\u003e Acknowledged'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.990",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initiating shutdown procedure..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:42.998",
+          "thread_id": "11",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received disconnection request with message 'DisconnectionMessage'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.002",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Stopped monitoring the registry."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.004",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Finalizing clipboard..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.004",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Cleared clipboard."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.004",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Stopped clipboard monitoring."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.005",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Clipboard] Finalized clipboard."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.007",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Terminating browser..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.008",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Initiating termination..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.510",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Window is closing..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.521",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Window has been closed."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.539",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Closed browser window #1."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.692",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Terminated browser."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.692",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Retained browser cache."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.693",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Terminating shell..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.698",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Audio] Stopped monitoring the audio device."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.699",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Restored original keyboard layout 'Deutsch (Deutschland)' [DEU, German]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.699",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[NetworkAdapter] Stopped monitoring the network adapter."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.699",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[PowerSupply] Stopped monitoring the power supply."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.700",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Finalizing system events..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.701",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[SystemMonitor] Stopped monitoring the operating system."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.701",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Restoring working area..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.702",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Stopped monitoring display changes."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.702",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Restored original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.703",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Finalizing applications..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.704",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Stopped monitoring applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.706",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Unregistered system capture start event with ID = a710964f-f48d-4056-bc51-627fad0e031d."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.707",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Unregistered system foreground event with ID = b6ad0496-a290-484f-a7e8-2788a8c00b03."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.707",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Stopping mouse interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.708",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Stopping keyboard interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.709",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "The runtime has already disconnected from the client communication host."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.710",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Stopping communication host..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.711",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host is closing..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.715",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host has been closed."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.715",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ClientHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/34b138e6-2d9d-43ba-b56b-ff886165a63f'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.716",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Closing runtime connection..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.725",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel is closing..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.726",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel has been closed."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.726",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/runtime/b974110a-c4ce-408f-a8d4-11bf5b2a8913'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.726",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Successfully disconnected from the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:43.727",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Application successfully finalized."
+        }
+      ]
+    },
+    {
+      "start_time": "2024-01-12 14:49:45.611",
+      "end_time": "2024-01-12 14:50:21.506",
+      "logs": [
+        {
+          "timestamp": "2024-01-12 14:49:45.611",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initiating startup procedure..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.627",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Loading text data..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.627",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Text] System language is 'en', trying to load data..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.643",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Text] Data successfully loaded."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.643",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing runtime connection..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.643",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/runtime/b974110a-c4ce-408f-a8d4-11bf5b2a8913' with authentication token 'df473d3c-bb01-4f4b-8dec-1f64ad52e29e'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.689",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel is opening..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.705",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel has been opened."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.721",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Connection was established."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.721",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Successfully connected to the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.721",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing application configuration..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.721",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Sending message 'SimpleMessage -\u003e ConfigurationNeeded'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received response 'ConfigurationResponse' for message 'SimpleMessage -\u003e ConfigurationNeeded'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received configuration response."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Successfully retrieved the application configuration from the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": " -\u003e Client-ID: ecc51b12-b854-4f5f-b946-f0d80edf429d"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": " -\u003e Runtime-ID: a571374a-4722-411f-b48c-1672e650bcc5"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": " -\u003e Session-ID: 8ea9049a-ad39-4f2e-8dba-098f0323173e"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Starting communication host..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.846",
+          "thread_id": "08",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host is opening..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.861",
+          "thread_id": "08",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host has been opened."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.861",
+          "thread_id": "08",
+          "level": "DEBUG",
+          "message": "[ClientHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/a2daa05d-0e58-43c4-9471-187f0914cdc1'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.861",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Starting keyboard interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.877",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Starting mouse interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:45.877",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing applications..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.377",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Initialized 279 currently running processes."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.377",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Initialized blacklist with 46 applications: AA_v3.exe, AeroAdmin.exe, beamyourscreen-host.exe, CamPlay.exe, Camtasia.exe, CamtasiaStudio.exe, Camtasia_Studio.exe, CamRecorder.exe, CamtasiaUtl.exe, chromoting.exe, CiscoCollabHost.exe, CiscoWebExStart.exe, Discord.exe, Element.exe, g2mcomm.exe, g2mcomm.exe, g2mlauncher.exe, g2mstart.exe, GotoMeetingWinStore.exe, join.me.exe, join.me.sentinel.exe, Mikogo-host.exe, MS-teams.exe, obs32.exe, obs64.exe, PCMonitorSrv.exe, pcmontask.exe, ptoneclk.exe, RemotePCDesktop.exe, remoting_host.exe, RPCService.exe, RPCSuite.exe, Skype.exe, SkypeApp.exe, SkypeHost.exe, slack.exe, SRServer.exe, strwinclt.exe, Teams.exe, TeamViewer.exe, Telegram.exe, vncserver.exe, vncviewer.exe, vncserverui.exe, webexmta.exe, Zoom.exe"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Initialized whitelist with 0 applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Started monitoring applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Registered system capture start event with ID = 7f078d89-1afe-453d-9799-2d0e74441934."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Registered system foreground event with ID = 871e3cb6-f2ca-4208-8bde-e56fdd3875ca."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing working area..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Disabled sleep mode and display timeout."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.393",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Taskbar] Calculated physical taskbar height is 50px."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Saved original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Trying to set new working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Working area of DISPLAY1 (1920x1080) is now set to: Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Started monitoring display changes."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing system events..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[SystemMonitor] Started monitoring the operating system."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.408",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing shell..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.471",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Audio] Found 'Kopfhorer (Jabra Link 380)' to be the active audio device."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.580",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Audio] Started monitoring the audio device."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.580",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Saved current keyboard layout 'Deutsch (Deutschland)' [DEU, German]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.580",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Detected keyboard layout 'Deutsch (Deutschland)' [DEU, German]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.580",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Detected keyboard layout 'English (United States)' [ENG, US]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.689",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[NetworkAdapter] Connection established."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.689",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[NetworkAdapter] Started monitoring the network adapter."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.689",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[PowerSupply] Started monitoring the power supply."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.689",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing action center..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.721",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[PowerSupply] Power grid is connected, battery charge at 100%."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.721",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing taskbar..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.736",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing task view..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.752",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing browser..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.752",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Starting initialization..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.814",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Accept Language: en-US"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.814",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Cache Path: C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Cache"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.830",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Engine Version: Chromium 118.0.5993.117, CEF r118.6.8+ge44bee1+chromium-118.0.5993.117, CefSharp 118.6.80.0"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.830",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Log File: C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Logs\\2024-01-12_14h48m43s_Browser.log"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.830",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Log Severity: Info."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.830",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] PDF Reader: Enabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.830",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Session Persistence: Enabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.908",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Browser Exam Key (BEK) transmission is enabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.908",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Configuration Key (CK) transmission is enabled."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.908",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] The browser application will be using the default browser exam key."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.908",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Initialized browser."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.939",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initializing clipboard..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.939",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Cleared clipboard."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.939",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Started clipboard monitoring with interval 50 ms."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.939",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Clipboard] Initialized clipboard for policy 'Isolated'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.971",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Taskbar] Set taskbar bounds to 1536x40 at (0/824), in physical pixels: 1920x50 at (0/1030)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:46.971",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Auto-starting browser..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.033",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Initialized browser control."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.143",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Initialized browser window."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.143",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Created browser window #1."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'ContactVisualization' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '1'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'CursorBaseSize' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '32'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'GestureVisualization' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '31'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Scheme Source' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: '2'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'AppStarting' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_working.ani'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Arrow' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_arrow.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Crosshair' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: ''."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Hand' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_link.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Help' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_helpsel.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'IBeam' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: ''."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'No' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_unavail.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'NWPen' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_pen.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeAll' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_move.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeNESW' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_nesw.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeNS' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_ns.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeNWSE' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_nwse.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'SizeWE' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_ew.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'UpArrow' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_up.cur'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Wait' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'C:\\Windows\\cursors\\aero_busy.ani'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value '' from registry key 'HKEY_CURRENT_USER\\Control Panel\\Cursors'. Initial value: 'Windows-Voreinstellung'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Started monitoring value 'Debugger' from registry key 'HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\Utilman.exe'. Initial value: ''."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.158",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Sending message 'SimpleMessage -\u003e ClientIsReady'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.174",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from  to 'Taskbar' (2296618)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.174",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e ClientIsReady'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.174",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Runtime acknowledged that the client is ready."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.174",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Application successfully initialized."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.174",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'Taskbar' (2296618) to '' (593122)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.221",
+          "thread_id": "11",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received connection request with authentication token 'df473d3c-bb01-4f4b-8dec-1f64ad52e29e'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.221",
+          "thread_id": "11",
+          "level": "DEBUG",
+          "message": "[ClientHost] Accepted connection request."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.236",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '' (593122) to 'ActionCenter' (1311314)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.236",
+          "thread_id": "17",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received message 'SimpleMessage -\u003e Authenticate', sending response 'AuthenticationResponse'."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.408",
+          "thread_id": "37",
+          "level": "DEBUG",
+          "message": "[KeyGenerator] Initializing browser exam key..."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:47.409",
+          "thread_id": "37",
+          "level": "WARNING",
+          "message": "[KeyGenerator] The current configuration does not contain a salt value for the browser exam key!"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.882",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (11100) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.898",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (9080) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.898",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (25556) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.898",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (9648) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.898",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'CefSharp.BrowserSubprocess.exe' (17120) has been started [Original Name: 'CefSharp.BrowserSubprocess.exe', Path: 'C:\\Program Files\\SafeExamBrowser\\Application\\CefSharp.BrowserSubprocess.exe', Signature: 2bc82fe8e56a39f96bc6c4b91d6703a0379b76a2]."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.898",
+          "thread_id": "34",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Process 'svchost.exe' (22092) has been terminated."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:48.898",
+          "thread_id": "37",
+          "level": "DEBUG",
+          "message": "[KeyGenerator] Successfully calculated browser exam key using integrity module."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:49.837",
+          "thread_id": "31",
+          "level": "ERROR",
+          "message": "[Browser Window #1] Failed to initialize JavaScript: JavaScript can't be executed in main frame!"
+        },
+        {
+          "timestamp": "2024-01-12 14:49:49.837",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'ActionCenter' (1311314) to '' (593122)."
+        },
+        {
+          "timestamp": "2024-01-12 14:49:49.837",
+          "thread_id": "32",
+          "level": "ERROR",
+          "message": "[Browser Window #1] Failed to execute JavaScript: JavaScript can't be executed in main frame!"
+        },
+        {
+          "timestamp": "2024-01-12 14:50:08.769",
+          "thread_id": "30",
+          "level": "INFO",
+          "message": "[Browser Window #1] Navigated."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:19.548",
+          "thread_id": "22",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '' (593122) to 'Taskbar' (2296618)."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:19.548",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '' (593122) to 'Taskbar' (2296618)."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:19.658",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'Taskbar' (2296618) to 'Quit?' (3148596)."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.597",
+          "thread_id": "22",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'Quit?' (3148596) to '\u0026Yes' (1903452)."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.707",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "The user chose to terminate the application."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.707",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Sending message 'SimpleMessage -\u003e RequestShutdown'..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.707",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from '\u0026Yes' (1903452) to 'Taskbar' (2296618)."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.707",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e RequestShutdown'."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.707",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Runtime acknowledged shutdown request."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.723",
+          "thread_id": "14",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received message 'SimpleMessage -\u003e Shutdown', sending response 'SimpleResponse -\u003e Acknowledged'."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.724",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Initiating shutdown procedure..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.724",
+          "thread_id": "23",
+          "level": "DEBUG",
+          "message": "[ApplicationMonitor] Window has changed from 'Taskbar' (2296618) to 'SplashScreen' (592916)."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.724",
+          "thread_id": "18",
+          "level": "DEBUG",
+          "message": "[ClientHost] Received disconnection request with message 'DisconnectionMessage'."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Registry] Stopped monitoring the registry."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Finalizing clipboard..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Cleared clipboard."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Clipboard] Stopped clipboard monitoring."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Clipboard] Finalized clipboard."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Terminating browser..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:20.771",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Initiating termination..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.289",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Window is closing..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.298",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[Browser Window #1] Window has been closed."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.308",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Closed browser window #1."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.314",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Successfully initiated cookie deletion."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.344",
+          "thread_id": "35",
+          "level": "DEBUG",
+          "message": "[BrowserApplication] Deleted 2 cookies."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.439",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[BrowserApplication] Terminated browser."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.465",
+          "thread_id": "01",
+          "level": "ERROR",
+          "message": "[BrowserApplication] Failed to delete browser cache!"
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.466",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Terminating shell..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.471",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Audio] Stopped monitoring the audio device."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.472",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[Keyboard] Restored original keyboard layout 'Deutsch (Deutschland)' [DEU, German]."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.472",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[NetworkAdapter] Stopped monitoring the network adapter."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.472",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[PowerSupply] Stopped monitoring the power supply."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.473",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Finalizing system events..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.474",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[SystemMonitor] Stopped monitoring the operating system."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.474",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Restoring working area..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.475",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Stopped monitoring display changes."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.475",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[DisplayMonitor] Restored original working area for DISPLAY1 (1920x1080): Left = 0, Top = 0, Right = 1920, Bottom = 1030."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.476",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Finalizing applications..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.478",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Stopped monitoring applications."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.480",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Unregistered system capture start event with ID = 7f078d89-1afe-453d-9799-2d0e74441934."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.480",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "[ApplicationMonitor] Unregistered system foreground event with ID = 871e3cb6-f2ca-4208-8bde-e56fdd3875ca."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.480",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Stopping mouse interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.481",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Stopping keyboard interception..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.482",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "The runtime has already disconnected from the client communication host."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.483",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Stopping communication host..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.484",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host is closing..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.488",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ClientHost] Communication host has been closed."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.489",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[ClientHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/client/a2daa05d-0e58-43c4-9471-187f0914cdc1'."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.489",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Closing runtime connection..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.495",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel is closing..."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.496",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Communication channel has been closed."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.497",
+          "thread_id": "01",
+          "level": "DEBUG",
+          "message": "[RuntimeProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/runtime/b974110a-c4ce-408f-a8d4-11bf5b2a8913'."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.497",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Successfully disconnected from the runtime."
+        },
+        {
+          "timestamp": "2024-01-12 14:50:21.497",
+          "thread_id": "01",
+          "level": "INFO",
+          "message": "Application successfully finalized."
+        }
+      ]
+    }
+  ]
+}

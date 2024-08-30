@@ -1,0 +1,3311 @@
+{
+  "application": {
+    "name": "Safe Exam Browser",
+    "version": "3.6.0",
+    "build": "3.6.0.633"
+  },
+  "system": {
+    "start_time": "2024-01-19 13:54:23.156",
+    "os": "Windows 11",
+    "computer": "PASCALSLAPTOP",
+    "model": "Nitro 5 Nitro AN515-55",
+    "manufacturer": "Acer",
+    "runtime_id": "8d1a1349-edb3-43bb-8beb-b8cf22f2ce58"
+  },
+  "logs": [
+    {
+      "timestamp": "2024-01-19 13:54:24.867",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initiating startup procedure..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:24.943",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Loading text data..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:24.949",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Text] System language is 'en', trying to load data..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:24.957",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Text] Data successfully loaded."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:24.957",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Starting communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:24.992",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host is opening..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.031",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host has been opened."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.031",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/3b37083f-29ae-4e93-a13f-43ec617198c1'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.032",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify application integrity..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.154",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application integrity successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.156",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application successfully initialized."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.194",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ------------------------------------ Session Start Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.197",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing new session configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.199",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Client-ID: a3f59293-b194-461a-84d2-e8b6d62fed59"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.200",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Runtime-ID: 8d1a1349-edb3-43bb-8beb-b8cf22f2ce58"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.200",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Session-ID: 5997cb9b-aa16-4f01-96a9-b8b807aac72a"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.201",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing application configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.203",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Found command-line argument for configuration resource: 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503', the URI is valid."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.209",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Initialized default settings, now attempting to load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.225",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Can't load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' as it isn't an existing file."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.225",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Sending HEAD request for 'https://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.522",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Received response '200 - OK'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.522",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Can load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' as it references an existing network resource."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.522",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Sending GET request for 'https://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.772",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Received response '200 - OK'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.772",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] The  response data is HTML."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.772",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to load data from 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' using NetworkResourceLoader -\u003e Result: LoadWithBrowser."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.772",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The configuration resource needs authentication or is a webpage, using 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=118503' as start URL for the browser."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.787",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The configuration was successful."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.787",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating version restrictions..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.803",
+      "thread": "09",
+      "level": "INFO",
+      "message": "There are no version restrictions for the configuration."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.803",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Remote proctoring is disabled, skipping disclaimer."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.803",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating remote session policy..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.803",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RemoteSessionDetector] System appears not to be running in a remote session."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.819",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify cursor configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.834",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Cursor configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.834",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify ease of access configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.834",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Ease of access configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.834",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating virtual machine policy..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.850",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating display configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.881",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected active, internal display 'DISPLAY\\NCP004D\\4\u0026fcd0332\u00260\u0026UID265988_0' connected via 'Internal'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.881",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected 1 active displays, 10 are allowed."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.881",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Display configuration is allowed."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.881",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing service..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.881",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The service will be ignored for the next session."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.881",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing kiosk mode 'CreateNewDesktop'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.897",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Found desktop handle for thread with ID = 24048. Attempting to get desktop name..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.897",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Successfully determined current desktop 'Default' [280]."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.897",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Current desktop is 'Default' [280]."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.897",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Attempting to create random desktop..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.897",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Successfully created random desktop 'WxdRehTEhvDzFkAsRMV' [8795]."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.897",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Created custom desktop 'WxdRehTEhvDzFkAsRMV' [8795]."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.944",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Successfully activated custom desktop."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.944",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DesktopMonitor] Started monitoring desktop 'WxdRehTEhvDzFkAsRMV' [8795]."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.944",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Starting new client process..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:25.944",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ProcessFactory] Attempting to start process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:26.037",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ProcessFactory] Successfully started process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe' with ID = 23392."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:26.037",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (23392)] Initialized termination event."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:26.037",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Waiting for client to complete initialization..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:27.788",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received connection request with authentication token '02dbed7a-771d-4c05-9800-de1ac0bd1755'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:27.788",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Accepted connection request."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:27.803",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ConfigurationNeeded', sending response 'ConfigurationResponse'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.382",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ClientIsReady', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.382",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Client has been successfully started and initialized. Creating communication proxy for client host..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.397",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/client/b112bd73-a8da-4ba2-8452-bbf4470d25f2' with authentication token '02dbed7a-771d-4c05-9800-de1ac0bd1755'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.397",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is opening..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.428",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been opened."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.460",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Connection was established."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.460",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Connection with client has been established. Requesting authentication..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.460",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Authenticate'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.507",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'AuthenticationResponse' for message 'SimpleMessage -\u003e Authenticate'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.507",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received authentication response."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.507",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Authentication of client has been successful, client is ready to operate."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.507",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Successfully started new client instance."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.507",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Successfully activated first session '5997cb9b-aa16-4f01-96a9-b8b807aac72a'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:29.507",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ---------------------------------------- Session Running ----------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.258",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Accepted request for reconfiguration with 'C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Temp\\config.seb'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.259",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'ReconfigurationMessage', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.263",
+      "thread": "23",
+      "level": "INFO",
+      "message": "### ------------------------------------ Session Start Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.267",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initializing new session configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.267",
+      "thread": "23",
+      "level": "INFO",
+      "message": " -\u003e Client-ID: 6bbd2658-1e2a-45e6-ab33-82d3c1fec799"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.268",
+      "thread": "23",
+      "level": "INFO",
+      "message": " -\u003e Runtime-ID: 8d1a1349-edb3-43bb-8beb-b8cf22f2ce58"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.268",
+      "thread": "23",
+      "level": "INFO",
+      "message": " -\u003e Session-ID: 6e178a5b-a695-4327-b2d4-b27a77326fe7"
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.269",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initializing new application configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.271",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Initialized default settings, now attempting to load 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.272",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Can load 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb' as it is an existing file."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.273",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Loading data from 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.274",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Created 'System.IO.FileStream' for 0,923 KB data in 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.275",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to load data from 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb' using FileResourceLoader -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.281",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[BinaryParser] 'System.IO.FileStream' starting with '\u003c?xm' does not match the Binary format."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.282",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[XmlParser] 'System.IO.FileStream' starting with '\u003c?xm' matches the Xml format."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.285",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[XmlParser] Found root node, starting to parse data..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.288",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[XmlParser] Finished parsing -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.289",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to parse data from 'System.IO.FileStream' using XmlParser -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.316",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Deleted temporary configuration file 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.316",
+      "thread": "23",
+      "level": "INFO",
+      "message": "The configuration was successful."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.317",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating version restrictions..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.317",
+      "thread": "23",
+      "level": "INFO",
+      "message": "There are no version restrictions for the configuration."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.320",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Remote proctoring is disabled, skipping disclaimer."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.322",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating remote session policy..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.323",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[RemoteSessionDetector] System appears not to be running in a remote session."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.324",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Attempting to verify cursor configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.326",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Cursor configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.326",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Attempting to verify ease of access configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.327",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Ease of access configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.327",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating virtual machine policy..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.337",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[VirtualMachineDetector] Computer 'PASCALSLAPTOP' appears not to be a virtual machine."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.337",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating display configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.348",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected active, internal display 'DISPLAY\\NCP004D\\4\u0026fcd0332\u00260\u0026UID265988_0' connected via 'Internal'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.348",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected 1 active displays, 1 are allowed."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.349",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Display configuration is allowed."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.350",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initializing service..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.351",
+      "thread": "23",
+      "level": "INFO",
+      "message": "The service will be ignored for the next session."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.355",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Instructing client to initiate shutdown procedure."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.356",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Shutdown'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.359",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Shutdown'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.360",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Client acknowledged shutdown request."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.360",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Disconnecting from client communication host."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.370",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is closing..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.371",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been closed."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.372",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/client/b112bd73-a8da-4ba2-8452-bbf4470d25f2'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:42.375",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client to disconnect from runtime communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.112",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received disconnection request with message 'DisconnectionMessage'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.114",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client process to terminate..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.215",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (23392)] Process has terminated."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.215",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Client has been successfully terminated."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.218",
+      "thread": "23",
+      "level": "INFO",
+      "message": "New kiosk mode 'CreateNewDesktop' is the same as the currently active mode, skipping re-initialization..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.218",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Starting new client process..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.219",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ProcessFactory] Attempting to start process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.302",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ProcessFactory] Successfully started process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe' with ID = 3232."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.303",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (3232)] Initialized termination event."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:43.303",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client to complete initialization..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:45.098",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received connection request with authentication token 'b8e08dbb-eb07-4300-b35c-8074e7493650'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:45.099",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Accepted connection request."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:45.112",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ConfigurationNeeded', sending response 'ConfigurationResponse'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.631",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ClientIsReady', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.631",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Client has been successfully started and initialized. Creating communication proxy for client host..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.635",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/client/ff00028c-b775-465f-b0db-eb1b44b16759' with authentication token 'b8e08dbb-eb07-4300-b35c-8074e7493650'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.637",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is opening..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.667",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been opened."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.685",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Connection was established."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.686",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Connection with client has been established. Requesting authentication..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.687",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Authenticate'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.696",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'AuthenticationResponse' for message 'SimpleMessage -\u003e Authenticate'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.697",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received authentication response."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.698",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Authentication of client has been successful, client is ready to operate."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.699",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Successfully started new client instance."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.702",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Successfully terminated old session '5997cb9b-aa16-4f01-96a9-b8b807aac72a' and activated new session '6e178a5b-a695-4327-b2d4-b27a77326fe7'."
+    },
+    {
+      "timestamp": "2024-01-19 13:54:46.703",
+      "thread": "23",
+      "level": "INFO",
+      "message": "### ---------------------------------------- Session Running ----------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 13:55:45.121",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:55:46.693",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:55:46.695",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 13:55:46.695",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 13:56:45.129",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:56:46.698",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:56:46.699",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 13:56:46.700",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 13:57:45.132",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:57:46.722",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:57:46.726",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 13:57:46.728",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 13:58:45.135",
+      "thread": "05",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:58:46.726",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:58:46.731",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 13:58:46.732",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 13:59:45.137",
+      "thread": "05",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 13:59:46.738",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 13:59:46.766",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 13:59:46.770",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:00:45.152",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:00:46.746",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:00:46.752",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:00:46.755",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:01:45.167",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:01:46.758",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:01:46.765",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:01:46.769",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:02:45.177",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:02:46.764",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:02:46.765",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:02:46.766",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:03:45.181",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:03:46.768",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:03:46.772",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:03:46.774",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:04:45.183",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:04:46.772",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:04:46.777",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:04:46.780",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:05:45.186",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:05:46.774",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:05:46.775",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:05:46.776",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:06:45.194",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:06:46.788",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:06:46.794",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:06:46.797",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:07:45.212",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:07:46.794",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:07:46.801",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:07:46.804",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:08:45.215",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:08:46.803",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:08:46.807",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:08:46.808",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:09:45.228",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:09:46.810",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:09:46.814",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:09:46.817",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:10:45.243",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:10:46.816",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:10:46.820",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:10:46.820",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:11:45.253",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:11:46.821",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:11:46.828",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:11:46.831",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:12:45.263",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:12:46.835",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:12:46.837",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:12:46.837",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:13:45.273",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:13:46.862",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:13:46.866",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:13:46.868",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:14:45.277",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:14:46.864",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:14:46.866",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:14:46.866",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:15:45.283",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:15:46.871",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:15:46.876",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:15:46.879",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:16:45.291",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:16:46.883",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:16:46.889",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:16:46.892",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:17:45.295",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:17:46.885",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:17:46.887",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:17:46.887",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:18:45.307",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:18:46.889",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:18:46.893",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:18:46.895",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:19:45.317",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:19:46.905",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:19:46.907",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:19:46.907",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:20:45.322",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:20:46.910",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:20:46.911",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:20:46.912",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:21:45.333",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:21:46.923",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:21:46.925",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:21:46.925",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:22:45.339",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:22:46.930",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:22:46.934",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:22:46.936",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:23:45.342",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:23:46.943",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:23:46.948",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:23:46.951",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:24:45.355",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:24:46.950",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:24:46.955",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:24:46.956",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:25:45.370",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:25:46.959",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:25:46.965",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:25:46.966",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:26:45.371",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:26:46.987",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:26:46.991",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:26:46.993",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:27:45.382",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:27:46.991",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:27:46.999",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:27:47.002",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:28:45.386",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:28:46.992",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:28:46.999",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:28:47.003",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:29:45.403",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:29:47.007",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:29:47.008",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:29:47.009",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:30:45.409",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:30:47.013",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:30:47.018",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:30:47.020",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:31:45.413",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:31:47.017",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:31:47.023",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:31:47.025",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:32:45.431",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:32:47.028",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:32:47.029",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:32:47.030",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:33:45.438",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:33:47.038",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:33:47.042",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:33:47.044",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:34:45.446",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:34:47.039",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:34:47.047",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:34:47.050",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:35:45.451",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:35:47.053",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:35:47.058",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:35:47.061",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:36:45.457",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:36:47.062",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:36:47.066",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:36:47.068",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:37:45.461",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:37:47.081",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:37:47.086",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:37:47.087",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:38:45.470",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:38:47.085",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:38:47.087",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:38:47.088",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:39:45.487",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:39:47.086",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:39:47.091",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:39:47.093",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:40:45.506",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:40:47.094",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:40:47.096",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:40:47.096",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:41:45.512",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:41:47.100",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:41:47.103",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:41:47.104",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:42:45.522",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:42:47.116",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:42:47.122",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:42:47.126",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:43:45.536",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:43:47.121",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:43:47.122",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:43:47.123",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:44:45.538",
+      "thread": "18",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:44:47.133",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:44:47.135",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:44:47.137",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:45:45.553",
+      "thread": "12",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:45:47.145",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:45:47.149",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:45:47.151",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:46:45.554",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:46:47.155",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:46:47.162",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:46:47.163",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:47:45.565",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:47:47.158",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:47:47.160",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:47:47.160",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:48:45.573",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:48:47.163",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:48:47.168",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:48:47.169",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:49:45.575",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:49:47.177",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:49:47.185",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:49:47.187",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:50:45.575",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:50:47.182",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:50:47.189",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:50:47.191",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:51:45.590",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:51:47.198",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:51:47.199",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:51:47.200",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:52:45.596",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:52:47.212",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:52:47.213",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:52:47.214",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:53:45.602",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:53:47.237",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:53:47.241",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:53:47.243",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:54:45.603",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:54:47.252",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:54:47.253",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:54:47.254",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:55:45.614",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:55:47.264",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:55:47.267",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:55:47.269",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:56:45.618",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:56:47.285",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:56:47.289",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:56:47.291",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:57:45.626",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:57:47.291",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:57:47.295",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:57:47.297",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:58:45.634",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:58:47.301",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:58:47.303",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:58:47.303",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 14:59:45.647",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 14:59:47.312",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 14:59:47.313",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 14:59:47.314",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:00:45.652",
+      "thread": "13",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:00:47.318",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:00:47.319",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:00:47.320",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:01:45.665",
+      "thread": "13",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:01:47.318",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:01:47.321",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:01:47.322",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:02:45.671",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:02:47.322",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:02:47.323",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:02:47.324",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:03:45.673",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:03:47.323",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:03:47.330",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:03:47.332",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:04:45.680",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:04:47.324",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:04:47.330",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:04:47.333",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:05:45.687",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:05:47.329",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:05:47.331",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:05:47.332",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:06:45.696",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:06:47.339",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:06:47.341",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:06:47.341",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:07:45.699",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:07:47.340",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:07:47.342",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:07:47.342",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:08:45.713",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:08:47.351",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:08:47.352",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:08:47.353",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:09:45.727",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:09:47.364",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:09:47.372",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:09:47.374",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:10:45.730",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:10:47.370",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:10:47.372",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:10:47.373",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:11:45.736",
+      "thread": "05",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:11:47.373",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:11:47.375",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:11:47.375",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:12:45.737",
+      "thread": "20",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:12:47.386",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:12:47.390",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:12:47.391",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:13:45.749",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:13:47.401",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:13:47.405",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:13:47.407",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:14:45.761",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:14:47.411",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:14:47.419",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:14:47.422",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:15:45.761",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:15:47.417",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:15:47.423",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:15:47.425",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:16:45.774",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:16:47.429",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:16:47.433",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:16:47.434",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:17:45.787",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:17:47.432",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:17:47.438",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:17:47.439",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:18:45.793",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:18:47.445",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:18:47.452",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:18:47.454",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:19:45.800",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:19:47.449",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:19:47.454",
+      "thread": "08",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:19:47.456",
+      "thread": "08",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:20:45.804",
+      "thread": "04",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:20:47.454",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:20:47.460",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:20:47.463",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:21:45.821",
+      "thread": "05",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:21:47.467",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:21:47.469",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:21:47.469",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:22:45.823",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:22:47.483",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:22:47.484",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:22:47.485",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:23:45.835",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:23:47.503",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:23:47.508",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:23:47.511",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:24:45.851",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:24:47.516",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:24:47.521",
+      "thread": "22",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:24:47.522",
+      "thread": "22",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:25:45.862",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:25:47.528",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:25:47.529",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:25:47.530",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:26:45.870",
+      "thread": "24",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:26:47.534",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:26:47.538",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:26:47.539",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:27:45.881",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e Ping', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:27:47.544",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Ping'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:27:47.546",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Ping'."
+    },
+    {
+      "timestamp": "2024-01-19 15:27:47.547",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ClientProxy] Pinged host, connection is alive."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.709",
+      "thread": "11",
+      "level": "INFO",
+      "message": "Received shutdown request from the client application."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.710",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e RequestShutdown', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.713",
+      "thread": "23",
+      "level": "INFO",
+      "message": "### ------------------------------------- Session Stop Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.715",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Instructing client to initiate shutdown procedure."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.727",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Shutdown'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.729",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Shutdown'."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.730",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Client acknowledged shutdown request."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.730",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Disconnecting from client communication host."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.737",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is closing..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.739",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been closed."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.741",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/client/ff00028c-b775-465f-b0db-eb1b44b16759'."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:05.743",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client to disconnect from runtime communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.566",
+      "thread": "13",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received disconnection request with message 'DisconnectionMessage'."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.566",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client process to terminate..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.653",
+      "thread": "11",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (3232)] Process has terminated."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.653",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Client has been successfully terminated."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.655",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Reverting kiosk mode 'CreateNewDesktop'..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.656",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[DesktopMonitor] Stopped monitoring desktop 'WxdRehTEhvDzFkAsRMV' [8795]."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.673",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Switched back to original desktop 'Default' [280]."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.688",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Closed custom desktop 'WxdRehTEhvDzFkAsRMV' [8795]."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.690",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Finalizing service..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.692",
+      "thread": "23",
+      "level": "INFO",
+      "message": "### --------------------------------------- Session Terminated --------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.808",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initiating shutdown procedure..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.809",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Stopping communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.810",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host is closing..."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.816",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host has been closed."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.816",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/3b37083f-29ae-4e93-a13f-43ec617198c1'."
+    },
+    {
+      "timestamp": "2024-01-19 15:28:06.817",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Application successfully finalized."
+    }
+  ]
+}

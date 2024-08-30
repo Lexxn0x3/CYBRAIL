@@ -1,0 +1,331 @@
+[
+  {
+    "timestamp": "0119/135429.100",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0119/135432.172",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135446.358",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0119/135449.303",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135734.219",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135738.621",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135740.303",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135835.521",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135837.172",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135920.988",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135923.954",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/135925.786",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/140005.987",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/140008.534",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/140008.967",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 28528,
+    "message": "Invalid value passed for the moodle:draftitemid option. The value must be a number.",
+    "source": "https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js",
+    "source_line_number": 28528
+  },
+  {
+    "timestamp": "0119/140009.476",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 621,
+    "message": "tiny_autosave/q60195:4_answer_id: Skipping draft restoration. The editor is not empty.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 621
+  },
+  {
+    "timestamp": "0119/141022.424",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/141022.573",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 28528,
+    "message": "Invalid value passed for the moodle:draftitemid option. The value must be a number.",
+    "source": "https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js",
+    "source_line_number": 28528
+  },
+  {
+    "timestamp": "0119/141022.921",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 621,
+    "message": "tiny_autosave/q60195:1_answer_id: Skipping draft restoration. The editor is not empty.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 621
+  },
+  {
+    "timestamp": "0119/142315.446",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/142315.655",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 28528,
+    "message": "Invalid value passed for the moodle:draftitemid option. The value must be a number.",
+    "source": "https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js",
+    "source_line_number": 28528
+  },
+  {
+    "timestamp": "0119/142315.954",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 621,
+    "message": "tiny_autosave/q60195:5_answer_id: Skipping draft restoration. The editor is not empty.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 621
+  },
+  {
+    "timestamp": "0119/143809.683",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/143809.856",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 28528,
+    "message": "Invalid value passed for the moodle:draftitemid option. The value must be a number.",
+    "source": "https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js",
+    "source_line_number": 28528
+  },
+  {
+    "timestamp": "0119/143810.116",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 621,
+    "message": "tiny_autosave/q60195:6_answer_id: Skipping draft restoration. The editor is not empty.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 621
+  },
+  {
+    "timestamp": "0119/145223.849",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/145223.983",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 28528,
+    "message": "Invalid value passed for the moodle:draftitemid option. The value must be a number.",
+    "source": "https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js",
+    "source_line_number": 28528
+  },
+  {
+    "timestamp": "0119/145224.155",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 621,
+    "message": "tiny_autosave/q60195:2_answer_id: Skipping draft restoration. The editor is not empty.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 621
+  },
+  {
+    "timestamp": "0119/150501.022",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 5127,
+    "message": "Skipping store of autosave content - content has been reset",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 5127
+  },
+  {
+    "timestamp": "0119/150501.281",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/150501.430",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 28528,
+    "message": "Invalid value passed for the moodle:draftitemid option. The value must be a number.",
+    "source": "https://elearning.ohmportal.de/lib/editor/tiny/loader.php/1702526678/tinymce.js",
+    "source_line_number": 28528
+  },
+  {
+    "timestamp": "0119/150501.617",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 621,
+    "message": "tiny_autosave/q60195:3_answer_id: Skipping draft restoration. The editor is not empty.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 621
+  },
+  {
+    "timestamp": "0119/152650.982",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session keep-alive.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/152655.975",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/152700.934",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/152759.390",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  },
+  {
+    "timestamp": "0119/152802.822",
+    "log_level": "INFO",
+    "component": "CONSOLE",
+    "line_number": 574,
+    "message": "Starting Moodle session timeout warning.",
+    "source": "https://elearning.ohmportal.de/lib/requirejs.php/1702526678/core/first.js",
+    "source_line_number": 574
+  }
+]

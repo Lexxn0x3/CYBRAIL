@@ -1,0 +1,1079 @@
+{
+  "application": {
+    "name": "Safe Exam Browser",
+    "version": "3.6.0",
+    "build": "3.6.0.633"
+  },
+  "system": {
+    "start_time": "2024-01-19 08:04:03.306",
+    "os": "Windows 11",
+    "computer": "PASCALSLAPTOP",
+    "model": "Nitro 5 Nitro AN515-55",
+    "manufacturer": "Acer",
+    "runtime_id": "ebb7f7b0-7626-4470-ae97-a09b3c2b695f"
+  },
+  "logs": [
+    {
+      "timestamp": "2024-01-19 08:04:05.358",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initiating startup procedure..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.446",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Loading text data..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.446",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Text] System language is 'en', trying to load data..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.461",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Text] Data successfully loaded."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.461",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Starting communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.503",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host is opening..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.541",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host has been opened."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.541",
+      "thread": "06",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Successfully started communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/88bcdada-49dc-4e01-b3a9-6aa8ffdeb116'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:05.542",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify application integrity..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.411",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application integrity successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.413",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application successfully initialized."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.436",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ------------------------------------ Session Start Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.441",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing new session configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.444",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Client-ID: 360bad56-89f8-4538-b3d9-d89889fa915a"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.454",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Runtime-ID: ebb7f7b0-7626-4470-ae97-a09b3c2b695f"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.454",
+      "thread": "09",
+      "level": "INFO",
+      "message": " -\u003e Session-ID: f62f73e9-2d41-48f1-9a92-c3322890ba31"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.454",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing application configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.454",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Found command-line argument for configuration resource: 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917', the URI is valid."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.469",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Initialized default settings, now attempting to load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.469",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Can't load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917' as it isn't an existing file."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.485",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Sending HEAD request for 'https://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.784",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Received response '200 - OK'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.784",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Can load 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917' as it references an existing network resource."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:09.784",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Sending GET request for 'https://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.051",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] Received response '200 - OK'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.051",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[NetworkResourceLoader] The  response data is HTML."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.066",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to load data from 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917' using NetworkResourceLoader -\u003e Result: LoadWithBrowser."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.066",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The configuration resource needs authentication or is a webpage, using 'sebs://elearning.ohmportal.de/mod/quiz/accessrule/seb/config.php?cmid=117917' as start URL for the browser."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.066",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The configuration was successful."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.082",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating version restrictions..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.082",
+      "thread": "09",
+      "level": "INFO",
+      "message": "There are no version restrictions for the configuration."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.082",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Remote proctoring is disabled, skipping disclaimer."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.082",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating remote session policy..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.098",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RemoteSessionDetector] System appears not to be running in a remote session."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.098",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify cursor configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.098",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Cursor configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.098",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Attempting to verify ease of access configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.098",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Ease of access configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.098",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating virtual machine policy..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.113",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Validating display configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.148",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected active, internal display 'DISPLAY\\NCP004D\\4\u0026fcd0332\u00260\u0026UID265988_0' connected via 'Internal'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.148",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected 1 active displays, 10 are allowed."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.148",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Display configuration is allowed."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.148",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing service..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.161",
+      "thread": "09",
+      "level": "INFO",
+      "message": "The service will be ignored for the next session."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.161",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initializing kiosk mode 'CreateNewDesktop'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.161",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Found desktop handle for thread with ID = 23460. Attempting to get desktop name..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.161",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Successfully determined current desktop 'Default' [284]."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.161",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Current desktop is 'Default' [284]."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.161",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Attempting to create random desktop..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.176",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[DesktopFactory] Successfully created random desktop 'WiZmpuppRemgIhKSjHG' [6451]."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.176",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Created custom desktop 'WiZmpuppRemgIhKSjHG' [6451]."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.207",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Successfully activated custom desktop."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.223",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DesktopMonitor] Started monitoring desktop 'WiZmpuppRemgIhKSjHG' [6451]."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.223",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Starting new client process..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.223",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ProcessFactory] Attempting to start process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.474",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[ProcessFactory] Successfully started process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe' with ID = 20548."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.474",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (20548)] Initialized termination event."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:10.474",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Waiting for client to complete initialization..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:12.342",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received connection request with authentication token '76b6d5ab-94b5-4faf-8361-be6fc37afe21'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:12.342",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Accepted connection request."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:12.374",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ConfigurationNeeded', sending response 'ConfigurationResponse'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.025",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ClientIsReady', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.025",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Client has been successfully started and initialized. Creating communication proxy for client host..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.025",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/client/e7a2ef54-5f20-4b6e-83c1-8be2c8c8444a' with authentication token '76b6d5ab-94b5-4faf-8361-be6fc37afe21'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.025",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is opening..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.088",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been opened."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.103",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Connection was established."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.103",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Connection with client has been established. Requesting authentication..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.103",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Authenticate'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.119",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'AuthenticationResponse' for message 'SimpleMessage -\u003e Authenticate'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.119",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received authentication response."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.119",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Authentication of client has been successful, client is ready to operate."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.119",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Successfully started new client instance."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.135",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Successfully activated first session 'f62f73e9-2d41-48f1-9a92-c3322890ba31'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:15.135",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ---------------------------------------- Session Running ----------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.197",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Accepted request for reconfiguration with 'C:\\Users\\pasca\\AppData\\Local\\SafeExamBrowser\\Temp\\config.seb'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.197",
+      "thread": "15",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'ReconfigurationMessage', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.205",
+      "thread": "23",
+      "level": "INFO",
+      "message": "### ------------------------------------ Session Start Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.208",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initializing new session configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.209",
+      "thread": "23",
+      "level": "INFO",
+      "message": " -\u003e Client-ID: 137bb2a9-33ca-45cd-8a45-42217ec8f4c8"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.210",
+      "thread": "23",
+      "level": "INFO",
+      "message": " -\u003e Runtime-ID: ebb7f7b0-7626-4470-ae97-a09b3c2b695f"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.211",
+      "thread": "23",
+      "level": "INFO",
+      "message": " -\u003e Session-ID: ffa4408a-5b56-4ab1-8afe-b317f3bfaa24"
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.212",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initializing new application configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.213",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Initialized default settings, now attempting to load 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.215",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Can load 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb' as it is an existing file."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.216",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Loading data from 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.217",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[FileResourceLoader] Created 'System.IO.FileStream' for 0,923 KB data in 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.217",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to load data from 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb' using FileResourceLoader -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.222",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[BinaryParser] 'System.IO.FileStream' starting with '\u003c?xm' does not match the Binary format."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.224",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[XmlParser] 'System.IO.FileStream' starting with '\u003c?xm' matches the Xml format."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.228",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[XmlParser] Found root node, starting to parse data..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.234",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[XmlParser] Finished parsing -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.235",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ConfigurationRepository] Tried to parse data from 'System.IO.FileStream' using XmlParser -\u003e Result: Success."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.262",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Deleted temporary configuration file 'file:///C:/Users/pasca/AppData/Local/SafeExamBrowser/Temp/config.seb'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.263",
+      "thread": "23",
+      "level": "INFO",
+      "message": "The configuration was successful."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.264",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating version restrictions..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.265",
+      "thread": "23",
+      "level": "INFO",
+      "message": "There are no version restrictions for the configuration."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.267",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Remote proctoring is disabled, skipping disclaimer."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.267",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating remote session policy..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.267",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[RemoteSessionDetector] System appears not to be running in a remote session."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.268",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Attempting to verify cursor configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.269",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Cursor configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.270",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Attempting to verify ease of access configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.270",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Ease of access configuration successfully verified."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.271",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating virtual machine policy..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.280",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[VirtualMachineDetector] Computer 'PASCALSLAPTOP' appears not to be a virtual machine."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.281",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Validating display configuration..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.294",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected active, internal display 'DISPLAY\\NCP004D\\4\u0026fcd0332\u00260\u0026UID265988_0' connected via 'Internal'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.294",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[DisplayMonitor] Detected 1 active displays, 1 are allowed."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.295",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Display configuration is allowed."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.296",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Initializing service..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.296",
+      "thread": "23",
+      "level": "INFO",
+      "message": "The service will be ignored for the next session."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.300",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Instructing client to initiate shutdown procedure."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.301",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Shutdown'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.305",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Shutdown'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.307",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Client acknowledged shutdown request."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.308",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Disconnecting from client communication host."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.317",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is closing..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.319",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been closed."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.319",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/client/e7a2ef54-5f20-4b6e-83c1-8be2c8c8444a'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:43.320",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client to disconnect from runtime communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.047",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received disconnection request with message 'DisconnectionMessage'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.048",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client process to terminate..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.146",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (20548)] Process has terminated."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.146",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Client has been successfully terminated."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.146",
+      "thread": "23",
+      "level": "INFO",
+      "message": "New kiosk mode 'CreateNewDesktop' is the same as the currently active mode, skipping re-initialization..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.161",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Starting new client process..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.161",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ProcessFactory] Attempting to start process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.256",
+      "thread": "23",
+      "level": "INFO",
+      "message": "[ProcessFactory] Successfully started process 'C:\\Program Files\\SafeExamBrowser\\Application\\SafeExamBrowser.Client.exe' with ID = 5104."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.256",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (5104)] Initialized termination event."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:44.256",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Waiting for client to complete initialization..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:46.047",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received connection request with authentication token '390f9887-03a2-4628-a4d4-02056d4cdd97'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:46.047",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Accepted connection request."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:46.062",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ConfigurationNeeded', sending response 'ConfigurationResponse'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.318",
+      "thread": "14",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e ClientIsReady', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.318",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Client has been successfully started and initialized. Creating communication proxy for client host..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.329",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Trying to connect to endpoint 'net.pipe://localhost/safeexambrowser/client/b44f0b5d-7efa-4bd3-a5f3-00a7d7916f00' with authentication token '390f9887-03a2-4628-a4d4-02056d4cdd97'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.329",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is opening..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.365",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been opened."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.381",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Connection was established."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.381",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Connection with client has been established. Requesting authentication..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.381",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Authenticate'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.396",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'AuthenticationResponse' for message 'SimpleMessage -\u003e Authenticate'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.396",
+      "thread": "23",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received authentication response."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.396",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Authentication of client has been successful, client is ready to operate."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.396",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Successfully started new client instance."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.396",
+      "thread": "23",
+      "level": "INFO",
+      "message": "Successfully terminated old session 'f62f73e9-2d41-48f1-9a92-c3322890ba31' and activated new session 'ffa4408a-5b56-4ab1-8afe-b317f3bfaa24'."
+    },
+    {
+      "timestamp": "2024-01-19 08:04:50.396",
+      "thread": "23",
+      "level": "INFO",
+      "message": "### ---------------------------------------- Session Running ----------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.051",
+      "thread": "19",
+      "level": "INFO",
+      "message": "Received shutdown request from the client application."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.052",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received message 'SimpleMessage -\u003e RequestShutdown', sending response 'SimpleResponse -\u003e Acknowledged'."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.056",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### ------------------------------------- Session Stop Procedure ------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.058",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Instructing client to initiate shutdown procedure."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.060",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Sending message 'SimpleMessage -\u003e Shutdown'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.064",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Received response 'SimpleResponse -\u003e Acknowledged' for message 'SimpleMessage -\u003e Shutdown'."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.066",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Client acknowledged shutdown request."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.067",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Disconnecting from client communication host."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.078",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel is closing..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.080",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Communication channel has been closed."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.081",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[ClientProxy] Disconnected from 'net.pipe://localhost/safeexambrowser/client/b44f0b5d-7efa-4bd3-a5f3-00a7d7916f00'."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.082",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Waiting for client to disconnect from runtime communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.917",
+      "thread": "17",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Received disconnection request with message 'DisconnectionMessage'."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:18.918",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Waiting for client process to terminate..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.002",
+      "thread": "19",
+      "level": "DEBUG",
+      "message": "[Process 'SafeExamBrowser.Client.exe' (5104)] Process has terminated."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.002",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Client has been successfully terminated."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.004",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Reverting kiosk mode 'CreateNewDesktop'..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.006",
+      "thread": "09",
+      "level": "INFO",
+      "message": "[DesktopMonitor] Stopped monitoring desktop 'WiZmpuppRemgIhKSjHG' [6451]."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.018",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Switched back to original desktop 'Default' [284]."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.036",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Closed custom desktop 'WiZmpuppRemgIhKSjHG' [6451]."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.039",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Finalizing service..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.043",
+      "thread": "09",
+      "level": "INFO",
+      "message": "### --------------------------------------- Session Terminated --------------------------------------- ###"
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.157",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Initiating shutdown procedure..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.159",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Stopping communication host..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.160",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host is closing..."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.168",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Communication host has been closed."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.168",
+      "thread": "09",
+      "level": "DEBUG",
+      "message": "[RuntimeHost] Terminated communication host for endpoint 'net.pipe://localhost/safeexambrowser/runtime/88bcdada-49dc-4e01-b3a9-6aa8ffdeb116'."
+    },
+    {
+      "timestamp": "2024-01-19 08:05:19.169",
+      "thread": "09",
+      "level": "INFO",
+      "message": "Application successfully finalized."
+    }
+  ]
+}
