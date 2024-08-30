@@ -2,6 +2,9 @@ import json
 import sys
 from enum import Enum
 from typing import List, Optional
+from helper import parse_config
+
+parsed_config = parse_config("module.config")
 
 class StatusEnum(str, Enum):
     SUCCESS = "success"
@@ -33,7 +36,7 @@ def compare_version_or_build(current, expected):
     current_parts = [int(part) for part in current.split('.')]
     expected_parts = [int(part) for part in expected.split('.')]
     
-    # Compare each part
+# Compare each part
     for curr, exp in zip(current_parts, expected_parts):
         if curr < exp:
             return False
@@ -52,8 +55,8 @@ def check_for_suspicious_activity(log_data: dict) -> List[Error]:
         version = app_info.get('version')
         build = app_info.get('build')
 
-        expected_version = "3.6.0"
-        expected_build = "3.6.0.0"
+        expected_version = parsed_config["min_version"]
+        expected_build = parsed_config["min_build"]
         # Compare the current version and build with the expected version and build
         
         if not compare_version_or_build(version, expected_version) or not compare_version_or_build(build, expected_build):
@@ -65,12 +68,8 @@ def check_for_suspicious_activity(log_data: dict) -> List[Error]:
 
     # Check for suspicious system info
     system_info = log_data.get('system', {})
-    suspicious_keywords = suspicious_keywords = [
-        "vm", "vmware", "virtualbox", "qemu", "xen", "hyper-v", "parallels",
-        "vbox", "kvm", "virt", "virtual", "cloud", "unknown", "generic",
-        "standard", "emulated", "bochs", "innotek",
-        "guest"
-    ]
+    suspicious_keywords = parsed_config["suspicious_keywords"]
+
     os_name = system_info.get('os', '').lower()
     model = system_info.get('model', '').lower()
     manufacturer = system_info.get('manufacturer', '').lower()
