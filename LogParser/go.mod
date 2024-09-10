@@ -10,6 +10,7 @@ require (
 require (
 	github.com/gofiber/template v1.8.3 // indirect
 	github.com/gofiber/utils v1.1.0 // indirect
+	github.com/sirupsen/logrus v1.9.3 // indirect
 )
 
 require (

@@ -4,14 +4,15 @@ import (
 	"LogParser/parser"
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
+  "flag"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/template/html/v2"
+  log "github.com/sirupsen/logrus"
 
 	"LogParser/checkstrategies" // Adjust this path to match your actual module path
 	"LogParser/config"
@@ -19,6 +20,12 @@ import (
 )
 
 func main() {
+  // Define a flag for the log level
+  logLevel := flag.String("log-level", "info", "set the log level (debug, info, error)")
+  flag.Parse()
+
+  // Initialize the logger with the given log level
+  initLogger(*logLevel)
 
 	// Load the template engine
 	engine := html.New("./views", ".html")
@@ -40,7 +47,20 @@ func main() {
 
 	log.Fatal(app.Listen(":3000"))
 }
+func initLogger(logLevel string) {
+    switch logLevel {
+    case "debug":
+        log.SetLevel(log.DebugLevel)
+    case "info":
+        log.SetLevel(log.InfoLevel)
+    case "error":
+        log.SetLevel(log.ErrorLevel)
+    default:
+        log.SetLevel(log.InfoLevel) // Default to info if no valid level is provided
+    }
 
+    log.SetOutput(os.Stdout) // You can set this to a file or stderr if needed
+}
 func listModuleConfigs(c *fiber.Ctx) error {
 	modulesDir := "./Modules"
 
@@ -69,6 +89,7 @@ func editModuleConfig(c *fiber.Ctx) error {
 	// Load the .config file
 	file, err := os.Open(filePath)
 	if err != nil {
+    log.Error(err.Error())
 		return c.Status(500).SendString("Failed to open config file")
 	}
 	defer file.Close()
@@ -76,7 +97,7 @@ func editModuleConfig(c *fiber.Ctx) error {
 	var config map[string]map[string]interface{}
 	err = json.NewDecoder(file).Decode(&config)
 	if err != nil {
-		fmt.Println(err)
+		log.Error(err.Error())
 		return c.Status(500).SendString("Failed to decode config file")
 	}
 
@@ -90,11 +111,12 @@ func saveModuleConfig(c *fiber.Ctx) error {
 	modulesDir := "./Modules"
 	configFile := c.FormValue("FileName")
 	filePath := filepath.Join(modulesDir, configFile)
-	fmt.Println(filePath, c.FormValue("FileName"))
+	log.Debug(filePath, c.FormValue("FileName"))
 
 	// Load the existing configuration
 	file, err := os.Open(filePath)
 	if err != nil {
+    log.Error(err.Error())
 		return c.Status(500).SendString("Failed to open config file")
 	}
 	defer file.Close()
@@ -102,7 +124,7 @@ func saveModuleConfig(c *fiber.Ctx) error {
 	var config map[string]map[string]interface{}
 	err = json.NewDecoder(file).Decode(&config)
 	if err != nil {
-		fmt.Println(err)
+    log.Error(err.Error())
 		return c.Status(500).SendString("Failed to decode config file")
 	}
 
@@ -141,7 +163,7 @@ func saveConfig(c *fiber.Ctx) error {
 	configPath := filepath.Join(baseDir, "config.json")
 	cfg, err := config.LoadConfig(configPath)
 	if err != nil {
-		return c.Status(500).SendString("Failed to load config")
+    return c.Status(500).SendString("Failed to load config: " + err.Error())
 	}
 
 	// Find or add the entry
@@ -161,14 +183,14 @@ func saveConfig(c *fiber.Ctx) error {
 		cfg.Students = append(cfg.Students, config.Student{
 			ID:   id,
 			Name: name,
-			Logs: config.LogPaths{BrowserLog: newBaseName + "_Browser.log", ClientLog: newBaseName + "_Client.log", RuntimeLog: newBaseName + "_Runtime.log"},
+			Logs: config.LogPaths{BrowserLog: newBaseName + "_Browser.log", ClientLog: newBaseName + "_Client.log", RuntimeLog: newBaseName + "_Runtime.log", TypeIntervalLog: newBaseName + "_TypeIntervall.json"},
 		})
 	}
 
 	// Save the updated configuration
 	err = config.SaveConfig(configPath, cfg)
 	if err != nil {
-		return c.Status(500).SendString("Failed to save config")
+    return c.Status(500).SendString("Failed to save config: " + err.Error())
 	}
 
 	return c.Redirect("/")
@@ -183,7 +205,7 @@ func runOverview(c *fiber.Ctx) error {
 		results := make(chan map[string]interface{}, len(existingConfig.Students))
 		for _, student := range existingConfig.Students {
 			go func(student config.Student) {
-				fmt.Printf("Processing Student: %s (%v)\n", student.Name, student.ID)
+				log.Debugf("Processing Student: %s (%v)\n", student.Name, student.ID)
 				result := process(baseDir, student.Logs)
 				results <- map[string]interface{}{
 					"student": student.Name,
@@ -207,6 +229,7 @@ func runOverview(c *fiber.Ctx) error {
 		})
 	}
 
+  log.Debug("No final result for")
 	return c.Redirect("/logfilelist")
 }
 
@@ -250,6 +273,7 @@ func process(baseDir string, logPaths config.LogPaths) map[string]interface{} {
 	browserResult := processLogFile(logPaths.BrowserLog, jsonPaths.BrowserLogJSON, &parser.BrowserLogParser{})
 	clientResult := processLogFile(logPaths.ClientLog, jsonPaths.ClientLogJSON, &parser.ClientLogParser{})
 	runtimeResult := processLogFile(logPaths.RuntimeLog, jsonPaths.RuntimeLogJSON, &parser.RuntimeLogParser{})
+  timeIntervalResult := processLogFile(logPaths.TypeIntervalLog, jsonPaths.TypeIntervalJSON, &parser.PassLogParser{}) 
 
 	// Execute the check modules and get the result
 	checkResults := runCheckModules(jsonPaths)
@@ -258,7 +282,7 @@ func process(baseDir string, logPaths config.LogPaths) map[string]interface{} {
 	overallStatus := checkResults["overallStatus"].(string)
 	overallDetails := []string{}
 
-	if !browserResult || !clientResult || !runtimeResult {
+	if !browserResult || !clientResult || !runtimeResult || !timeIntervalResult{
 		overallStatus = "error"
 		overallDetails = append(overallDetails, "Error in log processing")
 	}
@@ -288,7 +312,8 @@ func process(baseDir string, logPaths config.LogPaths) map[string]interface{} {
 
 // processLogFile reads, processes, and writes the log data to a JSON file.
 func processLogFile(logPath, jsonPath string, curparser parser.LogParser) bool {
-	logData, err := os.ReadFile(logPath)
+  logData, err := os.ReadFile(logPath)
+  log.Debug("reading " + logPath)
 	if err != nil {
 		log.Printf("Failed to read log file (%s): %v", logPath, err)
 		return false
@@ -304,6 +329,7 @@ func processLogFile(logPath, jsonPath string, curparser parser.LogParser) bool {
 	}
 
 	err = os.WriteFile(jsonPath, processedData, 0644)
+  log.Debug("writing " + jsonPath)
 	if err != nil {
 		log.Printf("Failed to write JSON file (%s): %v", jsonPath, err)
 		return false
@@ -330,6 +356,7 @@ func runCheckModules(jsonPaths config.JSONPaths) map[string]interface{} {
 		{"NetworkConfigCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: filepath.Join(execDir, "Modules/network_config_check.py")}, jsonPaths.ClientLogJSON},
 		{"FrequentReinitialization", &checkstrategies.PythonScriptStrategy{ScriptPath: filepath.Join(execDir, "Modules/frequent_reinitialization.py")}, jsonPaths.RuntimeLogJSON},
 		{"UnusualShutdownCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: filepath.Join(execDir, "Modules/unusual_shutdown_check.py")}, jsonPaths.ClientLogJSON},
+    {"BotTypingCheck", &checkstrategies.PythonScriptStrategy{ScriptPath: filepath.Join(execDir, "Modules/bot_typing.py")}, jsonPaths.TypeIntervalJSON},
 	}
 
 	overallStatus := "success"
@@ -371,7 +398,9 @@ func runCheckModules(jsonPaths config.JSONPaths) map[string]interface{} {
 		}
 
 		// Execute the module strategy
+    log.Debug("Executing: " + module.Name)
 		output, err := module.Strategy.Execute(module.LogPath)
+    log.Debug(output)
 		result := utils.ParseModuleOutput(output, err)
 		results[module.Name] = result
 

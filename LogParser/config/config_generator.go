@@ -1,8 +1,7 @@
 package config
 
 import (
-	"io/ioutil"
-	"log"
+  log "github.com/sirupsen/logrus"
 	"os"
 	"path/filepath"
 	"strings"
@@ -43,12 +42,13 @@ func CheckLogFilesInConfig(logDir, configPath string) bool {
 	// Load the configuration
 	config, err := LoadConfig(configPath)
 	if err != nil {
-		log.Printf("Failed to load config: %v", err)
+		log.Errorf("Failed to load config: %v", err)
 		return false
 	}
 
 	// Retrieve all log files in the directory
 	logFiles := GetAllLogFiles(logDir)
+
 
 	// Create a map of student log files from the config for quick lookup
 	studentLogMap := make(map[string]bool)
@@ -57,6 +57,7 @@ func CheckLogFilesInConfig(logDir, configPath string) bool {
 		studentLogMap[student.Logs.BrowserLog] = true
 		studentLogMap[student.Logs.ClientLog] = true
 		studentLogMap[student.Logs.RuntimeLog] = true
+    studentLogMap[student.Logs.TypeIntervalLog] = true
 	}
 
 	// Check if each log file in the directory has a corresponding student config
@@ -71,7 +72,7 @@ func CheckLogFilesInConfig(logDir, configPath string) bool {
 
 // getAllLogFiles retrieves all log files from the given directory.
 func GetAllLogFiles(dir string) []string {
-	files, err := ioutil.ReadDir(dir)
+	files, err := os.ReadDir(dir)
 	if err != nil {
 		log.Fatalf("Failed to read directory: %v", err)
 	}
@@ -101,7 +102,11 @@ func GroupLogsByBaseName(logFiles []string) map[string]LogPaths {
 			logs := groups[baseName]
 			logs.RuntimeLog = logFile
 			groups[baseName] = logs
-		}
+		} else if strings.Contains(logFile, "_TypeIntervall"){
+      logs := groups[baseName]
+      logs.TypeIntervalLog = logFile
+      groups[baseName] = logs
+    }
 	}
 
 	return groups
