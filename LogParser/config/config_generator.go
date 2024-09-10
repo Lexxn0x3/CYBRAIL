@@ -63,6 +63,7 @@ func CheckLogFilesInConfig(logDir, configPath string) bool {
 	// Check if each log file in the directory has a corresponding student config
 	for _, logFile := range logFiles {
 		if !studentLogMap[logFile] {
+      log.Error("Not all log files in config. logFile: " + logFile)
 			return false
 		}
 	}

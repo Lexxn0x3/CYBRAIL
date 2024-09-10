@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "0112/144319.183",
+    "log_level": "WARNING",
+    "component": "policy_logger.cc",
+    "line_number": 148,
+    "message": ":components\\enterprise\\browser\\controller\\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled."
+  },
+  {
+    "timestamp": "0112/144335.557",
+    "log_level": "WARNING",
+    "component": "sqlite_persistent_store_backend_base.cc",
+    "line_number": 198,
+    "message": "Failed to post task from LoadNelPoliciesAndNotifyInBackground@net\\extras\\sqlite\\sqlite_persistent_reporting_and_nel_store.cc:1324 to client_task_runner_."
+  }
+]

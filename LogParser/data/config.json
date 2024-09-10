@@ -1,0 +1,14 @@
+{
+  "students": [
+    {
+      "id": "875",
+      "name": "jhggv",
+      "logs": {
+        "BrowserLog": "data/2024-01-12_14h43m08s_Browser.log",
+        "ClientLog": "data/2024-01-12_14h43m08s_Client.log",
+        "RuntimeLog": "data/2024-01-12_14h43m08s_Runtime.log",
+        "TypeIntervalLog": "data/2024-01-12_14h43m08s_TypeIntervalLog.log"
+      }
+    }
+  ]
+}
