@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -9,38 +10,28 @@ import (
     "github.com/eiannone/keyboard"
 )
 
-// KeyEvent represents a key press with a timestamp
-type KeyEvent struct {
-    Key       rune    `json:"key"`
-    Timestamp string  `json:"timestamp"`
+// KeyEventIntervalThreshold defines how long of a pause qualifies as a new event
+const KeyEventIntervalThreshold = 2.0 // 2 seconds
+
+// Event represents a set of keypress intervals
+type Event struct {
+    Intervals []float64 `json:"intervals"`
 }
 
-// TypingSession holds the sequence of key events
+// TypingSession holds multiple events
 type TypingSession struct {
-    Events []KeyEvent `json:"events"`
+    Events []Event `json:"events"`
 }
 
-// AddEvent adds a new KeyEvent to the TypingSession
-func (ts *TypingSession) AddEvent(key rune) {
-    ts.Events = append(ts.Events, KeyEvent{
-        Key:       key,
-        Timestamp: time.Now().Format(time.RFC3339Nano),
-    })
-}
-
-// CalculateIntervals calculates the intervals between consecutive key events
-func (ts *TypingSession) CalculateIntervals() []time.Duration {
-    intervals := make([]time.Duration, 0)
-    for i := 1; i < len(ts.Events); i++ {
-        start, _ := time.Parse(time.RFC3339Nano, ts.Events[i-1].Timestamp)
-        end, _ := time.Parse(time.RFC3339Nano, ts.Events[i].Timestamp)
-        interval := end.Sub(start)
-        intervals = append(intervals, interval)
+// AddInterval adds a new interval to the latest event or creates a new event if needed
+func (ts *TypingSession) AddInterval(interval float64, isNewEvent bool) {
+    if isNewEvent || len(ts.Events) == 0 {
+        ts.Events = append(ts.Events, Event{}) // Start a new event
     }
-    return intervals
+    ts.Events[len(ts.Events)-1].Intervals = append(ts.Events[len(ts.Events)-1].Intervals, interval)
 }
 
-// ToJSON converts TypingSession to JSON format
+// ToJSON converts the TypingSession to JSON format
 func (ts *TypingSession) ToJSON() ([]byte, error) {
     return json.MarshalIndent(ts, "", "    ")
 }
@@ -55,6 +46,7 @@ func main() {
     fmt.Println("Start typing... Press ESC to quit.")
 
     var session TypingSession
+    var prevTime time.Time
 
     for {
         char, key, err := keyboard.GetKey()
@@ -66,20 +58,31 @@ func main() {
             break
         }
 
-        session.AddEvent(char)
-        fmt.Printf("You pressed: %q at %v\n", char, time.Now())
+        currentTime := time.Now()
+
+        // If this is not the first keypress, calculate the interval
+        if !prevTime.IsZero() {
+            interval := currentTime.Sub(prevTime).Seconds()
+            isNewEvent := interval > KeyEventIntervalThreshold // Detect if it's a new event
+            session.AddInterval(interval, isNewEvent)
+        }
+
+        prevTime = currentTime
+
+        fmt.Printf("You pressed: %q at %v\n", char, currentTime)
     }
 
+    // Convert session to JSON
     jsonOutput, err := session.ToJSON()
     if err != nil {
         panic(err)
     }
 
-    fmt.Println("Session data in JSON format:")
+    fmt.Println("Session data in JSON format (with multiple events):")
     fmt.Println(string(jsonOutput))
 
     // Optionally, write JSON to a file
-    if err := os.WriteFile("typing_session.json", jsonOutput, 0644); err != nil {
+    if err := os.WriteFile("typing_intervals.json", jsonOutput, 0644); err != nil {
         panic(err)
     }
 }

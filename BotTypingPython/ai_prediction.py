@@ -12,15 +12,12 @@ def load_json_log(filename):
         data = json.load(file)
 
     all_intervals = []
-    for session in data:
-        # Extract timestamps from the log and calculate intervals
-        timestamps = [event['timestamp'] for event in session['events']]
-        timestamps = [np.datetime64(t) for t in timestamps]
+    for session in data["events"]:
+        # Extract intervals directly from the session
+        intervals = session["intervals"]
 
-        # Calculate time intervals between consecutive keypresses
-        intervals = np.diff(timestamps).astype('timedelta64[ms]').astype(np.float64) / 1000.0  # Convert to seconds
         if len(intervals) > 0:
-            all_intervals.append(intervals)
+            all_intervals.append(np.array(intervals))
 
     return all_intervals
 
@@ -46,7 +43,7 @@ def overall_bot_score(predictions):
 
 
 # Load the JSON log of typing events
-log_filename = 'samples/bot/constant_bot_data_speed_0.1.json'  # Replace with your log file path
+log_filename = 'samples/interval/human/typing_session_20240909_141805.json'  # Replace with your log file path
 intervals = load_json_log(log_filename)
 
 # Prepare the data for prediction (assuming model was trained with n_steps=10)

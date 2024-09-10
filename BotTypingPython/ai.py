@@ -1,32 +1,31 @@
 import os
 import json
 import numpy as np
-from datetime import datetime
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
+from tensorflow.keras.layers import LSTM, Dense, Input
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
-from tensorflow.keras.layers import Input
-import tensorflow as tf
 import shap
 
 
-def load_data(directory, label):
-    """Load and label data from JSON files in a specified directory."""
+def load_intervals(directory, label):
+    """Load interval-only data from JSON files with multiple events."""
     sessions = []
     for filename in os.listdir(directory):
         filepath = os.path.join(directory, filename)
         with open(filepath, 'r') as file:
             data = json.load(file)
-            for session in data:
-                timestamps = [datetime.fromisoformat(event['timestamp']) for event in session['events']]
-                if len(timestamps) > 1:
-                    intervals = [t2 - t1 for t1, t2 in zip(timestamps[:-1], timestamps[1:])]
-                    intervals = [interval.total_seconds() for interval in intervals]
-                    sessions.append((intervals, label))
+            for session in data["events"]:
+                # Extract intervals from each event directly
+                intervals = session["intervals"]  # session["intervals"] is already a list of intervals
+
+                if len(intervals) > 0:
+                    sessions.append((np.array(intervals), label))
+
     return sessions
+
 
 
 def create_sequences(sessions, n_steps=10):
@@ -36,7 +35,7 @@ def create_sequences(sessions, n_steps=10):
         for i in range(len(intervals) - n_steps):
             X.append(intervals[i:i + n_steps])
             y.append(label)
-    return np.array(X), np.array(y)
+    return np.array(X).reshape((len(X), n_steps, 1)), np.array(y)
 
 
 def build_model(input_shape):
@@ -75,9 +74,9 @@ def plot_learning_curves(history):
     plt.show()
 
 
-# Load data from both human and bot directories
-human_data = load_data('samples/human', 0)
-bot_data = load_data('samples/bot', 1)
+# Load interval-only data from both human and bot directories
+human_data = load_intervals('samples/interval/human', 0)  # Label 0 for human
+bot_data = load_intervals('samples/interval/bot', 1)  # Label 1 for bot
 
 # Combine human and bot data
 all_data = human_data + bot_data
@@ -96,19 +95,23 @@ X_test = X_test.reshape((X_test.shape[0], X_test.shape[1], 1))
 model = build_model((X_train.shape[1], 1))
 
 # Set up callbacks
-early_stopping = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
+early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 model_checkpoint = ModelCheckpoint('saved_model/best_model.keras', monitor='val_loss', save_best_only=True)
 
-if False:
+# Optionally, train the model (set this to True if you want to re-train the model)
+if True:
     # Train the model with early stopping and model checkpointing
-    history = model.fit(X_train, y_train, epochs=3, batch_size=32, validation_data=(X_test, y_test),
+    history = model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_test, y_test),
                         callbacks=[early_stopping, model_checkpoint])
 
     # Plot the learning curves
     plot_learning_curves(history)
+    best_model = model
+else:
+    best_model = load_model('saved_model/best_model.keras')
 
 # Load the best model saved during training
-best_model = load_model('saved_model/best_model.keras')
+#best_model = load_model('saved_model/best_model.keras')
 
 # Evaluate the model on the test data
 evaluation = best_model.evaluate(X_test, y_test)
@@ -116,7 +119,7 @@ print(f'Test Loss: {evaluation[0]}, Test Accuracy: {evaluation[1]}')
 
 # Reshape X_train and X_test to 2D arrays (samples, flattened time steps * features)
 X_train_reshaped = X_train.reshape((X_train.shape[0], -1))  # Flatten each sample's time steps into a 2D array
-X_test_reshaped = X_test.reshape((X_test.shape[0], -1))     # Same for test data
+X_test_reshaped = X_test.reshape((X_test.shape[0], -1))  # Same for test data
 
 # Use KernelExplainer as a general solution for SHAP explanations
 explainer = shap.KernelExplainer(best_model.predict, X_train_reshaped[:100])
