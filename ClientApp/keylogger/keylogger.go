@@ -39,7 +39,7 @@ func (ts *TypingSession) ToJSON() ([]byte, error) {
 
 // StartKeylogger starts the keylogger and returns the typing session data in JSON format.
 // exitSequenceEnabled allows control over whether the "exit" sequence will end the session.
-func StartKeylogger(exitSequenceEnabled bool) ([]byte, error) {
+func StartKeylogger(exitSequenceEnabled bool, termination chan bool) ([]byte, error) {
 	// Create a new keylogger
 	kl := keylogger.NewKeylogger()
 
@@ -49,36 +49,43 @@ func StartKeylogger(exitSequenceEnabled bool) ([]byte, error) {
 	var prevTime time.Time
 	var inputBuffer strings.Builder
 
+loop:
 	for {
-		// Capture the key event
-		key := kl.GetKey()
+		select {
+		case <-termination:
+			// Exit the loop
+			break loop
+		default:
+			// Capture the key event
+			key := kl.GetKey()
 
-		// Skip empty key events
-		if key.Empty {
-			time.Sleep(10 * time.Millisecond)
-			continue
-		}
+			// Skip empty key events
+			if key.Empty {
+				time.Sleep(10 * time.Millisecond)
+				continue
+			}
 
-		currentTime := time.Now()
+			currentTime := time.Now()
 
-		// If this is not the first keypress, calculate the interval
-		if !prevTime.IsZero() {
-			interval := currentTime.Sub(prevTime).Seconds()
-			isNewEvent := interval > KeyEventIntervalThreshold // Detect if it's a new event
-			session.AddInterval(interval, isNewEvent)
-		}
+			// If this is not the first keypress, calculate the interval
+			if !prevTime.IsZero() {
+				interval := currentTime.Sub(prevTime).Seconds()
+				isNewEvent := interval > KeyEventIntervalThreshold // Detect if it's a new event
+				session.AddInterval(interval, isNewEvent)
+			}
 
-		prevTime = currentTime
+			prevTime = currentTime
 
-		// Output the key pressed in a more readable format
-		fmt.Printf("You pressed: %s at %v (Keycode: %d)\n", string(key.Rune), currentTime, key.Keycode)
+			// Output the key pressed in a more readable format
+			fmt.Printf("You pressed: %s at %v (Keycode: %d)\n", string(key.Rune), currentTime, key.Keycode)
 
-		// Add the key to the input buffer for exit sequence detection
-		if exitSequenceEnabled {
-			inputBuffer.WriteRune(key.Rune)
-			if strings.Contains(inputBuffer.String(), ExitSequence) {
-				fmt.Println("Exit sequence detected. Exiting...")
-				break
+			// Add the key to the input buffer for exit sequence detection
+			if exitSequenceEnabled {
+				inputBuffer.WriteRune(key.Rune)
+				if strings.Contains(inputBuffer.String(), ExitSequence) {
+					fmt.Println("Exit sequence detected. Exiting...")
+					break
+				}
 			}
 		}
 	}

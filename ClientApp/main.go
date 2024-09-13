@@ -2,23 +2,28 @@ package main
 
 import (
 	"ClientApp/keylogger"
+	"ClientApp/openprograms"
 	"fmt"
+	"os"
+	"os/signal"
+	"syscall"
 )
 
 func main() {
-	// Start the keylogger with the exit sequence enabled
-	jsonData, err := keylogger.StartKeylogger(true)
-	if err != nil {
-		panic(err)
-	}
+	signalChannel := make(chan os.Signal, 1)
+	signal.Notify(signalChannel, syscall.SIGINT, syscall.SIGTERM)
 
-	// Output JSON
-	fmt.Println("Session data in JSON format:")
-	fmt.Println(string(jsonData))
+	exitChannel := make(chan bool, 1)
 
-	// Save to file
-	err = keylogger.SaveTypingSessionToFile(jsonData, "typing_intervals.json")
-	if err != nil {
-		panic(err)
-	}
+	go func() {
+		sig := <-signalChannel
+		fmt.Printf("Received signal: %v\n", sig)
+		openprograms.RunProcessWatch(true)
+		exitChannel <- true
+	}()
+
+	go keylogger.RunKeywatch(exitChannel)
+	go openprograms.RunProcessWatch(false)
+
+	<-exitChannel
 }
