@@ -1,0 +1,197 @@
+\documentclass[
+    11pt,
+    a4paper,
+    sfdefaults=false,
+    toc=chapterentrywithdots,
+    twoside,openright,
+    titlepage,
+    parskip=half,
+    headings=normal,  % reduces heading size
+    listof=totoc,
+    bibliography=totoc,
+    index=totoc,
+    captions=tableheading,  % caption below table
+    chapterprefix,
+    listof=flat,
+    final
+]{scrbook}
+
+
+% details about your thesis
+\newcommand{\titel}{CYBRAIL}
+\newcommand{\artderarbeit}{IT-Projekt}  % {Bachelorarbeit,Masterarbeit}
+\newcommand{\autor}{Mattis Krämer, Robin Rosner, Pascal Blank}
+\newcommand{\studiengang}{Bachelor Informatik}  % {Informatik,Wirtschaftsinformatik,Medieninformatik}
+\newcommand{\matrikelnr}{,,3646070}
+\newcommand{\erstgutachter}{Dr. M. Geier}
+%\newcommand{\zweitgutachter}{Prof.\,Dr.~Donald Duck}
+%\newcommand{\betreuer}{M.Sc.\,~Martina Schmidt}
+%\newcommand{\unternehmen}{Musterfirma GmbH}
+\newcommand{\logo}{figures/TH-Nuernberg-RGB.png}
+\newcommand{\keywords}{hot, fuzz}
+\newcommand{\creationsemester}{SS2024 - WS2425}
+\newcommand{\submissiondate}{06.01.2025}
+
+% custom head and foot
+\usepackage[automark]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\ihead{\headmark}
+\chead{}
+\ohead{\pagemark}
+\renewcommand*\chaptermarkformat{\chapappifchapterprefix{\ }% 
+  \thechapter.\enskip}
+
+\RedeclareSectionCommand[tocindent=0pt]{section}
+\RedeclareSectionCommand[tocindent=0pt]{subsection}
+%\RedeclareSectionCommand[tocnumwidth=70pt]{chapter}
+
+\usepackage{scrhack}
+
+% other packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,relsize,textcomp,csquotes}
+\usepackage{amsmath,amsfonts}
+\usepackage[english, ngerman]{babel}  % flip for German thesis
+\usepackage[final]{graphicx}
+\usepackage{setspace,geometry,xcolor}
+\usepackage{makeidx}
+\usepackage{paralist,ifthen,todonotes}
+\usepackage{url}
+\usepackage[toc]{glossaries}
+\usepackage{pdfpages}
+
+% table setup
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{lscape}
+
+
+% pdf hyperref
+\usepackage[
+    bookmarks=true,
+    bookmarksopen=true,
+    bookmarksnumbered=true,
+    bookmarksopenlevel=1,
+    pdftitle={\titel},
+    pdfauthor={\autor},
+    pdfcreator={\autor},
+    pdfsubject={\titel},
+    pdfkeywords={\keywords},
+    pdfpagelabels=true,
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=magenta,
+    anchorcolor=black,
+    citecolor=cyan,
+    filecolor=magenta,
+    menucolor=red,
+    plainpages=false,
+    hypertexnames=true,
+    linktocpage=true,
+]{hyperref}
+
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    maxbibnames=10,
+]{biblatex}
+
+% configure your listings style
+\usepackage{listings}
+\lstset{
+	tabsize=3,
+	extendedchars=true,
+	frame=single,
+	showstringspaces=true,
+	numbers=left,
+	numberstyle=\small,
+	breakautoindent=true
+}
+
+\addbibresource{refs.bib}
+
+% page setup
+% \setlength{\topskip}{\ht\strutbox}
+\geometry{paper=a4paper,left=2.5cm,top=3.0cm,bindingoffset=.8cm}
+\setstretch{1.5}
+\frenchspacing
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+% some commands
+\newcommand{\ua}{\mbox{u.\,a.\ }}
+\newcommand{\zB}{\mbox{z.\,B.\ }}
+\newcommand{\dahe}{\mbox{d.\,h.,\ }}
+\newcommand{\bzw}{\mbox{bzw.\ }}
+\newcommand{\bzgl}{\mbox{bzgl.\ }}
+\newcommand{\eg}{\mbox{e.\,g.\ }}
+\newcommand{\ie}{\mbox{i.\,e.\ }}
+\newcommand{\wrt}{\mbox{w.\,r.\,t.\ }}
+\newcommand{\etal}{\mbox{\emph{et\,al.\ }}}
+
+
+% TODO remove if not needed...
+%\usepackage{blindtext}
+
+% load glossary entries
+%\makenoidxglossaries
+%\loadglsentries{glossary}
+
+\begin{document}
+
+
+\setcounter{secnumdepth}{3}  % numerate subsections
+\setcounter{tocdepth}{2}  % ...but don't include them in toc
+
+\frontmatter
+\include{cover}
+
+% download the following form (requires VPN) and complete it (hit save in your editor)
+% https://intern.ohmportal.de/fileadmin/Public_Docs/SB/SB_0009_FO_Pruefungsrechtliche_Erklaerung_und_Erklaerung_zur_Veroeffentlichung_der_Abschlussarbeit_public.pdf
+%\includepdf{SB_0009_FO_Pruefungsrechtliche_Erklaerung_und_Erklaerung_zur_Veroeffentlichung_der_Abschlussarbeit_public.pdf}\cleardoublepage
+
+
+\include{content/0_einleitung}
+
+\tableofcontents
+
+\mainmatter
+
+\include{content/1_projektziele}
+\include{content/2_projektverlauf}
+\include{content/3_ergebnisse}
+\include{content/4_qualitätssicherung}
+\include{content/5_risikoanalyse}
+\include{content/6_kommunikation}
+\include{content/7_ressourcenmanagement}
+\include{content/8_lessonslearned}
+\include{content/9_abschlussbewertung}
+\include{content/10_fazit}
+
+
+% remove if not needed
+%\appendix
+%\include{content/a1_supplemental}
+
+\backmatter
+%\listoffigures
+\cleardoublepage
+
+%\listoftables
+%\cleardoublepage
+
+\renewcommand{\lstlistlistingname}{Abbildungsverzeichnis}  % change for German thesis
+\lstlistoflistings
+%\cleardoublepage
+
+
+%\printbibliography
+
+\include{content/11_anhang}
+
+%\printnoidxglossaries
+
+\end{document}
