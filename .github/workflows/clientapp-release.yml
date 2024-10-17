@@ -8,12 +8,13 @@ on:
     paths:
       - 'ClientApp/**'
   workflow_dispatch:
-  
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     defaults:
       run:
+        shell: cmd
         working-directory: ClientApp
 
     steps:
@@ -24,17 +25,20 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version: '1.21'
+          check-latest: true
 
       - name: Build ClientApp
+        shell: bash
         run: |
-          go build -o ClientApp
+          go build -o ClientApp.exe
 
       - name: Archive ClientApp
+        shell: powershell
         run: |
-          tar -czf ClientApp.tar.gz ClientApp
+          Compress-Archive -Path ClientApp.exe -DestinationPath ClientApp.zip
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
           name: ClientApp
-          path: ClientApp.tar.gz
+          path: ClientApp.zip
