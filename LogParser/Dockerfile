@@ -16,7 +16,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o logparser
 # Final Stage
 FROM gcr.io/distroless/static-debian12
 
-COPY --from=builder /app/logparser /logparser
+COPY --from=builder /app/logparser /app/logparser
+COPY --from=builder /app/views /app/views
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
 ENTRYPOINT ["/logparser"]
