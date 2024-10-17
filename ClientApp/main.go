@@ -42,7 +42,7 @@ func main() {
 
 func uploadLogs() error {
 	// Server URL
-	url := "http://127.0.0.1:4000/upload-logs"
+	url := "https://cybrail-api.mattzi.de/upload-logs"
 
 	// Create a buffer to hold the multipart form data
 	var requestBody bytes.Buffer
