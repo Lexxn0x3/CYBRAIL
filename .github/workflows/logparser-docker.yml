@@ -18,12 +18,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version: '1.22'
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v2
@@ -35,7 +35,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./LogParser
+          file: ./LogParser/Dockerfile
           push: true
           tags: |
             ghcr.io/lexxn0x3/cybrail:latest

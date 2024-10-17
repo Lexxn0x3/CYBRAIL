@@ -12,33 +12,37 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    defaults:
-      run:
-        shell: cmd
-        working-directory: ClientApp
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: '1.21'
           check-latest: true
 
       - name: Build ClientApp
         shell: bash
+        working-directory: ./ClientApp
         run: |
           go build -o ClientApp.exe
 
       - name: Archive ClientApp
         shell: powershell
+        working-directory: ./ClientApp
         run: |
           Compress-Archive -Path ClientApp.exe -DestinationPath ClientApp.zip
+         
+      - name: Check Files
+        shell: bash
+        run: |
+          ls -la ./ClientApp
+
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ClientApp
-          path: ClientApp.zip
+          path: ClientApp/ClientApp.zip
