@@ -1,0 +1,39 @@
+name: Build and Release ClientApp
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'ClientApp/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ClientApp
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Build ClientApp
+        run: |
+          go build -o ClientApp
+
+      - name: Archive ClientApp
+        run: |
+          tar -czf ClientApp.tar.gz ClientApp
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ClientApp
+          path: ClientApp.tar.gz
