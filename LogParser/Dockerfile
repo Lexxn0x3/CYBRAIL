@@ -14,7 +14,9 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -o logparser
 
 # Final Stage
-FROM gcr.io/distroless/static-debian12
+FROM python:3.9-slim-bullseye
+
+RUN pip install --no-cache-dir numpy tensorflow
 
 # Declare the /data directory as a volume
 VOLUME /data
