@@ -16,7 +16,7 @@ func RunKeywatch(termination chan bool) {
 	fmt.Println(string(jsonData))
 
 	// Save to file
-	err = SaveTypingSessionToFile(jsonData, "typing_intervals.json")
+	err = SaveTypingSessionToFile(jsonData, "TypeIntervall.json")
 	if err != nil {
 		panic(err)
 	}

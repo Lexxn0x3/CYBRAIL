@@ -27,7 +27,7 @@
                         {{.status}}
                     </span>
                 </p>
-                {{if eq .status "cheating"}}
+                {{ if or (eq .status "cheating") (eq .status "error") }}
                 <p>Details:</p>
                 <ul>
                     {{range $detail := .details}}
