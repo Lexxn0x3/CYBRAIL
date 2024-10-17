@@ -20,4 +20,4 @@ COPY --from=builder /app/logparser /app/logparser
 COPY --from=builder /app/views /app/views
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
-ENTRYPOINT ["/logparser"]
+ENTRYPOINT ["/app/logparser"]
