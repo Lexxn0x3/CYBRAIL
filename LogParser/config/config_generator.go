@@ -1,36 +1,12 @@
 package config
 
 import (
-  log "github.com/sirupsen/logrus"
 	"os"
 	"path/filepath"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
-
-// GenerateConfig checks for the existence of a config file and generates one if needed.
-// func GenerateConfig(configPath string, dataDir string) {
-// 	if promptUserForConfigCreation() {
-// 		logFiles := getAllLogFiles(dataDir)
-// 		groups := groupLogsByBaseName(logFiles)
-
-// 		students := []models.Student{}
-// 		for baseName, logs := range groups {
-// 			id, name := promptUserForStudentInfo(baseName)
-// 			student := models.Student{
-// 				ID:   id,
-// 				Name: name,
-// 				Logs: logs,
-// 			}
-// 			students = append(students, student)
-// 		}
-
-// 		cfg := models.Config{Students: students}
-// 		saveConfig(configPath, cfg)
-// 		fmt.Println("Configuration saved.")
-// 	} else {
-// 		return
-// 	}
-// }
 
 // configExists checks if the configuration file already exists.
 func ConfigExists(path string) bool {
@@ -49,7 +25,6 @@ func CheckLogFilesInConfig(logDir, configPath string) bool {
 	// Retrieve all log files in the directory
 	logFiles := GetAllLogFiles(logDir)
 
-
 	// Create a map of student log files from the config for quick lookup
 	studentLogMap := make(map[string]bool)
 	for _, student := range config.Students {
@@ -57,7 +32,7 @@ func CheckLogFilesInConfig(logDir, configPath string) bool {
 		studentLogMap[student.Logs.BrowserLog] = true
 		studentLogMap[student.Logs.ClientLog] = true
 		studentLogMap[student.Logs.RuntimeLog] = true
-    studentLogMap[student.Logs.TypeIntervalLog] = true
+		studentLogMap[student.Logs.TypeIntervalLog] = true
 	}
 
 	// Check if each log file in the directory has a corresponding student config
@@ -79,7 +54,7 @@ func GetAllLogFiles(dir string) []string {
 
 	var logFiles []string
 	for _, file := range files {
-		if !file.IsDir() && strings.HasSuffix(file.Name(), ".log") {
+		if !file.IsDir() && (strings.HasSuffix(file.Name(), ".log") || strings.HasSuffix(file.Name(), "TypeIntervall.json")) {
 			logFiles = append(logFiles, filepath.Join(dir, file.Name()))
 		}
 	}
@@ -102,11 +77,11 @@ func GroupLogsByBaseName(logFiles []string) map[string]LogPaths {
 			logs := groups[baseName]
 			logs.RuntimeLog = logFile
 			groups[baseName] = logs
-		} else if strings.Contains(logFile, "_TypeIntervall"){
-      logs := groups[baseName]
-      logs.TypeIntervalLog = logFile
-      groups[baseName] = logs
-    }
+		} else if strings.Contains(logFile, "_TypeIntervall.json") {
+			logs := groups[baseName]
+			logs.TypeIntervalLog = logFile
+			groups[baseName] = logs
+		}
 	}
 
 	return groups
