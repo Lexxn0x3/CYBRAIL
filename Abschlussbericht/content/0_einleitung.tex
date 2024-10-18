@@ -1,14 +1,7 @@
 \chapter{Einleitung} \label{ch:einleitung}
-CYBRAIL ist ein Tool, das es ermöglichen soll, mögliche Betrugsversuche in Online- oder Präsenzklausuren am Computer zu erkennen. 
-Dabei liefert es eine nachvollziehbare Begründung anhand von verschiedenen Indizien, die während einer Onlineklausur in Logdateien gesammelt und später durch dieses Tool ausgewertet werden können.\\
-\\
-Im Rahmen dieses IT-Projekts wurde das System CYBRAIL entwickelt, um die Integrität und Transparenz akademischer Prüfungen signifikant zu verbessern. Mit der fortschreitenden Digitalisierung von Prüfungsprozessen gewinnt der Einsatz von Tools wie dem Safe Exam Browser (SEB) zunehmend an Bedeutung, da sie gewährleisten, dass Prüfungen unter fairen Bedingungen durchgeführt werden und unerlaubte Hilfsmittel ausgeschlossen bleiben. Allerdings stellt die Auswertung der durch den SEB generierten Protokolle (Logs) bislang eine erhebliche Herausforderung dar, insbesondere wenn es darum geht, potenziell verdächtige Aktivitäten in Echtzeit zu identifizieren und adäquat zu reagieren.
 
-Bisher wurde der SEB primär zur Abschreckung von Studierenden verwendet, ohne die generierten Logs systematisch auszuwerten oder zu überprüfen, ob Studierende Wege gefunden haben, die Sicherheitsvorkehrungen des SEB zu umgehen. Diese Lücke birgt das Risiko, dass unrechtmäßige Aktivitäten unentdeckt bleiben und somit die Integrität der Prüfungsergebnisse gefährdet wird.
-
-Das zentrale Ziel von CYBRAIL ist es, diesen Mangel durch die Automatisierung des Prüfungsprozesses zu beheben und den verantwortlichen Professoren eine effiziente, möglichst in Echtzeit ablaufende Kontrolle und Auswertung der SEB-Logs zu ermöglichen. Dies umfasst die Entwicklung von Algorithmen zur automatisierten Analyse und Klassifizierung der Log-Daten, um Verdachtsfälle unerlaubter Mittel schnell und präzise zu erkennen und gleichzeitig entsprechende Beweismittel bereitzustellen. Ein weiteres wichtiges Merkmal von CYBRAIL ist die Bereitstellung einer modularen Systemarchitektur mit flexiblen Schnittstellen, die es ermöglicht, weitere Prüfmechanismen bei Bedarf problemlos zu integrieren.
-
-Durch diese Lösung sollen sowohl die Zuverlässigkeit und Transparenz des Prüfungsprozesses als auch die Nachvollziehbarkeit der Prüfungsergebnisse erheblich gesteigert werden.
+Im Rahmen dieses IT-Projekts wurde das System \gls{cybrail} entwickelt, um die Integrität und Transparenz akademischer Prüfungen signifikant zu verbessern.\\
+Mit der fortschreitenden Digitalisierung von Prüfungsprozessen gewinnt der Einsatz von Tools wie dem \gls{seb} zunehmend an Bedeutung, da sie gewährleisten, dass Prüfungen unter fairen Bedingungen durchgeführt werden und unerlaubte Hilfsmittel ausgeschlossen bleiben. Allerdings stellt die Auswertung der durch den \gls{seb} generierten Protokolle (Logs) bislang eine erhebliche Herausforderung dar, insbesondere wenn es darum geht, potenziell verdächtige Aktivitäten in Echtzeit oder im Nachhinein zu identifizieren und adäquat darauf zu reagieren.
 
 \section{Safe Exam Browser}
 Der \gls{seb} ist ein abgesicherter Browser, der speziell für Prüfungen an Schulen entwickelt wurde. 
@@ -24,13 +17,12 @@ Frühere Versionen des \gls{seb} konnten durch den einfachen Austausch einer Pro
 Dies wird eigentlich durch mehrere komplexe Prüfungen unterbunden, die den Start in einer \gls{vm} verhindern sollten. 
 Diese Manipulation konnte jedoch mit einer etwa fünfminütigen Google-Suche leicht und unkompliziert durchgeführt werden. 
 Dadurch ist es möglich, den \gls{seb} in einem Fenster oder auf einem zweiten Bildschirm auszuführen, während auf dem Hostsystem – also dem System, das die \gls{vm} betreibt – nach Lösungen gegoogelt, Videoanrufe durchgeführt oder Aufzeichnungen gemacht werden können.\\
-\\
 Dennoch gab es bereits in diesen Fällen gewisse Indizien in diversen Logdateien, die auf einen Missbrauch hinwiesen. 
 Beispielsweise wird geloggt, wenn sich die Bildschirmauflösung ändert, was passiert, wenn die Fenstergröße der \gls{vm} angepasst wird oder der Bildschirm in den Vollbildmodus wechselt. 
 Der \gls{seb} verfügt zudem über eine Integritätsprüfung, um Modifikationen festzustellen.\\
-\\
 Beide dieser Indizien werden jedoch lediglich in Logdateien geschrieben. 
 Ohne eine Auswertung und Sammlung der Logdateien erfährt der Prüfer oder die Aufsichtsperson nichts von solchen Vorfällen.
+
 \subsection{Automatisches Tippen}
 Ein weiterer Angriffsvektor ist nahezu unentdeckbar: das automatische Eintippen von Zeichen anstelle des normalen Copy-Pastes. 
 Dies könnte entweder durch auf dem Gerät laufende Software geschehen, die nicht durch den \gls{seb} blockiert wird – hier würde nur eine Whitelist helfen, da ein solches Programm beliebig benannt werden kann – oder durch einen Hardware-Dongle, der beispielsweise Text von einem anderen Gerät automatisch eintippt. 
@@ -45,7 +37,9 @@ es findet keine automatische Auswertung der Logs statt, was bedeutet, dass ein M
 Dies ist jedoch sehr schwierig, es sei denn, man ist mit der Funktionsweise des \gls{seb} vertraut.
 
 \section{Lösung}
-Eine offensichtliche Lösung wäre ein Tool, das diesen Prozess möglichst generisch und erweiterbar automatisiert: CYBRAIL – Cyber Barrier for Reliable Academic Integrity and Log-analysis.
+Eine offensichtliche Lösung wäre ein Tool, das diesen Prozess möglichst generisch und erweiterbar automatisiert: CYBRAIL – Cyber Barrier for Reliable Academic Integrity and Log-analysis.\\
+Das zentrale Ziel von \gls{cybrail} ist es, diesen Mangel durch die Automatisierung des Prüfungsprozesses zu beheben und den verantwortlichen Professoren eine effiziente, möglichst in Echtzeit ablaufende Kontrolle und Auswertung der SEB-Logs zu ermöglichen. Dies umfasst die Entwicklung von Algorithmen zur automatisierten Analyse und Klassifizierung der Log-Daten, um Verdachtsfälle unerlaubter Mittel schnell und präzise zu erkennen und gleichzeitig entsprechende Beweismittel bereitzustellen. Ein weiteres wichtiges Merkmal von \gls{cybrail} ist die Bereitstellung einer modularen Systemarchitektur mit flexiblen Schnittstellen, die es ermöglicht, weitere Prüfmechanismen bei Bedarf problemlos zu integrieren.\\
+Durch diese Lösung sollen sowohl die Zuverlässigkeit und Transparenz des Prüfungsprozesses als auch die Nachvollziehbarkeit der Prüfungsergebnisse erheblich gesteigert werden.
 
 
 
