@@ -1,1 +1,37 @@
 \chapter{Einleitung} \label{ch:einleitung}
+CYBRAIL ist ein Tool, das es ermöglichen soll, mögliche Betrugsversuche in Online- oder Präsenzklausuren am Computer zu erkennen. Dabei liefert es eine nachvollziehbare Begründung anhand von verschiedenen Indizien, die während einer Onlineklausur in Logdateien gesammelt und später durch dieses Tool ausgewertet werden können.
+
+\section{Safe Exam Browser}
+Der \gls{seb} ist ein abgesicherter Browser, der speziell für Prüfungen an Schulen entwickelt wurde. Seine Funktionalität ist stark eingeschränkt, um die den Studierenden zur Verfügung stehenden Hilfsmittel erheblich zu beschränken. Der \gls{seb} wird auch an unserer Hochschule eingesetzt, weshalb der Fokus dieses Projekts auf diesen Browser ausgerichtet ist. Zu den Funktionen des \gls{seb} gehören unter anderem Prüfungen, ob unerlaubte Programme im Hintergrund laufen, ob der Bildschirm geteilt wird, und es wird verhindert, dass Studierende die \gls{seb}-Umgebung verlassen, andere Programme öffnen oder Copy-Paste verwenden. Somit bildet der \gls{seb} eine solide Grundlage, um faire Prüfungen zu ermöglichen und Betrug zu verhindern.
+\section{Cheating with SEB}
+Jedoch hat jedes System auch gewisse schwächen.
+
+\subsection{Virtuelle Machine}
+So konnten frühere versionen des \gls{seb} mit dem einfachen Austausch einer Programmdatei so verändert werden, dass dieser nun auch ein einer \gls{vm} startet.
+Dieses wird eigentlich durch mehrere komplexe checks unterbunden und würde den start in einer \gls{vm} abbrechen.
+Dieser Cheat war mit einer ca. 5 minuten Google suche einfach und unkompliziert anzuwenden.
+Durch diesen ist es dem zufolge mölgich den \gls{seb} in eine Fenster oder auf einem 2. Bildschirm zu haben während man auf dem Hostsystem - alo dem system was die \gls{vm} ausführt - die lösungen googelt, aufnimmt, in einem Videocall ist oder ähnliches.\\
+\\
+Trotz all dem gab es auch hier schon gewisse indizien in diversen log files, welche auf so einen misbrauch hinweisen.
+Z.b. wird geloggt wenn sich die display auflösung verändert, dies würde passieren wenn die Fenster größe der \gls{vm} angepasst wird oder diese zu Vollbild wechselt.
+Auch verfügt der \gls{seb} über einen Integritätscheck um Modifikationen festzustellen.\\
+\\
+Beide diese Indizien werden jedoch lediglich ein eine Logfile geschrieben.
+Ohne auswertung und einsammeln der Logfiles wird man dies all Prüfer oder Aufsich also nie erfahren.
+
+\subsection{Auto Typing}
+Ein anderer angriffsvektor ist quasi undedektierbar: Copy-Paste durch automatische eintippen von zeiche.
+Dies könnte entwer per auf dem Gerät laufender Software geschen, welche nicht durch den \gls{seb} geblockt wird; hier würde nur eine Whitlist helfen, da man so ein Programm ja beliebig benenen könnte
+oder aber es könnte ein Hardware dongel verwendet werden, welcher z.b. Text von einer anem anderen gerät schnell dort eintippt.
+Somit kann auf einem 2. Gerät die Lösung gesucht oder unter Studenten geteilt werden und dann schnell ung bequem automatisch eingetippt werden.
+
+\subsection{SEB Server}
+Alle infomrationen die in Logs gespeichert werden liegen zunächst auf dem Client des Users, also unzugänglich um auffälliges verhalten festzustellen.
+\gls{seb} liefert hierdoch einen optionalen \gls{seb}-Server.
+Dieser kann in der Hoschschule aufgesetzt werden und nach richtiger konfiguration des servers und der Konfigurationsdatei für Clienat - welche vor start der Klausur direkt von Moodle geladent werden kann -
+Logdateien von den Client empfangen.
+Dies ist jedoch seine ganze Funktionalit, es findet kein automaische auswertung der Logs stat, hier müsste ein Mensch versuche - vermutlich stichproben artik - auffälligkeiten zu finde.
+Dies ist jedoch sehr schiwierug auser man ist vertraut mit der Funktionsweise des \gls{seb}s.
+
+\section{Lösung}
+Eine offensichtliche Lösung hierfür wäre ein Tool wleches diesen prozess möglichst generisch und erweiterbar auomatisiert: CYBRAIL - Cyber Barrier for Reliable Academic Integrity and Log-analysis -.

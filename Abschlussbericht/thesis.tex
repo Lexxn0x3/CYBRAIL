@@ -3,7 +3,8 @@
     a4paper,
     sfdefaults=false,
     toc=chapterentrywithdots,
-    oneside,openany,
+    oneside,  % Ensures consistent margins
+    openany,  % No blank pages between sections
     titlepage,
     parskip=half,
     headings=normal,  % reduces heading size
@@ -11,7 +12,6 @@
     bibliography=totoc,
     index=totoc,
     captions=tableheading,  % caption below table
-    chapterprefix,
     listof=flat,
     final
 ]{scrbook}
@@ -69,6 +69,7 @@
 
 
 % pdf hyperref
+
 \usepackage[
     bookmarks=true,
     bookmarksopen=true,
@@ -78,15 +79,13 @@
     pdfauthor={\autor},
     pdfcreator={\autor},
     pdfsubject={\titel},
-    pdfkeywords={\keywords},
     pdfpagelabels=true,
-    colorlinks=true,
-    linkcolor=black,
-    urlcolor=magenta,
-    anchorcolor=black,
-    citecolor=cyan,
-    filecolor=magenta,
-    menucolor=red,
+    colorlinks=true,       % Links are colored
+    linkcolor=blue,        % Internal link color
+    urlcolor=blue,         % External link color
+    citecolor=blue,        % Citation link color
+    filecolor=blue,        % File link color
+    menucolor=blue,        % Menu link color
     plainpages=false,
     hypertexnames=true,
     linktocpage=true,
@@ -114,7 +113,8 @@
 
 % page setup
 % \setlength{\topskip}{\ht\strutbox}
-\geometry{paper=a4paper,left=2.5cm,top=3.0cm,bindingoffset=.8cm}
+% Adjust the geometry and page layout
+\geometry{paper=a4paper,left=2.5cm,right=2.5cm,top=3.0cm,bottom=3.0cm,bindingoffset=0cm}
 \setstretch{1.5}
 \frenchspacing
 \clubpenalty = 10000
@@ -137,8 +137,8 @@
 %\usepackage{blindtext}
 
 % load glossary entries
-%\makenoidxglossaries
-%\loadglsentries{glossary}
+\makenoidxglossaries
+\loadglsentries{glossary}
 
 \begin{document}
 
@@ -160,6 +160,7 @@
 
 \mainmatter
 
+\include{content/0_einleitung}
 \include{content/1_projektziele}
 \include{content/2_projektverlauf}
 \include{content/3_ergebnisse}
