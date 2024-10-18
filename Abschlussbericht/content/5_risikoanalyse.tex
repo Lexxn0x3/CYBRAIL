@@ -1,1 +1,56 @@
 \chapter{Risikoanalyse und Risikomanagement} \label{ch:Risikoanalyse}
+Bei der Entwicklung von CYBRAIL wurden verschiedene Risiken identifiziert, um mögliche Hindernisse oder Probleme während des Projekts frühzeitig zu erkennen und Gegenmaßnahmen zu definieren. 
+Die Risiken lassen sich in fünf Hauptkategorien unterteilen:
+
+\begin{itemize} \item \textbf{Technische Risiken:} Diese umfassen Softwarefehler, Kompatibilitätsprobleme zwischen verschiedenen Versionen des Safe Exam Browsers (SEB) und Sicherheitslücken. 
+\item \textbf{Datenschutz- und Compliance-Risiken:} Hier geht es vor allem um Datenschutzverletzungen und die Einhaltung von Vorschriften zum Schutz der Daten der Studierenden. 
+\item \textbf{Betriebliche Risiken:} Diese betreffen Ausfälle oder Unterbrechungen des Systems sowie Skalierbarkeitsprobleme. 
+\item \textbf{Annahme- und Akzeptanzrisiken:} Hierzu gehören der Widerstand von Lehrenden und Studierenden sowie der Mangel an Schulungen und Unterstützung. 
+\item \textbf{Projektspezifische Risiken:} Diese umfassen den fehlenden Zugriff auf Logdaten der Studierenden und die Anbindung an universitäre Dienste wie Moodle nach der Implementierung. \end{itemize}
+
+Basierend auf der Wahrscheinlichkeit und dem Schadensausmaß jedes Risikos wurde eine Risikoprioritätszahl (RPZ) berechnet. 
+Diese gibt an, wie dringend das Risiko behandelt werden muss. Für jedes Risiko wurden außerdem Gegenmaßnahmen entwickelt, um dessen Auswirkungen zu minimieren oder ganz zu vermeiden.
+
+Die folgende Tabelle fasst die wichtigsten Risiken zusammen, die im Projekt identifiziert wurden:
+
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|p{7cm}|c|c|c|p{6cm}|}
+\hline
+\textbf{Risiko} & \textbf{Schadenshöhe (1–10)} & \textbf{Wahrscheinlichkeit} & \textbf{RPZ} & \textbf{Gegenmaßnahmen} \\
+\hline
+Softwarefehler und -probleme: Wie man sie handhabt und was nach dem Projekt passiert & 2 & 0,7 & 1,4 & FAQ, Tests, abhängig von der Geschichte \\
+\hline
+Kompatibilitätsprobleme mit verschiedenen Versionen des SEB & 8 & 0,1 & 0,8 & Konfigurierbar \\
+\hline
+Sicherheitslücken & 7 & 0,5 & 3,5 & Sicherheitskonzepte, Penetrationstests \\
+\hline
+Datenschutzverletzungen & 8 & 0,4 & 3,2 & Sicherheitskonzepte, Penetrationstests, Datenspeicherlebensdauer \\
+\hline
+Einhaltung der Datenschutzvorschriften der Studierenden & 7 & 0,2 & 1,4 & Datensparsamkeit, Rücksprache mit Petric \\
+\hline
+Ausfallzeiten und Unterbrechungen & 2 & 0,2 & 0,4 & -- \\
+\hline
+Skalierungsprobleme & 2 & 0,2 & 0,4 & -- \\
+\hline
+Widerstand von Lehrenden und Studierenden & 2 & 0,6 & 1,2 & -- \\
+\hline
+Mangel an Schulungen und Unterstützung & 8 & 0,3 & 2,4 & Dokumentation, Benutzeroberfläche \\
+\hline
+Kein Zugriff auf Logdaten der Studierenden & 10 & 0,25 & 2,5 & -- \\
+\hline
+Kein Zugriff auf universitäre Dienste wie Moodle nach der Implementierung & 10 & 0,1 & 1 & -- \\
+\hline
+\end{tabular}
+\caption{Risikobewertung und Gegenmaßnahmen}
+\end{table}
+\end{landscape}
+
+\section{Zusammenfassung der Risikobewertung}
+
+Die Risikobewertung zeigt, dass die kritischsten Risiken in den Bereichen Datenschutzverletzungen und Sicherheitslücken liegen, die beide durch entsprechende Sicherheitsmaßnahmen und Penetrationstests gemindert werden können. 
+Gravierend wäre jedoch der fehlende Zugriff auf die Logdaten der Studierenden, da diese essenziell für die Funktion unseres Tools sind. 
+Ohne diese Daten wäre eine Auswertung und Erkennung von Betrugsversuchen nicht möglich. 
+Allerdings schätzen wir die Wahrscheinlichkeit, dass hierfür keine Lösung gefunden werden kann, als sehr gering ein. 
+Mit den entsprechenden technischen und organisatorischen Maßnahmen, wie der Nutzung des \gls{seb}-Servers und der korrekten Konfiguration des Systems, sollten wir in der Lage sein, auf die notwendigen Logs zuzugreifen und diese sicher zu analysieren.
