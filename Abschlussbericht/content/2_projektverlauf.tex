@@ -1,14 +1,25 @@
 \chapter{Projektverlauf und Meilensteine} \label{ch:projektverlauf}
-\section{Programmentwurf und Architekturentwurf}
-\todo{rewrite}
+Dieses Kapitel beschreibt die einzelnen Entwicklungsschritte und die dadurch erreichten Meilensteine unserer Sprints.
 
-Der Entwurf des Programms sowie die Architektur von CYBRAIL basieren auf einer klaren Strukturierung der Funktionalitäten, um eine effiziente und erweiterbare Lösung zu gewährleisten. 
+\section{Anforderungs- und Risikoanalyse}
+Im ersten Sprint haben wir uns mit der Definition der Anforderungen (Requirements) beschäftigt. 
+Ziel war es, festzulegen, welche Aspekte unser Projekt abdecken soll und welche Eigenschaften möglicherweise unrealistisch oder optional sind, um einen klaren Fokus zu setzen. 
+Eine detailliertere Beschreibung der Anforderungen findet sich in Kapitel \ref{ch:projektziele}.\\
+\\
+Gleichzeitig mit der Festlegung der Anforderungen haben wir uns ebenfalls mit den daraus resultierenden Risiken auseinandergesetzt. 
+Hierbei stand die Frage im Vordergrund, welche Fehlschläge am wahrscheinlichsten und gravierendsten sein könnten. 
+Besonders besorgniserregend waren die Risiken in Bezug auf die Beschaffung der Logdateien und den Datenschutz. 
+Eine genauere Beschreibung der Risikobewertung findet sich ebenfalls in Kapitel \ref{ch:Risikoanalyse}.
+
+\section{Programmentwurf und Architekturentwurf}
+Unser zweiter großer Meilenstein war die Ausarbeitung eines möglichen Programmentwurfs, also der strukturelle Aufbau des Programms.\\
+\\
+Der Entwurf des Programms sowie die Architektur von \gls{cybrail} basieren auf einer klaren Strukturierung der Funktionalitäten, um eine effiziente und erweiterbare Lösung zu gewährleisten. 
 Im folgenden Abschnitt wird der Architekturentwurf näher erläutert, gefolgt von einem detaillierten Blick auf die wichtigsten Klassen und deren Interaktionen.
 
 \subsection{Architekturentwurf}
 
-Das Architekturdiagramm (siehe Abbildung \ref{fig
-}) zeigt die modulare Struktur des Systems. 
+Das Architekturdiagramm (siehe Abbildung \ref{fig:klassendiagramm}) zeigt die modulare Struktur des Systems. 
 CYBRAIL ist in verschiedene Schichten unterteilt, um die Verantwortlichkeiten klar voneinander zu trennen und eine flexible Erweiterbarkeit zu ermöglichen. Die wichtigsten Schichten sind:
 
 \begin{itemize} 
@@ -34,8 +45,7 @@ Durch diese modulare Architektur ist es möglich, einzelne Komponenten unabhäng
 
 \subsection{Programmentwurf}
 
-Das Klassendiagramm in Abbildung \ref{fig
-} verdeutlicht die wichtigsten Klassen und deren Beziehungen innerhalb des Systems. 
+Das Klassendiagramm in Abbildung \ref{fig:architekturdiagramm} verdeutlicht die wichtigsten Klassen und deren Beziehungen innerhalb des Systems. 
 Die zentrale Klasse ist \texttt{LogAnalyzer}, welche für die Analyse der Logdaten zuständig ist. 
 Die wichtigsten Klassen und deren Funktionen sind:
 
@@ -63,3 +73,58 @@ Die modulare Struktur erlaubt es zudem, neue Regeln und Methoden zur Betrugserke
 \subsection{Zusammenfassung}
 
 Der Architektur- und Programmentwurf von CYBRAIL folgt einem modularen Ansatz, der eine einfache Erweiterbarkeit und Wartbarkeit des Systems ermöglicht. Durch die klare Trennung der Verantwortlichkeiten kann CYBRAIL sowohl für die Verarbeitung großer Datenmengen als auch für eine schnelle Analyse in Echtzeit verwendet werden. Die klare Definition der Klassen und deren Aufgabenbereiche stellt sicher, dass das System flexibel auf neue Anforderungen angepasst werden kann.
+
+\section{Logparsing und erstes MVP}
+Zu Beginn war es wichtig, die eigentlichen Daten, mit denen wir arbeiten wollten, in ein computerlesbares Format zu bringen und somit ein erstes \gls{mvp} zu erstellen.\\
+\\
+Wir haben einen modularen Ansatz entwickelt, der mithilfe eines Strategy Patterns die unterschiedlichen Arten von Logs – sowohl die der \gls{seb} als auch andere Logtypen – unterscheiden kann und einfach um neue Logtypen erweiterbar ist. 
+Dieses Modul nimmt alle Logdateien als Input, identifiziert den Logtyp anhand des Dateinamens und wendet schließlich die passende Strategie an, um das Log in parsierbare \gls{json}-Dateien zu konvertieren, welche später als Grundlage für die Analysen dienen.\\
+\\
+Für einen ersten Test haben wir außerdem ein Python-Modul entwickelt, das die geparsten Logs von einem Studenten einliest und anhand des Systemnamens erkennt, ob es sich dabei um eine virtuelle Maschine (VM) handelt.\\
+\\
+Beide Funktionalitäten haben wir in ein erstes \gls{mvp} integriert, das wir in Go geschrieben haben. Dieses \gls{mvp} konnte ein Set von Logdateien parsen, das erste Modul darauf ausführen und einen Status zurückmelden.\\
+\\
+Für die Kommunikation zwischen dem Hauptprogramm und den Modulen haben wir uns auf die Eingabe von Argumenten und die Ausgabe eines parsierbaren Outputs über \texttt{std::out} geeinigt.
+
+\section{UI und Batchverarbeitung}
+Bisher konnte unser Tool nur über die Konsole bedient werden. 
+Um die Bedienung zu vereinfachen, haben wir uns entschieden, es mit einer Weboberfläche auszustatten. 
+Dies haben wir direkt aus Go heraus umgesetzt, indem wir einige Methoden in API-Calls refaktoriert haben, um Programm-Ein- und Ausgaben zu realisieren.\\
+\\
+Zeitgleich wurde das Programm erweitert, um Logdateien von beliebig vielen Studierenden auszuwerten und sowohl ein Gesamtergebnis als auch Einzelauswertungen zu erstellen. 
+Hierfür wurde eine Programmhilfe entwickelt, die zunächst auf der Konsole den Benutzer unterstützte, alle Logs den richtigen Studierenden mit Namen und Matrikelnummer zuzuordnen. 
+Im Verlauf wurde diese Funktionalität auch in die Webversion portiert. Über einen einfachen Knopfdruck konnten alle Logs eingesehen und den Studierenden zugeordnet werden. 
+Sobald alle Logs zugeordnet waren, startete das Webinterface eine Analyse für jeden Studierenden und sammelte die Resultate aus allen Modulen, um diese mit detaillierten Auffälligkeiten zu präsentieren.\\
+\\
+Um Auffälligkeiten über \texttt{std::out} ausführlich zurückzugeben, wurde ein \gls{json}-Schema entwickelt, das genau beschreibt, welche Stelle die Auffälligkeit enthält und was daran auffällig ist.\\
+\\
+Des Weiteren wurde eine standardisierte Modulkonfiguration eingeführt, mit der Einstellungen für einzelne Module festgelegt werden können, wie zum Beispiel Empfindlichkeit, Keywords etc. Die Anpassung dieser Konfigurationen wurde ebenfalls in das Webinterface integriert. Diese Einstellungen sind generell vorhanden, und das \gls{ui} baut sich automatisch auf Grundlage der Konfigurationen auf, die in der jeweiligen Datei für ein Modul gefunden werden.\\
+\\
+Neben der Weiterentwicklung von Modulen, um Auffälligkeiten wie Netzwerkänderungen, Bildschirmaktivitäten oder Integritätschecks zu demonstrieren, wurde auch eine Python-Bibliothek entwickelt, um die einzelnen Module zu vereinheitlichen und doppelten Code zu refaktorisieren. 
+In jedem Modul sind das Einlesen der Logdateien und der Modulkonfigurationen sowie die Rückgabe von Auffälligkeiten einheitlich gestaltet.
+
+\section{Client-App und KI-Auswertung} 
+Eines unserer ersten Ziele war es, sowohl KI-generierte Inhalte als auch automatisches Tippen zu erkennen. 
+Die Erkennung von \gls{ki}-generierten Inhalten mussten wir jedoch ausschließen, da wir hierfür die Antworten aller Studierenden zusätzlich aus Moodle hätten extrahieren müssen.\\
+\\
+Für die Erkennung, ob automatisches Tippen verwendet wurde – eine Alternative zu Copy-Paste – haben wir zwei Szenarien identifiziert:
+\begin{enumerate} 
+\item Anschläge mit konstanten Zeitabständen 
+\item Anschläge mit variierenden Zeitabständen, die unauffälliger wirken 
+\end{enumerate}
+Um beide Fälle erkennen zu können, haben wir uns dazu entschieden, eine \gls{ki} zu trainieren, die mit hoher Wahrscheinlichkeit diese beiden Szenarien als potenzielle Betrugsversuche erkennt. 
+Dazu wurde ein Programm geschrieben, das automatisch getippte Daten generiert. 
+Als Input dienten \gls{ki}-generierte Texte, die in Wortwahl, Grammatik etc. den Klausurantworten ähneln sollten. 
+Diese Texte wurden aufgeteilt: Ein Teil wurde mit konstanten Intervallen aufgezeichnet, der andere Teil mit Variationen, die durchschnittliches menschliches Tippverhalten nachahmen sollten.\\
+\\
+Als Grundlage für die Verarbeitung haben wir ein Format entwickelt, das lediglich die Zeit zwischen jedem Tastenanschlag speichert. 
+Nach der manuellen Generierung von menschlichen Testdaten wurden sowohl die maschinellen als auch die menschlichen Timing-Daten der \gls{ki} für das Training bereitgestellt. 
+Nach kurzer Trainingszeit erzielte die \gls{ki} auf ihrem Testdatensatz eine hohe Genauigkeit und konnte auch in Praxistests gut vorhersagen, ob ein Mensch oder eine Maschine getippt hatte.\\
+\\
+Um diese Timinginformationen zu erhalten – die im Standardlog des \gls{seb} nicht enthalten sind – haben wir begonnen, eine Client-App zu entwickeln. 
+Im aktuellen \gls{mvp} speichert diese App die Timing-Daten in einer Logdatei, die dann vom \gls{ki}-Modul im Programm ausgewertet werden kann.
+
+\section{Kompletter Prototype}
+Um unseren Prototypen zu verfollständigen wurde nun noch die Clientapp verfollständigt, so das diese am Ende einer Klausur alle Logdateien an unser Programm zur auswertung sendet.
+Auch wurde das Program als ein Dockercontainer verpackt um einfaches Deployment zu gewährleisten.
+Die Clientapp kann einfach als .exe auf dem zielsystem ausgeführt werden.

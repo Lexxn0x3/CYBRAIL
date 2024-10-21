@@ -61,7 +61,7 @@
 \usepackage{makeidx}
 \usepackage{paralist,ifthen,todonotes}
 \usepackage{url}
-\usepackage[toc]{glossaries}
+\usepackage[toc,acronym]{glossaries} % Acronmyme im Glossar unterstützen
 \usepackage{pdfpages}
 
 % table setup
@@ -69,7 +69,6 @@
 \usepackage{array}
 \usepackage{ragged2e}
 \usepackage{lscape}
-
 
 % pdf hyperref
 
@@ -180,14 +179,14 @@
 %\include{content/a1_supplemental}
 
 \backmatter
-%\listoffigures
+\listoffigures
 \cleardoublepage
 
-%\listoftables
-%\cleardoublepage
+\listoftables
+\cleardoublepage
 
-\renewcommand{\lstlistlistingname}{Abbildungsverzeichnis}  % change for German thesis
-\lstlistoflistings
+%\renewcommand{\lstlistlistingname}{Abbildungsverzeichnis}  % change for German thesis
+%\lstlistoflistings
 %\cleardoublepage
 
 
@@ -195,6 +194,6 @@
 
 \include{content/11_anhang}
 
-%\printnoidxglossaries
+\printnoidxglossaries
 
 \end{document}

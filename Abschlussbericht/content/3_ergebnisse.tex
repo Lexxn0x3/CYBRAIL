@@ -1,1 +1,27 @@
 \chapter{Ergebnisse und Leistungen} \label{ch:ergebnisse}
+Als Gesamtergebnis haben wir nun einen Docker-Server und eine Client-App entwickelt, die alle Logdateien des \gls{seb} senden und Timing-Informationen der Eingaben der Studierenden speichern kann, um diese später auf ihre Legitimität hin zu überprüfen.\\
+\\
+Der Docker-Server verfügt über ein eigenes Webinterface, mit dem die Auswertung der Logdateien einer Klausur für alle Studierenden verwaltet werden kann. 
+Alle Logdateien der Studierenden werden an den Server gesendet und dort gesammelt. 
+Nach der Zuordnung der Logs zu den jeweiligen Studierenden wird ein modularer Analyseprozess gestartet. 
+Das Programm kann beliebige Module aufrufen, die dem Standard entsprechen, und sammelt von jedem dieser Module Ergebnisse für jeden Studierenden. 
+Sollte ein neues Modul erstellt oder Anpassungen vorgenommen werden müssen, kann dies einfach ohne Neukompilierung geschehen.\\
+\\
+Ähnliches gilt für die Konfigurationen der einzelnen Module. 
+Jede Konfiguration ist ebenfalls generisch, und das \gls{ui} zur Konfiguration der Module setzt sich automatisch aus den vorhandenen Konfigurationsdateien zusammen.\\
+\\
+Auch das Parsing der Logs funktioniert ähnlich. Mithilfe eines Strategy-Patterns können neue Logtypen einfach integriert und in einem Modul verarbeitet werden.\\
+\\
+Aktuell stehen folgende Module zur Verfügung, die:\\
+\\
+\begin{itemize} 
+  \item Copy-Paste-ähnliches Autotyping erkennen können 
+  \item Auffälligkeiten in der Displaykonfiguration (z.B. zu viele Displays oder Änderungen der Auflösung) erkennen können 
+  \item Auffälligkeiten bei Neuinitialisierungen des \gls{seb} feststellen können 
+  \item Die Integrität des \gls{seb} prüfen können 
+  \item Eine VM erkennen können, wenn der \gls{seb} innerhalb einer VM gestartet wird, was normalerweise durch den \gls{seb} verhindert wird   
+  \item Ungewöhnliche Netzwerkaktivitäten feststellen können 
+  \item Ungewöhnliches Shutdown-Verhalten des \gls{seb} erkennen können 
+\end{itemize}
+
+Zusätzlich zu diesen Modulen steht eine Python-Bibliothek zur Verfügung, die wiederkehrende Methoden in den Modulen abstrahiert.

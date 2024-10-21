@@ -17,9 +17,11 @@ Frühere Versionen des \gls{seb} konnten durch den einfachen Austausch einer Pro
 Dies wird eigentlich durch mehrere komplexe Prüfungen unterbunden, die den Start in einer \gls{vm} verhindern sollten. 
 Diese Manipulation konnte jedoch mit einer etwa fünfminütigen Google-Suche leicht und unkompliziert durchgeführt werden. 
 Dadurch ist es möglich, den \gls{seb} in einem Fenster oder auf einem zweiten Bildschirm auszuführen, während auf dem Hostsystem – also dem System, das die \gls{vm} betreibt – nach Lösungen gegoogelt, Videoanrufe durchgeführt oder Aufzeichnungen gemacht werden können.\\
+\\
 Dennoch gab es bereits in diesen Fällen gewisse Indizien in diversen Logdateien, die auf einen Missbrauch hinwiesen. 
 Beispielsweise wird geloggt, wenn sich die Bildschirmauflösung ändert, was passiert, wenn die Fenstergröße der \gls{vm} angepasst wird oder der Bildschirm in den Vollbildmodus wechselt. 
 Der \gls{seb} verfügt zudem über eine Integritätsprüfung, um Modifikationen festzustellen.\\
+\\
 Beide dieser Indizien werden jedoch lediglich in Logdateien geschrieben. 
 Ohne eine Auswertung und Sammlung der Logdateien erfährt der Prüfer oder die Aufsichtsperson nichts von solchen Vorfällen.
 
@@ -39,6 +41,7 @@ Dies ist jedoch sehr schwierig, es sei denn, man ist mit der Funktionsweise des 
 \section{Lösung}
 Eine offensichtliche Lösung wäre ein Tool, das diesen Prozess möglichst generisch und erweiterbar automatisiert: CYBRAIL – Cyber Barrier for Reliable Academic Integrity and Log-analysis.\\
 Das zentrale Ziel von \gls{cybrail} ist es, diesen Mangel durch die Automatisierung des Prüfungsprozesses zu beheben und den verantwortlichen Professoren eine effiziente, möglichst in Echtzeit ablaufende Kontrolle und Auswertung der SEB-Logs zu ermöglichen. Dies umfasst die Entwicklung von Algorithmen zur automatisierten Analyse und Klassifizierung der Log-Daten, um Verdachtsfälle unerlaubter Mittel schnell und präzise zu erkennen und gleichzeitig entsprechende Beweismittel bereitzustellen. Ein weiteres wichtiges Merkmal von \gls{cybrail} ist die Bereitstellung einer modularen Systemarchitektur mit flexiblen Schnittstellen, die es ermöglicht, weitere Prüfmechanismen bei Bedarf problemlos zu integrieren.\\
+\\
 Durch diese Lösung sollen sowohl die Zuverlässigkeit und Transparenz des Prüfungsprozesses als auch die Nachvollziehbarkeit der Prüfungsergebnisse erheblich gesteigert werden.
 
 
